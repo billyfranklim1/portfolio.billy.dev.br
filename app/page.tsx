@@ -162,7 +162,7 @@ export default function Page() {
     <section>
       <PreloadResources />
       <h1 className="font-medium text-2xl mb-8 tracking-tighter">
-        Oi, Eu sou o Billy 👋
+        Oi, eu sou o Billy 👋
       </h1>
       <p className="prose prose-neutral dark:prose-invert">
         {`Eu sou um desenvolvedor de software que gosta de construir coisas para a web. E atualmente `}
