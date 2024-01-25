@@ -165,7 +165,7 @@ export default function Page() {
         Oi, eu sou o Billy 👋
       </h1>
       <p className="prose prose-neutral dark:prose-invert">
-        Eu sou um desenvolvedor de software com mais de 6 anos de experiência. E minhas principais stacks são Laravel, Vue.js e React.js.
+        Eu sou engenheiro de software com mais de 6 anos de experiência. E minhas principais stacks são <a href="https://laravel.com/" target="_blank">Laravel</a>, <a href="https://vuejs.org/" target="_blank">Vue.js</a> e <a href="https://pt-br.react.dev/" target="_blank">React.js</a>.
       </p>
 
       <div className="prose prose-neutral dark:prose-invert">
@@ -188,7 +188,7 @@ export default function Page() {
         />
       </div>
       <div className="flex justify-end mt-2">
-        <Link href="/projects" className="flex items-center space-3 gap-2">
+        <Link href="/projects" className="flex items-center space-3 gap-2 underline font-medium">
           Ver mais <ArrowIcon />
         </Link>
       </div>
@@ -210,7 +210,7 @@ export default function Page() {
           />
         </div>
         <div className="flex justify-end mt-2">
-          <Link href="/projects" className="flex items-center space-3 gap-2">
+          <Link href="/projects" className="flex items-center space-3 gap-2 underline font-medium">
             Ver mais <ArrowIcon />
           </Link>
         </div>
