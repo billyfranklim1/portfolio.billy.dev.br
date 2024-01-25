@@ -165,19 +165,17 @@ export default function Page() {
         Oi, eu sou o Billy 👋
       </h1>
       <p className="prose prose-neutral dark:prose-invert">
-        {`Eu sou um desenvolvedor de software que gosta de construir coisas para a web. E atualmente `}
-        <Link href="/work">trabalho</Link>
-        {` como engenheiro de software na DevSkin.`}
+        Eu sou um desenvolvedor de software com mais de 6 anos de experiência. E minhas principais stacks são Laravel, Vue.js e React.js.
       </p>
 
       <div className="prose prose-neutral dark:prose-invert">
         <h3 className="font-medium text-xl tracking-tighter">
         📌 Principais posts  
         </h3>
-        <p>
+        {/* <p>
           De uma olhada em alguns dos meus post, é uma forma que encontrei de
           compartilhar conhecimento e experiências.
-        </p>
+        </p> */}
       </div>
       <div className="mt-8 flex w-full gap-4">
         <BlogLink
