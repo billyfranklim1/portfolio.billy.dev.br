@@ -172,7 +172,7 @@ export default function Page() {
 
       <div className="prose prose-neutral dark:prose-invert">
         <h3 className="font-medium text-xl tracking-tighter">
-          Principais posts  📌
+        📌 Principais posts  
         </h3>
         <p>
           De uma olhada em alguns dos meus post, é uma forma que encontrei de
@@ -197,7 +197,7 @@ export default function Page() {
 
       <section>
         <h2 className="font-medium text-xl mb-4 tracking-tighter">
-          Alguns do meus projetos 💼
+         💼 Alguns do meus projetos 
         </h2>
         <div className="mt-8 flex w-full gap-4">
           <ProjectLink
