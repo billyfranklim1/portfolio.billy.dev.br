@@ -1,5 +1,5 @@
-"use client";
 import type { Metadata } from "next";
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: "Projetos",
@@ -7,22 +7,6 @@ export const metadata: Metadata = {
 };
 
 export default function WorkPage() {
-  const navigateToSection = (sectionId) => {
-    document.querySelectorAll(".project-button").forEach((btn) => {
-      btn.classList.remove("bg-neutral-50", "dark:bg-neutral-800");
-    });
-
-    const button = document.getElementById(`btn-${sectionId}`);
-    if (button) {
-      button.classList.add("bg-neutral-50", "dark:bg-neutral-800");
-    }
-
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <section>
       <h1 className="font-medium text-2xl mb-8 tracking-tighter">
@@ -43,14 +27,11 @@ export default function WorkPage() {
 
         <div className="flex space-x-4 mt-4">
           {["backend", "frontend", "mobile", "ia"].map((section) => (
-            <button
-              key={section}
-              id={`btn-${section}`}
-              className={`border border-neutral-200 dark:border-neutral-700 rounded-full px-4 py-2 project-button`}
-              onClick={() => navigateToSection(section)}
-            >
+            <Link 
+            key={section} 
+            href={`#${section}`} passHref id={`link-${section}`} className={`border border-neutral-200 dark:border-neutral-700 rounded-full px-4 py-2 project-button uppercase text-xs font-medium no-underline	`}>
               {section}
-            </button>
+            </Link>
           ))}
         </div>
 
