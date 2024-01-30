@@ -25,7 +25,7 @@ export default function WorkPage() {
           são feitos por pura diversão.
         </p>
 
-        <div className="flex space-x-4 mt-4">
+        <div className="flex space-x-2 mt-4">
           {["backend", "frontend", "mobile", "ia"].map((section) => (
             <Link 
             key={section} 
