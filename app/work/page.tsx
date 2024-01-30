@@ -59,10 +59,26 @@ export default function WorkPage() {
             garantir alinhamento e transparência no processo de desenvolvimento.
           </li>
         </ul>
-        <p>
-          Competências: React.js · MySQL · PHP · JavaScript · Laravel · Git ·
-          Vue.js
-        </p>
+        <div className="flex space-x-2 my-2">
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            React.js
+          </span>
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            MySQL
+          </span>
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            PHP
+          </span>
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            Laravel
+          </span>
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            Git
+          </span>
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            Vue.js
+          </span>
+        </div>
 
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
 
@@ -108,10 +124,29 @@ export default function WorkPage() {
             para garantir testes completos antes do lançamento.
           </li>
         </ul>
-        <p>
-          Competências: Elasticsearch · React Native · Vuejs · RabbitMQ ·
-          React.js · Laravel
-        </p>
+
+        <div className="flex space-x-2 my-2">
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            Elasticsearch
+          </span>
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            React Native
+          </span>
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            Vuejs
+          </span>
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            RabbitMQ
+          </span>
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            React.js
+          </span>
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            Laravel
+          </span>
+        </div>
+
+
 
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
 
@@ -151,7 +186,28 @@ export default function WorkPage() {
             gestão de projetos.
           </li>
         </ul>
-        <p>Competências: MySQL · PHP · JavaScript · Laravel · Git · Vue.js</p>
+
+        <div className="flex space-x-2 my-2">
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            MySQL
+          </span>
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            PHP
+          </span>
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            JavaScript
+          </span>
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            Laravel
+          </span>
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            Git
+          </span>
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            Vue.js
+          </span>
+        </div>
+
 
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
         <h2 className="font-medium text-xl mb-1 tracking-tighter">Workana</h2>
@@ -191,7 +247,27 @@ export default function WorkPage() {
             Slimframework, Redbeanphp, JQuery, VueJS, HTML, CSS e MySQL.
           </li>
         </ul>
-        <p>Competências: MySQL · PHP · JavaScript · Laravel · Git · Vue.js</p>
+        <div className="flex space-x-2 my-2">
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            MySQL
+          </span>
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            PHP
+          </span>
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            JavaScript
+          </span>
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            Laravel
+          </span>
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            Git
+          </span>
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            Vue.js
+          </span>
+        </div>
+
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
 
         <h2 className="font-medium text-xl mb-1 tracking-tighter">
@@ -220,7 +296,26 @@ export default function WorkPage() {
             de soluções eficientes.
           </li>
         </ul>
-        <p>Competências: MySQL · PHP · JavaScript · Laravel · Git · Vue.js</p>
+        <div className="flex space-x-2 my-2">
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            MySQL
+          </span>
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            PHP
+          </span>
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            JavaScript
+          </span>
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            Laravel
+          </span>
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            Git
+          </span>
+          <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
+            Vue.js
+          </span>
+        </div>
       </div>
     </section>
   );
