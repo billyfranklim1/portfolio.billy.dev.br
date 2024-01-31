@@ -103,10 +103,9 @@ async function Subs({ name }: { name: string }) {
   );
 }
 
-function BlogLink({ slug, name }) {
+function BlogLink({ slug, name, description }) {
   return (
-    // each acupate 50% of the space
-    <div className="group w-1/2">
+    <div className="group w-full">
       <a
         href={`/blog/${slug}`}
         className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4 w-full"
@@ -114,6 +113,9 @@ function BlogLink({ slug, name }) {
         <div className="flex flex-col">
           <p className="font-medium text-neutral-900 dark:text-neutral-100">
             {name}
+          </p>
+          <p className="text-neutral-600 dark:text-neutral-400 text-sm">
+            {description}
           </p>
           {/* <Suspense fallback={<p className="h-6" />}>
             <Views slug={slug} />
@@ -129,7 +131,7 @@ function BlogLink({ slug, name }) {
 
 function ProjectLink({ name, description, url }) {
   return (
-    <div className="group w-1/2">
+    <div className="group w-full">
       <a
         href={url}
         target="_blank"
@@ -177,19 +179,21 @@ export default function Page() {
           compartilhar conhecimento e experiências.
         </p> */}
       </div>
-      <div className="mt-8 flex w-full gap-4">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <BlogLink
           slug="arte-aprender-experiencia-transformadora"
           name="A arte de aprender"
+          description="aprendendo a aprender é o segredo"
         />
         <BlogLink
           slug="minha-jornada-transformadora-na-tecnologia"
           name="Minha jornada na tecnologia"
+          description="como entrei na área de tecnologia"
         />
       </div>
       <div className="flex justify-end mt-2">
         <Link href="/projects" className="flex items-center space-3 gap-2 underline font-medium text-xs">
-          Ver mais <ArrowIcon />
+          Ver mais
         </Link>
       </div>
 
@@ -197,7 +201,7 @@ export default function Page() {
         <h2 className="font-medium text-xl mb-4 tracking-tighter">
          💼 Alguns do meus projetos 
         </h2>
-        <div className="mt-8 flex w-full gap-4">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <ProjectLink
             name="Laravel Auth API"
             description="API de autenticação com Laravel Sanctum"
@@ -211,7 +215,7 @@ export default function Page() {
         </div>
         <div className="flex justify-end mt-2">
           <Link href="/projects" className="flex items-center space-3 gap-2 underline font-medium text-xs">
-            Ver mais <ArrowIcon />
+            Ver mais
           </Link>
         </div>
       </section>
