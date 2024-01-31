@@ -192,7 +192,7 @@ export default function Page() {
         />
       </div>
       <div className="flex justify-end mt-2">
-        <Link href="/projects" className="flex items-center space-3 gap-2 underline font-medium text-xs">
+        <Link href="/blog" className="flex items-center space-3 gap-2 underline font-medium text-xs">
           Ver mais
         </Link>
       </div>
