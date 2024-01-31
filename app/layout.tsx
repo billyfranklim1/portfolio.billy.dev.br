@@ -13,10 +13,10 @@ export const metadata: Metadata = {
     default: 'Billy',
     template: '%s | Billy',
   },
-  description: 'Developer, writer, and creator.',
+  description: 'Software engineer.',
   openGraph: {
     title: 'Billy',
-    description: 'Developer, writer, and creator.',
+    description: 'Software engineer.',
     url: 'https://billy.dev.br',
     siteName: 'Billy',
     locale: 'en_US',
