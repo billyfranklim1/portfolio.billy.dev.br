@@ -43,7 +43,7 @@ export default function WorkPage() {
   const projects = {
     "💻 backend": [
       {
-        "title": "Laravel Auth API",
+        "title": "Auth API",
         "description": "API de autenticação com Laravel",
         "link": "https://github.com/billyfranklim1/laravel-auth-api",
         "tags": ["php", "laravel", "auth", "sanctum"]
