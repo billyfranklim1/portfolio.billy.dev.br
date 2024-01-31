@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Uses',
   description:
-    "Here's what tech I'm currently using for coding, videos, and music.",
+    "Aqui está o que estou usando atualmente.",
 };
 
 export default function UsesPage() {
@@ -25,7 +25,7 @@ export default function UsesPage() {
         <ul>
           <li>
             Editor: VSCode (
-            <a href="https://gist.github.com/leerob/e7883ab35d900b8cbb684ac77e7c4703">
+            <a href="https://gist.github.com/billyfranklim1/99d2bae4e414ac1d40000707117dbd7c">
               Settings / Extensions
             </a>
             )
@@ -42,6 +42,7 @@ export default function UsesPage() {
           <li>Notion</li>
           <li>Notion Calendar</li>
           <li>Retangle</li>
+          <li>Browser Arc</li>
           {/* <li>CleanShot X</li> */}
           {/* <li>RetroClip</li> */}
           {/* <li>Grammarly</li> */}
