@@ -59,7 +59,7 @@ export default function WorkPage() {
             garantir alinhamento e transparência no processo de desenvolvimento.
           </li>
         </ul>
-        <div className="flex space-x-2 my-2">
+        <div className="flex flex-wrap gap-2 my-2">
           <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
             React.js
           </span>
@@ -125,7 +125,7 @@ export default function WorkPage() {
           </li>
         </ul>
 
-        <div className="flex space-x-2 my-2">
+        <div className="flex flex-wrap gap-2 my-2">
           <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
             Elasticsearch
           </span>
@@ -187,7 +187,7 @@ export default function WorkPage() {
           </li>
         </ul>
 
-        <div className="flex space-x-2 my-2">
+        <div className="flex flex-wrap gap-2 my-2">
           <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
             MySQL
           </span>
@@ -247,7 +247,7 @@ export default function WorkPage() {
             Slimframework, Redbeanphp, JQuery, VueJS, HTML, CSS e MySQL.
           </li>
         </ul>
-        <div className="flex space-x-2 my-2">
+        <div className="flex flex-wrap gap-2 my-2">
           <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
             MySQL
           </span>
@@ -296,7 +296,7 @@ export default function WorkPage() {
             de soluções eficientes.
           </li>
         </ul>
-        <div className="flex space-x-2 my-2">
+        <div className="flex flex-wrap gap-2 my-2">
           <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
             MySQL
           </span>

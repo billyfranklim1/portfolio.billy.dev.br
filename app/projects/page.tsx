@@ -186,7 +186,7 @@ export default function WorkPage() {
               href={`#${section.replace(/[^a-zA-Z]|\p{Emoji}/gu, "")}`}
               passHref
               id={`link-${section.replace(/[^a-zA-Z]|\p{Emoji}/gu, "")}`}
-              className={`border border-neutral-200 dark:border-neutral-700 rounded-full px-2 md:px-4 py-1 md:py-2 project-button text-xs font-medium no-underline`}
+              className={`border border-neutral-200 dark:border-neutral-700 rounded-full px-2 md:px-4 py-1 md:py-2 project-button text-xs font-medium no-underline my-1`}
             >
               {section}
             </Link>
