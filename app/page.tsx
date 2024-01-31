@@ -167,12 +167,50 @@ export default function Page() {
         Oi, eu sou o Billy 👋
       </h1>
       <p className="prose prose-neutral dark:prose-invert">
-        Eu sou engenheiro de software com mais de 6 anos de experiência. E minhas principais stacks são <a href="https://laravel.com/" target="_blank">Laravel</a>, <a href="https://vuejs.org/" target="_blank">Vue.js</a> e <a href="https://pt-br.react.dev/" target="_blank">React.js</a>.
+        {'Eu sou engenheiro de software com 7 anos de experiência. Tendo '}
+        <Link href="/work">trabalhado</Link> 
+        {' em empresas de diversos tamanhos e segmentos, E minhas principais stacks são '}
+        <Badge href="https://react.dev">
+          <img src="/laravel.svg" alt="Vercel" className="inline-flex mr-1" style={{ width: '13px', height: '11px', marginRight: '5px' }} />
+          Laravel
+        </Badge>
+        {", "}
+        <Badge href="https://react.dev">
+          <img src="/vue.svg" alt="Vercel" className="inline-flex" 
+          style={{ width: '13px', height: '11px', marginRight: '5px' }} />
+          VueJs
+        </Badge>
+        {", "}
+        <Badge href="https://vercel.com/home">
+          <svg
+            width="13"
+            height="11"
+            role="img"
+            aria-label="Vercel logo"
+            className="inline-flex mr-1"
+          >
+            <use href="/sprite.svg#react" />
+          </svg>
+          React
+        </Badge>
+        {". Você pode me encontrar no "}
+        <Badge href="https://www.linkedin.com/in/billyfranklim/">
+          <img alt="GitHub logo" src="/linkedIn.svg" width="13"
+            height="11" style={{ marginRight: '5px' }} />
+          LinkedIn
+        </Badge>
+        {" e no "}
+        <Badge href="https://www.github.com/billyfranklim1">
+          <img alt="GitHub logo" src="/github-logo.svg" width="13"
+            height="11" style={{ marginRight: '5px' }} />
+          GitHub
+        </Badge>
+        Caso queira me enviar um e-mail, meu endereço é <a href="mailto:billyfranklim@gmail.com" target="_blank">billyfranklim@gmail.com</a>.
       </p>
 
       <div className="prose prose-neutral dark:prose-invert">
         <h3 className="font-medium text-xl tracking-tighter">
-        📌 principais posts  
+          📌 principais posts
         </h3>
         {/* <p>
           De uma olhada em alguns dos meus post, é uma forma que encontrei de
@@ -199,7 +237,7 @@ export default function Page() {
 
       <section>
         <h2 className="font-medium text-xl mb-4 tracking-tighter">
-         💼 Alguns do meus projetos 
+          💼 Alguns do meus projetos
         </h2>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <ProjectLink
@@ -396,7 +434,7 @@ export default function Page() {
       </div>
 
       */}
-      <ul className="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-600 dark:text-neutral-300">
+      {/* <ul className="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-600 dark:text-neutral-300">
         <li>
           <a
             className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
@@ -419,7 +457,7 @@ export default function Page() {
             <p className="h-7 ml-2">me encontre no github</p>
           </a>
         </li>
-      </ul>
+      </ul> */}
     </section>
   );
 }
