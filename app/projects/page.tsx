@@ -179,15 +179,20 @@ export default function WorkPage() {
         </p>
 
         <h3 className="font-medium text-xl ">🔍 busque por categoria</h3>
-        <div className="flex space-x-1 mt-4">
+        <div className="flex flex-wrap space-x-1 mt-4">
           {["💻 backend", "🌐 frontend", "📱 mobile", "🤖 IA", "📄 scripts"].map((section) => (
-            <Link 
-            key={section} 
-            href={`#${section.replace(/[^a-zA-Z]|\p{Emoji}/gu, "")}`} passHref id={`link-${section.replace(/[^a-zA-Z]|\p{Emoji}/gu, "")}`} className={`border border-neutral-200 dark:border-neutral-700 rounded-full px-4 py-2 project-button text-xs font-medium no-underline	`}>
+            <Link
+              key={section}
+              href={`#${section.replace(/[^a-zA-Z]|\p{Emoji}/gu, "")}`}
+              passHref
+              id={`link-${section.replace(/[^a-zA-Z]|\p{Emoji}/gu, "")}`}
+              className={`border border-neutral-200 dark:border-neutral-700 rounded-full px-2 md:px-4 py-1 md:py-2 project-button text-xs font-medium no-underline`}
+            >
               {section}
             </Link>
           ))}
         </div>
+
 
         <ProjectsList projects={projects} />
 
