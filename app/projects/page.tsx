@@ -43,119 +43,118 @@ export default function WorkPage() {
   const projects = {
     "💻 backend": [
       {
-        "title": "laravel-auth-api",
-        "description": "",
+        "title": "Laravel Auth API",
+        "description": "API de autenticação com Laravel",
         "link": "https://github.com/billyfranklim1/laravel-auth-api",
-        "tags": ["php", "laravel", "auth"]
+        "tags": ["php", "laravel", "auth", "sanctum"]
       },
       {
-        "title": "Backend-challenge",
-        "description": "",
+        "title": "E-Commerce API",
+        "description": "API que simula uma interface de um e-commerce, com entidades de clientes, produtos e pedidos",
         "link": "https://github.com/billyfranklim1/backend-challenge",
-        "tags": ["challenge", "backend"]
+        "tags": ["laravel", "api", "php-unit", "docker"]
       },
-
       {
-        "title": "loteria",
-        "description": "",
+        "title": "loteria API",
+        "description": "API que simula um jogo de loteria",
         "link": "https://github.com/billyfranklim1/loteria",
-        "tags": ["lottery", "game"]
+        "tags": ["laravel", "api", "php-unit", "docker"]
       },
     ],
     "🌐 frontend": [
       {
         "title": "Pomodoro",
-        "description": "",
+        "description": "Relógio pomodoro, para estudo e trabalho",
         "link": "https://github.com/billyfranklim1/node-api",
-        "tags": ["nodejs", "api"]
+        "tags": ["html", "css", "javascript"]
       },
       {
-        "title": "Nestes blog",
-        "description": "",
+        "title": "Nextjs blog",
+        "description": "Blog feito com nextjs",
         "link": "https://github.com/billyfranklim1/nextjs-blog",
-        "tags": ["nextjs", "blog"]
+        "tags": ["nextjs", "react"]
       },
       {
-        "title": "Login-react",
-        "description": "",
+        "title": "Login react",
+        "description": "Tela de login feita com react",
         "link": "https://github.com/billyfranklim1/login-reactjs",
-        "tags": ["react", "login"]
+        "tags": ["reactjs", "javascript"]
       },
       {
-        "title": "Front challenge",
-        "description": "",
+        "title": "E-commerce - Pastel de ideias",
+        "description": "E-commerce de uma pastelaria",
         "link": "https://github.com/billyfranklim1/frontend-challenge",
-        "tags": ["frontend", "challenge"]
+        "tags": ["vuejs", "javascript", "tailwindcss"]
       },
       {
         "title": "Portifolio",
-        "description": "",
+        "description": "portifolio landing page",
         "link": "https://github.com/billyfranklim1/portifolio-landing-page",
-        "tags": ["portfolio", "landing-page"]
+        "tags": ["html", "css", "javascript"]
       },
       {
         "title": "Netflix clone taiilwindcss",
-        "description": "",
+        "description": "Clone da interface do netflix feito com tailwindcss",
         "link": "https://github.com/billyfranklim1/site-clone-netflix-tailwindcss",
-        "tags": ["tailwindcss", "netflix", "clone"]
+        "tags": ["tailwindcss", "html", "css", "javascript"]
       },
       {
         "title": "my-links",
-        "description": "",
+        "description": "Gerenciador de links",
         "link": "https://github.com/billyfranklim1/my-links",
-        "tags": ["links", "management"]
+        "tags": ["html", "css", "javascript"]
       },
       {
         "title": "snake_js",
-        "description": "",
+        "description": "Jogo da cobrinha",
         "link": "https://github.com/billyfranklim1/snake_js",
-        "tags": ["javascript", "game", "snake"]
+        "tags": ["javascript", "html", "css"]
       },
     ],
     "📱 mobile": [
       {
         "title": "Login-react-native",
-        "description": "",
+        "description": "Tela de login feita com react-native",
         "link": "https://github.com/billyfranklim1/login-react-native",
-        "tags": ["react-native", "login"]
+        "tags": ["react-native", "javascript"]
       }
     ],
     "🤖 ia": [
       {
         "title": "Api movie recommendation",
-        "description": "",
+        "description": "Api de recomendação de filmes usando inteligência artificial",
         "link": "https://github.com/billyfranklim1/login-react-native",
-        "tags": ["gpt-3", "api", "movie", "recommendation"]
+        "tags": ["gpt", "api", "python"]
       },
       {
         "title": "gereador de flashcards anki",
-        "description": "",
+        "description": "Gera flashcards para anki usando a api do gpt",
         "link": "https://github.com/billyfranklim1/login-react-native",
-        "tags": ["gpt-3", "api", "movie", "recommendation"]
+        "tags": ["gpt", "api", "python"]
       },
     ],
     "📄 scripts": [
       {
-        "title": "LinkedIn-Job-Miner",
-        "description": "",
+        "title": "LinkedIn Job Miner",
+        "description": "Minerador de vagas de emprego no linkedin",
         "link": "https://github.com/billyfranklim1/LinkedIn-Job-Miner",
-        "tags": ["linkedin", "job", "miner"]
+        "tags": ["python", "linkedin", "job", "miner"]
       },
       {
         "title": "Birthday alert",
-        "description": "",
+        "description": "Alerta de aniversário no grupo do whatsapp",
         "link": "https://github.com/billyfranklim1/birthday",
-        "tags": ["birthday", "alert"]
+        "tags": ["python", "whatsapp", "alert"]
       },
       {
         "title": "Twitter python",
-        "description": "",
+        "description": "Interface de linha de comando para o twitter",
         "link": "https://github.com/billyfranklim1/twitter-python",
         "tags": ["python", "twitter"]
       },
       {
-        "title": "Screap google imagem",
-        "description": "",
+        "title": "Scrap google imagem",
+        "description": "Scrape de imagens do google",
         "link": "https://github.com/billyfranklim1/scrape-google-imagens-php",
         "tags": ["php", "scrape", "google-images"]
       }
@@ -179,6 +178,7 @@ export default function WorkPage() {
           são feitos por pura diversão.
         </p>
 
+        <h3 className="font-medium text-xl ">🔍 busque por categoria</h3>
         <div className="flex space-x-1 mt-4">
           {["💻 backend", "🌐 frontend", "📱 mobile", "🤖 IA", "📄 scripts"].map((section) => (
             <Link 
