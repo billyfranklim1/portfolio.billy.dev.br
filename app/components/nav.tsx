@@ -13,6 +13,9 @@ const navItems = {
   '/blog': {
     name: 'blog',
   },
+  '/uses': {
+    name: 'setup',
+  },
   // '/guestbook': {
   //   name: 'livro de visitas',
   // },
