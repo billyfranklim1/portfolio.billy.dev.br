@@ -25,18 +25,18 @@ export default function WorkPage() {
           são feitos por pura diversão.
         </p>
 
-        <div className="flex space-x-2 mt-4">
-          {["backend", "frontend", "mobile", "ia"].map((section) => (
+        <div className="flex space-x-1 mt-4">
+          {["backend", "frontend", "mobile", "IA"].map((section) => (
             <Link 
             key={section} 
-            href={`#${section}`} passHref id={`link-${section}`} className={`border border-neutral-200 dark:border-neutral-700 rounded-full px-4 py-2 project-button uppercase text-xs font-medium no-underline	`}>
+            href={`#${section}`} passHref id={`link-${section}`} className={`border border-neutral-200 dark:border-neutral-700 rounded-full px-4 py-2 project-button text-xs font-medium no-underline	`}>
               {section}
             </Link>
           ))}
         </div>
 
         <h2 className="font-medium text-xl ">💻 backend</h2>
-        <div className="grid grid-cols-2 gap-4" id="backend">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2" id="backend">
           <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded w-full justify-between px-3 py-4">
             <h5 className="font-medium text-base">Projeto 1</h5>
             <p className="text-xs">
@@ -56,7 +56,7 @@ export default function WorkPage() {
               </span>
             </div>
 
-            <a target="_blank" href="#">
+            <a target="_blank" href="#" className="text-xs">
               Ver no github
             </a>
           </div>
@@ -79,7 +79,7 @@ export default function WorkPage() {
               </span>
             </div>
 
-            <a target="_blank" href="#">
+            <a target="_blank" href="#" className="text-xs">
               Ver no github
             </a>
           </div>
@@ -88,7 +88,7 @@ export default function WorkPage() {
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
 
         <h2 className="font-medium text-xl ">🌐 frontend</h2>
-        <div className="grid grid-cols-2 gap-4" id="frontend">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2" id="frontend">
           <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded w-full justify-between px-3 py-4">
             <h5 className="font-medium text-base">Projeto 1</h5>
             <p className="text-xs">
@@ -107,7 +107,7 @@ export default function WorkPage() {
               </span>
             </div>
 
-            <a target="_blank" href="#">
+            <a target="_blank" href="#" className="text-xs">
               Ver no github
             </a>
           </div>
@@ -130,14 +130,15 @@ export default function WorkPage() {
               </span>
             </div>
 
-            <a target="_blank" href="#">
+            <a target="_blank" href="#" className="text-xs">
               Ver no github
             </a>
           </div>
         </div>
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        
         <h2 className="font-medium text-xl ">📱 mobile</h2>
-        <div className="grid grid-cols-2 gap-4" id="mobile">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2" id="mobile">
           <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded w-full justify-between px-3 py-4">
             <h5 className="font-medium text-base">Projeto 1</h5>
             <p className="text-xs">
@@ -155,7 +156,7 @@ export default function WorkPage() {
                 #mongodb
               </span>
             </div>
-            <a target="_blank" href="#">
+            <a target="_blank" href="#" className="text-xs">
               Ver no github
             </a>
           </div>
@@ -177,16 +178,17 @@ export default function WorkPage() {
                 #mongodb
               </span>
             </div>
-            <a target="_blank" href="#">
+            <a target="_blank" href="#" className="text-xs">
               Ver no github
             </a>
           </div>
         </div>
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        
         <h2 className="font-medium text-xl ">
           🤖 IA (Inteligência Artificial)
         </h2>
-        <div className="grid grid-cols-2 gap-4" id="ia">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2" id="ia">
           <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded w-full justify-between px-3 py-4">
             <h5 className="font-medium text-base">Projeto 1</h5>
             <p className="text-xs">
@@ -204,7 +206,7 @@ export default function WorkPage() {
                 #mongodb
               </span>
             </div>
-            <a target="_blank" href="#">
+            <a target="_blank" href="#" className="text-xs">
               Ver no github
             </a>
           </div>
@@ -225,7 +227,7 @@ export default function WorkPage() {
                 #mongodb
               </span>
             </div>
-            <a target="_blank" href="#">
+            <a target="_blank" href="#" className="text-xs">
               Ver no github
             </a>
           </div>

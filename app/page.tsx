@@ -115,9 +115,9 @@ function BlogLink({ slug, name }) {
           <p className="font-medium text-neutral-900 dark:text-neutral-100">
             {name}
           </p>
-          <Suspense fallback={<p className="h-6" />}>
+          {/* <Suspense fallback={<p className="h-6" />}>
             <Views slug={slug} />
-          </Suspense>
+          </Suspense> */}
         </div>
         <div className="text-neutral-700 dark:text-neutral-300 transform transition-transform duration-300 group-hover:-rotate-12">
           <ArrowIcon />
@@ -170,7 +170,7 @@ export default function Page() {
 
       <div className="prose prose-neutral dark:prose-invert">
         <h3 className="font-medium text-xl tracking-tighter">
-        📌 Principais posts  
+        📌 principais posts  
         </h3>
         {/* <p>
           De uma olhada em alguns dos meus post, é uma forma que encontrei de
