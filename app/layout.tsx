@@ -45,6 +45,19 @@ export const metadata: Metadata = {
 
 const cx = (...classes) => classes.filter(Boolean).join(' ');
 
+const Footer = () => {
+  return (
+    <footer className="flex justify-between items-center text-xs mt-8 mb-4">
+      <span>© 2024 Billy. Todos os direitos reservados.</span>
+      <div className="flex space-x-4"> 
+        {/*  */}
+       
+      </div>
+    </footer>
+  );
+};
+
+
 export default function RootLayout({
   children,
 }: {
@@ -68,6 +81,7 @@ export default function RootLayout({
           {children}
           <Analytics />
           <SpeedInsights />
+          <Footer />
         </main>
       </body>
     </html>
