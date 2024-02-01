@@ -163,13 +163,40 @@ export default function Page() {
   return (
     <section>
       <PreloadResources />
-      <h1 className="font-medium text-2xl mb-8 tracking-tighter">
-        Oi, eu sou o Billy 👋
+      <h1 className="font-medium text-2xl mb-2 tracking-tighter text-gray-900 dark:text-gray-400">
+        <b className="font-bold dark:text-gray-100 text-gray-900">
+          Olá, meu nome é Billy 👋 .</b> <br></br>Engenheiro de Software Full-Stack.
       </h1>
+      <div className="flex space-x-2 mb-10">
+        <Badge href="https://www.linkedin.com/in/billyfranklim/">
+          <img alt="GitHub logo" src="/linkedIn.svg" width="13"
+            height="11" style={{ marginRight: '5px' }} />
+          LinkedIn
+        </Badge>
+        <Badge href="https://www.github.com/billyfranklim1">
+          <img alt="GitHub logo" src="/github-logo.svg" width="13"
+            height="11" style={{ marginRight: '5px' }} />
+          GitHub
+        </Badge>
+        <Badge href="https://www.instagram.com/billy.dev.br">
+          <img alt="Instagram logo" src="/instagram.svg" width="13"
+            height="11" style={{ marginRight: '5px' }} />
+          Instagram
+        </Badge>
+        <Badge href="https://www.twitter.com/billyfranklim1">
+          <img alt="x logo" src="/x.svg" width="13"
+            height="11" style={{ marginRight: '5px' }} />
+          X (Twitter)
+        </Badge>
+      </div>
       <p className="prose prose-neutral dark:prose-invert">
         {'Eu sou engenheiro de software com 7 anos de experiência. Tendo '}
         <Link href="/work">trabalhado</Link> 
-        {' em empresas de diversos tamanhos e segmentos, E minhas principais stacks são '}
+        {' em empresas de diversos tamanhos e segmentos, tais como startups, empresas de médio, grande porte e empresas governamentais. '}
+        <br></br>
+        <br></br>
+
+        {'Minhas principais stacks são '}
         <Badge href="https://react.dev">
           <img src="/laravel.svg" alt="Vercel" className="inline-flex mr-1" style={{ width: '13px', height: '11px', marginRight: '5px' }} />
           Laravel
@@ -193,24 +220,12 @@ export default function Page() {
           </svg>
           React
         </Badge>
-        {". Você pode me encontrar no "}
-        <Badge href="https://www.linkedin.com/in/billyfranklim/">
-          <img alt="GitHub logo" src="/linkedIn.svg" width="13"
-            height="11" style={{ marginRight: '5px' }} />
-          LinkedIn
-        </Badge>
-        {" e no "}
-        <Badge href="https://www.github.com/billyfranklim1">
-          <img alt="GitHub logo" src="/github-logo.svg" width="13"
-            height="11" style={{ marginRight: '5px' }} />
-          GitHub
-        </Badge>
-        Caso queira me enviar um e-mail, meu endereço é <a href="mailto:billyfranklim@gmail.com" target="_blank">billyfranklim@gmail.com</a>.
+        .
       </p>
 
       <div className="prose prose-neutral dark:prose-invert">
         <h3 className="font-medium text-xl tracking-tighter">
-          📌 principais posts
+          📌 posts recentes
         </h3>
         {/* <p>
           De uma olhada em alguns dos meus post, é uma forma que encontrei de
@@ -237,7 +252,7 @@ export default function Page() {
 
       <section>
         <h2 className="font-medium text-xl mb-4 tracking-tighter">
-          💼 Alguns do meus projetos
+          💼 alguns dos meus projetos
         </h2>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <ProjectLink
