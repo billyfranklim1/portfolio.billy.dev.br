@@ -167,7 +167,7 @@ export default function Page() {
         <b className="font-bold dark:text-gray-100 text-gray-900">
           Olá, meu nome é Billy 👋 .</b> <br></br>Engenheiro de Software Full-Stack.
       </h1>
-      <div className="flex space-x-2 mb-10">
+      <div className="flex flex-wrap gap-2 mt-2 mb-10">
         <Badge href="https://www.linkedin.com/in/billyfranklim/">
           <img alt="GitHub logo" src="/linkedIn.svg" width="13"
             height="11" style={{ marginRight: '5px' }} />
