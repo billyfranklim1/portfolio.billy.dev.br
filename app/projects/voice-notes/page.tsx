@@ -3,14 +3,14 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Voice Notes - Aplicação Web para Transcrição e Análise de Áudio | Billy Franklim',
-  description: 'Voice Notes é uma aplicação web moderna para gravação, transcrição automática e análise inteligente de notas de áudio. Desenvolvido com Laravel e IA por Billy Franklim.',
-  keywords: 'Voice Notes, transcrição de áudio, notas de voz, Laravel, IA, inteligência artificial, produtividade, Billy Franklim',
+  title: 'Voice Notes - Aplicação Web para Transcrição e Análise de Áudio | Billy',
+  description: 'Voice Notes é uma aplicação web moderna para gravação, transcrição automática e análise inteligente de notas de áudio. Desenvolvido com Laravel e IA por Billy.',
+  keywords: 'Voice Notes, transcrição de áudio, notas de voz, Laravel, IA, inteligência artificial, produtividade, Billy',
   openGraph: {
     title: 'Voice Notes - Transcrição e Análise Inteligente de Áudio',
     description: 'Aplicação web para gravação, transcrição automática e análise inteligente de notas de áudio.',
     url: 'https://portfolio.billy.dev.br/projects/voice-notes',
-    siteName: 'Billy Franklim Portfolio',
+    siteName: 'Billy Portfolio',
     images: [
       {
         url: '/og-voice-notes.jpg',
@@ -204,7 +204,7 @@ export default function VoiceNotesPage() {
 
       <div className="border-t border-gray-200 dark:border-gray-800 pt-8">
         <p className="text-center text-gray-600 dark:text-gray-400">
-          Desenvolvido por <Link href="/" className="text-green-600 dark:text-green-400 hover:underline">Billy Franklim</Link>
+          Desenvolvido por <Link href="/" className="text-green-600 dark:text-green-400 hover:underline">Billy</Link>
         </p>
       </div>
     </section>

@@ -11,18 +11,18 @@ import { GoogleAnalytics } from './components/GoogleAnalytics';
 export const metadata: Metadata = {
   metadataBase: new URL('https://billy.dev.br'),
   title: {
-    default: 'Billy Franklim - Engenheiro de Software Full-Stack',
-    template: '%s | Billy Franklim',
+    default: 'Billy - Engenheiro de Software Full-Stack',
+    template: '%s | Billy',
   },
   description: 'Engenheiro de Software Full-Stack com 7 anos de experiência em Laravel, Vue.js e React. Desenvolvimento web, APIs e soluções escaláveis.',
-  keywords: 'Billy Franklim, Engenheiro de Software, Full-Stack, Laravel, Vue.js, React, Next.js, PHP, JavaScript, TypeScript, Desenvolvimento Web, APIs',
-  authors: [{ name: 'Billy Franklim' }],
-  creator: 'Billy Franklim',
+  keywords: 'Billy, Engenheiro de Software, Full-Stack, Laravel, Vue.js, React, Next.js, PHP, JavaScript, TypeScript, Desenvolvimento Web, APIs',
+  authors: [{ name: 'Billy' }],
+  creator: 'Billy',
   openGraph: {
-    title: 'Billy Franklim - Engenheiro de Software Full-Stack',
+    title: 'Billy - Engenheiro de Software Full-Stack',
     description: 'Engenheiro de Software Full-Stack com expertise em Laravel, Vue.js e React. Confira meus projetos e artigos sobre desenvolvimento web.',
     url: 'https://billy.dev.br',
-    siteName: 'Billy Franklim',
+    siteName: 'Billy',
     locale: 'pt_BR',
     type: 'website',
     images: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         url: 'https://billy.dev.br/opengraph-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Billy Franklim - Engenheiro de Software',
+        alt: 'Billy - Engenheiro de Software',
       },
     ],
   },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: 'Billy Franklim',
+    title: 'Billy',
     card: 'summary_large_image',
     creator: '@billyfranklim1',
   },
@@ -101,7 +101,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Person',
-              name: 'Billy Franklim',
+              name: 'Billy',
               jobTitle: 'Engenheiro de Software Full-Stack',
               url: 'https://billy.dev.br',
               sameAs: [

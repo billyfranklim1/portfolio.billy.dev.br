@@ -7,7 +7,7 @@ export async function GET() {
   const rss = `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Billy Franklim - Blog</title>
+    <title>Billy - Blog</title>
     <link>${baseUrl}/blog</link>
     <description>Artigos sobre desenvolvimento de software, tecnologia e experiências na área de programação.</description>
     <language>pt-BR</language>
@@ -29,7 +29,7 @@ export async function GET() {
       <guid isPermaLink="true">${url}</guid>
       <description>${escapeXml(post.metadata.summary)}</description>
       <pubDate>${new Date(post.metadata.publishedAt).toUTCString()}</pubDate>
-      <author>contato@billy.dev.br (Billy Franklim)</author>
+      <author>contato@billy.dev.br (Billy)</author>
     </item>`;
       })
       .join('')}

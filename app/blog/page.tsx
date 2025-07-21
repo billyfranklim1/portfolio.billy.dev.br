@@ -8,7 +8,7 @@ export const metadata = {
   title: 'Blog',
   description: 'Artigos sobre desenvolvimento de software, tecnologia, Laravel, Vue.js, React e experiências na área de programação.',
   openGraph: {
-    title: 'Blog - Billy Franklim',
+    title: 'Blog - Billy',
     description: 'Artigos sobre desenvolvimento de software, tecnologia e experiências na área de programação.',
     type: 'website',
   },

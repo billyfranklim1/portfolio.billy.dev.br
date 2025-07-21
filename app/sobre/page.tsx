@@ -3,7 +3,7 @@ import avatar from 'app/avatar.jpg';
 
 export const metadata = {
   title: 'Sobre',
-  description: 'Conheça mais sobre Billy Franklim, engenheiro de software full-stack com 7 anos de experiência.',
+  description: 'Conheça mais sobre Billy, engenheiro de software full-stack com 7 anos de experiência.',
 };
 
 export default function SobrePage() {
@@ -16,7 +16,7 @@ export default function SobrePage() {
         <div className="flex flex-col md:flex-row gap-8 mb-8">
           <div className="flex-shrink-0">
             <Image
-              alt="Billy Franklim"
+              alt="Billy"
               src={avatar}
               width={150}
               height={150}
@@ -26,7 +26,7 @@ export default function SobrePage() {
           </div>
           <div>
             <p>
-              Olá! Sou Billy Franklim, engenheiro de software full-stack com 7 anos de experiência 
+              Olá! Sou Billy, engenheiro de software full-stack com 7 anos de experiência 
               desenvolvendo soluções web escaláveis e de alta qualidade.
             </p>
             <p>

@@ -4,14 +4,14 @@ import Image from 'next/image'
 import { ProjectTracker } from '@/app/components/ProjectTracker'
 
 export const metadata: Metadata = {
-  title: 'HubNews AI - Plataforma de Inteligência Artificial para Análise de Notícias | Billy Franklim',
-  description: 'HubNews AI é uma plataforma inovadora que utiliza inteligência artificial para análise, curadoria e insights de notícias em tempo real. Desenvolvido por Billy Franklim.',
-  keywords: 'HubNews, IA, inteligência artificial, análise de notícias, curadoria de conteúdo, news aggregator, AI news, Billy Franklim',
+  title: 'HubNews AI - Plataforma de Inteligência Artificial para Análise de Notícias | Billy',
+  description: 'HubNews AI é uma plataforma inovadora que utiliza inteligência artificial para análise, curadoria e insights de notícias em tempo real. Desenvolvido por Billy.',
+  keywords: 'HubNews, IA, inteligência artificial, análise de notícias, curadoria de conteúdo, news aggregator, AI news, Billy',
   openGraph: {
     title: 'HubNews AI - Plataforma de IA para Análise de Notícias',
     description: 'Plataforma inovadora que utiliza inteligência artificial para análise e curadoria de notícias em tempo real.',
     url: 'https://portfolio.billy.dev.br/projects/hubnews',
-    siteName: 'Billy Franklim Portfolio',
+    siteName: 'Billy Portfolio',
     images: [
       {
         url: '/og-hubnews.jpg',
@@ -163,7 +163,7 @@ export default function HubNewsPage() {
 
       <div className="border-t border-gray-200 dark:border-gray-800 pt-8">
         <p className="text-center text-gray-600 dark:text-gray-400">
-          Desenvolvido por <Link href="/" className="text-blue-600 dark:text-blue-400 hover:underline">Billy Franklim</Link>
+          Desenvolvido por <Link href="/" className="text-blue-600 dark:text-blue-400 hover:underline">Billy</Link>
         </p>
       </div>
     </section>

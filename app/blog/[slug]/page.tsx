@@ -109,7 +109,7 @@ export default function Blog({ params }) {
             url: `https://billy.dev.br/blog/${post.slug}`,
             author: {
               '@type': 'Person',
-              name: 'Billy Franklim',
+              name: 'Billy',
             },
           }),
         }}

@@ -3,14 +3,14 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Sistema Reino - Software de Gestão Eclesiástica Completo | Billy Franklim',
-  description: 'Sistema Reino é um software completo de gestão para igrejas e organizações religiosas. Gerencie membros, finanças, eventos e muito mais. Desenvolvido por Billy Franklim.',
-  keywords: 'Sistema Reino, gestão de igreja, software eclesiástico, gestão de membros, dízimos e ofertas, Laravel, SaaS, Billy Franklim',
+  title: 'Sistema Reino - Software de Gestão Eclesiástica Completo | Billy',
+  description: 'Sistema Reino é um software completo de gestão para igrejas e organizações religiosas. Gerencie membros, finanças, eventos e muito mais. Desenvolvido por Billy.',
+  keywords: 'Sistema Reino, gestão de igreja, software eclesiástico, gestão de membros, dízimos e ofertas, Laravel, SaaS, Billy',
   openGraph: {
     title: 'Sistema Reino - Gestão Eclesiástica Completa',
     description: 'Software completo para gestão de igrejas com controle de membros, finanças, eventos e comunicação.',
     url: 'https://portfolio.billy.dev.br/projects/sistema-reino',
-    siteName: 'Billy Franklim Portfolio',
+    siteName: 'Billy Portfolio',
     images: [
       {
         url: '/og-sistema-reino.jpg',
@@ -265,7 +265,7 @@ export default function SistemaReinoPage() {
 
       <div className="border-t border-gray-200 dark:border-gray-800 pt-8">
         <p className="text-center text-gray-600 dark:text-gray-400">
-          Desenvolvido por <Link href="/" className="text-purple-600 dark:text-purple-400 hover:underline">Billy Franklim</Link>
+          Desenvolvido por <Link href="/" className="text-purple-600 dark:text-purple-400 hover:underline">Billy</Link>
         </p>
       </div>
     </section>
