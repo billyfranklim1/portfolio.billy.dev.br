@@ -6,6 +6,7 @@ import { Navbar } from './components/nav';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { SandpackCSS } from './blog/[slug]/sandpack';
+import { GoogleAnalytics } from './components/GoogleAnalytics';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://billy.dev.br'),
@@ -92,17 +93,6 @@ export default function RootLayout({
     >
       <head>
         <SandpackCSS />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8LBWHFC6T"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-M8LBWHFC6T');
-            `,
-          }}
-        />
       </head>
       <body className="antialiased max-w-2xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto">
         <script
@@ -127,6 +117,7 @@ export default function RootLayout({
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />
           {children}
+          <GoogleAnalytics />
           <Analytics />
           <SpeedInsights />
           <Footer />

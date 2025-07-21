@@ -1,12 +1,12 @@
-export default function robots() {
+import { MetadataRoute } from 'next'
+
+export default function robots(): MetadataRoute.Robots {
   return {
-    rules: [
-      {
-        userAgent: '*',
-        allow: '/',
-      },
-    ],
+    rules: {
+      userAgent: '*',
+      allow: '/',
+      disallow: ['/admin/', '/api/'],
+    },
     sitemap: 'https://billy.dev.br/sitemap.xml',
-    host: 'https://billy.dev.br',
-  };
+  }
 }

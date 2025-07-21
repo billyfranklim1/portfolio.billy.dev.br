@@ -1,7 +1,10 @@
+'use client'
+
 import { Suspense } from "react";
 import { unstable_noStore as noStore } from "next/cache";
 import Link from "next/link";
 import Image from "next/image";
+import { trackExternalLink, trackSocialClick, trackProjectView } from './components/GoogleAnalytics';
 import smashing from "public/images/home/smashing.jpg";
 import summit from "public/images/home/summit.jpg";
 import reactathon from "public/images/home/reactathon.jpg";
@@ -19,10 +22,17 @@ import {
 } from "app/db/queries";
 
 function Badge(props) {
+  const handleClick = () => {
+    if (props.href) {
+      trackSocialClick(props.href);
+    }
+  };
+
   return (
     <a
       {...props}
       target="_blank"
+      onClick={handleClick}
       className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded p-1 text-sm inline-flex items-center leading-4 text-neutral-900 dark:text-neutral-100 no-underline"
     />
   );
@@ -130,12 +140,27 @@ function BlogLink({ slug, name, description }) {
 }
 
 function ProjectLink({ name, description, url }) {
+  const isExternal = url.startsWith('http');
+  
+  const handleClick = () => {
+    if (isExternal) {
+      trackExternalLink(url, 'project');
+    } else {
+      trackProjectView(name);
+    }
+  };
+
+  const linkProps = isExternal ? {
+    target: "_blank",
+    rel: "noopener noreferrer"
+  } : {};
+
   return (
     <div className="group w-full">
-      <a
+      <Link
         href={url}
-        target="_blank"
-        rel="noopener noreferrer"
+        {...linkProps}
+        onClick={handleClick}
         className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4 w-full"
       >
         <div className="flex flex-col">
@@ -149,7 +174,7 @@ function ProjectLink({ name, description, url }) {
         <div className="text-neutral-700 dark:text-neutral-300 transform transition-transform duration-300 group-hover:-rotate-12">
           <ArrowIcon />
         </div>
-      </a>
+      </Link>
     </div>
   );
 }
