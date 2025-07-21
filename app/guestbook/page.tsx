@@ -9,6 +9,8 @@ export const metadata = {
   description: 'Sign my guestbook and leave your mark.',
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function GuestbookPage() {
   return (
     <section>
