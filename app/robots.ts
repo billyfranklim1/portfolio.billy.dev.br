@@ -3,9 +3,10 @@ export default function robots() {
     rules: [
       {
         userAgent: '*',
+        allow: '/',
       },
     ],
-    sitemap: 'https://leerob.io/sitemap.xml',
-    host: 'https://leerob.io',
+    sitemap: 'https://billy.dev.br/sitemap.xml',
+    host: 'https://billy.dev.br',
   };
 }

@@ -169,22 +169,22 @@ export default function Page() {
       </h1>
       <div className="flex flex-wrap gap-2 mt-2 mb-10">
         <Badge href="https://www.linkedin.com/in/billyfranklim/">
-          <img alt="GitHub logo" src="/linkedIn.svg" width="13"
+          <img alt="Logo do LinkedIn" src="/linkedIn.svg" width="13"
             height="11" style={{ marginRight: '5px' }} />
           LinkedIn
         </Badge>
         <Badge href="https://www.github.com/billyfranklim1">
-          <img alt="GitHub logo" src="/github-logo.svg" width="13"
+          <img alt="Logo do GitHub" src="/github-logo.svg" width="13"
             height="11" style={{ marginRight: '5px' }} />
           GitHub
         </Badge>
         <Badge href="https://www.instagram.com/billy.dev.br">
-          <img alt="Instagram logo" src="/instagram.svg" width="13"
+          <img alt="Logo do Instagram" src="/instagram.svg" width="13"
             height="11" style={{ marginRight: '5px' }} />
           Instagram
         </Badge>
         <Badge href="https://www.twitter.com/billyfranklim1">
-          <img alt="x logo" src="/x.svg" width="13"
+          <img alt="Logo do X (Twitter)" src="/x.svg" width="13"
             height="11" style={{ marginRight: '5px' }} />
           X (Twitter)
         </Badge>
@@ -198,12 +198,12 @@ export default function Page() {
 
         {'Minhas principais stacks são '}
         <Badge href="https://react.dev">
-          <img src="/laravel.svg" alt="Vercel" className="inline-flex mr-1" style={{ width: '13px', height: '11px', marginRight: '5px' }} />
+          <img src="/laravel.svg" alt="Logo do Laravel" className="inline-flex mr-1" style={{ width: '13px', height: '11px', marginRight: '5px' }} />
           Laravel
         </Badge>
         {", "}
         <Badge href="https://react.dev">
-          <img src="/vue.svg" alt="Vercel" className="inline-flex" 
+          <img src="/vue.svg" alt="Logo do Vue.js" className="inline-flex" 
           style={{ width: '13px', height: '11px', marginRight: '5px' }} />
           VueJs
         </Badge>
@@ -213,7 +213,7 @@ export default function Page() {
             width="13"
             height="11"
             role="img"
-            aria-label="Vercel logo"
+            aria-label="Logo do React"
             className="inline-flex mr-1"
           >
             <use href="/sprite.svg#react" />
@@ -270,6 +270,29 @@ export default function Page() {
           <Link href="/projects" className="flex items-center space-3 gap-2 underline font-medium text-xs">
             Ver mais
           </Link>
+        </div>
+      </section>
+
+      <section className="mt-12">
+        <h2 className="font-medium text-xl mb-4 tracking-tighter">
+          🚀 projetos em produção
+        </h2>
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <ProjectLink
+            name="HubNews AI"
+            description="Plataforma de IA para análise de notícias"
+            url="/projects/hubnews"
+          />
+          <ProjectLink
+            name="Voice Notes"
+            description="App para transcrição de notas de áudio"
+            url="/projects/voice-notes"
+          />
+          <ProjectLink
+            name="Sistema Reino"
+            description="Gestão completa para igrejas"
+            url="/projects/sistema-reino"
+          />
         </div>
       </section>
 

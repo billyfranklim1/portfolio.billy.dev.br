@@ -6,7 +6,12 @@ import { getBlogPosts } from 'app/db/blog';
 
 export const metadata = {
   title: 'Blog',
-  description: 'Read my thoughts on software development, design, and more.',
+  description: 'Artigos sobre desenvolvimento de software, tecnologia, Laravel, Vue.js, React e experiências na área de programação.',
+  openGraph: {
+    title: 'Blog - Billy Franklim',
+    description: 'Artigos sobre desenvolvimento de software, tecnologia e experiências na área de programação.',
+    type: 'website',
+  },
 };
 
 export default function BlogPage() {
