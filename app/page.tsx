@@ -1,10 +1,7 @@
-'use client'
-
 import { Suspense } from "react";
 import { unstable_noStore as noStore } from "next/cache";
 import Link from "next/link";
 import Image from "next/image";
-import { trackExternalLink, trackSocialClick, trackProjectView } from './components/GoogleAnalytics';
 import smashing from "public/images/home/smashing.jpg";
 import summit from "public/images/home/summit.jpg";
 import reactathon from "public/images/home/reactathon.jpg";
@@ -20,23 +17,9 @@ import {
   getVercelYouTubeSubs,
   getViewsCount,
 } from "app/db/queries";
-
-function Badge(props) {
-  const handleClick = () => {
-    if (props.href) {
-      trackSocialClick(props.href);
-    }
-  };
-
-  return (
-    <a
-      {...props}
-      target="_blank"
-      onClick={handleClick}
-      className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded p-1 text-sm inline-flex items-center leading-4 text-neutral-900 dark:text-neutral-100 no-underline"
-    />
-  );
-}
+import { Badge } from './components/home/Badge';
+import { ProjectLink } from './components/home/ProjectLink';
+import { BlogLink } from './components/home/BlogLink';
 
 function ArrowIcon() {
   return (
@@ -113,72 +96,6 @@ async function Subs({ name }: { name: string }) {
   );
 }
 
-function BlogLink({ slug, name, description }) {
-  return (
-    <div className="group w-full">
-      <a
-        href={`/blog/${slug}`}
-        className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4 w-full"
-      >
-        <div className="flex flex-col">
-          <p className="font-medium text-neutral-900 dark:text-neutral-100">
-            {name}
-          </p>
-          <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-            {description}
-          </p>
-          {/* <Suspense fallback={<p className="h-6" />}>
-            <Views slug={slug} />
-          </Suspense> */}
-        </div>
-        <div className="text-neutral-700 dark:text-neutral-300 transform transition-transform duration-300 group-hover:-rotate-12">
-          <ArrowIcon />
-        </div>
-      </a>
-    </div>
-  );
-}
-
-function ProjectLink({ name, description, url }) {
-  const isExternal = url.startsWith('http');
-  
-  const handleClick = () => {
-    if (isExternal) {
-      trackExternalLink(url, 'project');
-    } else {
-      trackProjectView(name);
-    }
-  };
-
-  const linkProps = isExternal ? {
-    target: "_blank",
-    rel: "noopener noreferrer"
-  } : {};
-
-  return (
-    <div className="group w-full">
-      <Link
-        href={url}
-        {...linkProps}
-        onClick={handleClick}
-        className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4 w-full"
-      >
-        <div className="flex flex-col">
-          <p className="font-medium text-neutral-900 dark:text-neutral-100">
-            {name}
-          </p>
-          <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-            {description}
-          </p>
-        </div>
-        <div className="text-neutral-700 dark:text-neutral-300 transform transition-transform duration-300 group-hover:-rotate-12">
-          <ArrowIcon />
-        </div>
-      </Link>
-    </div>
-  );
-}
-
 async function Views({ slug }: { slug: string }) {
   let views = await getViewsCount();
   return <ViewCounter allViews={views} slug={slug} />;
@@ -194,23 +111,23 @@ export default function Page() {
       </h1>
       <div className="flex flex-wrap gap-2 mt-2 mb-10">
         <Badge href="https://www.linkedin.com/in/billyfranklim/">
-          <img alt="Logo do LinkedIn" src="/linkedIn.svg" width="13"
-            height="11" style={{ marginRight: '5px' }} />
+          <Image alt="Conecte-se comigo no LinkedIn" src="/linkedIn.svg" width={13}
+            height={11} style={{ marginRight: '5px' }} priority />
           LinkedIn
         </Badge>
         <Badge href="https://www.github.com/billyfranklim1">
-          <img alt="Logo do GitHub" src="/github-logo.svg" width="13"
-            height="11" style={{ marginRight: '5px' }} />
+          <Image alt="Veja meus projetos no GitHub" src="/github-logo.svg" width={13}
+            height={11} style={{ marginRight: '5px' }} priority />
           GitHub
         </Badge>
         <Badge href="https://www.instagram.com/billy.dev.br">
-          <img alt="Logo do Instagram" src="/instagram.svg" width="13"
-            height="11" style={{ marginRight: '5px' }} />
+          <Image alt="Siga-me no Instagram" src="/instagram.svg" width={13}
+            height={11} style={{ marginRight: '5px' }} priority />
           Instagram
         </Badge>
         <Badge href="https://www.twitter.com/billyfranklim1">
-          <img alt="Logo do X (Twitter)" src="/x.svg" width="13"
-            height="11" style={{ marginRight: '5px' }} />
+          <Image alt="Acompanhe-me no X (Twitter)" src="/x.svg" width={13}
+            height={11} style={{ marginRight: '5px' }} priority />
           X (Twitter)
         </Badge>
       </div>
@@ -222,23 +139,22 @@ export default function Page() {
         <br></br>
 
         {'Minhas principais stacks são '}
-        <Badge href="https://react.dev">
-          <img src="/laravel.svg" alt="Logo do Laravel" className="inline-flex mr-1" style={{ width: '13px', height: '11px', marginRight: '5px' }} />
+        <Badge href="https://laravel.com">
+          <Image src="/laravel.svg" alt="Framework Laravel" className="inline-flex mr-1" width={13} height={11} style={{ marginRight: '5px' }} />
           Laravel
         </Badge>
         {", "}
-        <Badge href="https://react.dev">
-          <img src="/vue.svg" alt="Logo do Vue.js" className="inline-flex" 
-          style={{ width: '13px', height: '11px', marginRight: '5px' }} />
+        <Badge href="https://vuejs.org">
+          <Image src="/vue.svg" alt="Framework Vue.js" className="inline-flex" width={13} height={11} style={{ marginRight: '5px' }} />
           VueJs
         </Badge>
         {", "}
-        <Badge href="https://vercel.com/home">
+        <Badge href="https://react.dev">
           <svg
             width="13"
             height="11"
             role="img"
-            aria-label="Logo do React"
+            aria-label="Biblioteca React"
             className="inline-flex mr-1"
           >
             <use href="/sprite.svg#react" />
