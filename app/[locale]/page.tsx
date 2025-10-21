@@ -220,7 +220,8 @@ export default async function Page({
         </Link>
       </div>
 
-      <section>
+      {/* Seção de projetos GitHub comentada - agora tudo está na página /projects */}
+      {/* <section>
         <h2 className="font-medium text-xl mb-4 tracking-tighter">
           {t('projects')}
         </h2>
@@ -241,9 +242,9 @@ export default async function Page({
             {t('viewMore')}
           </Link>
         </div>
-      </section>
+      </section> */}
 
-      <section className="mt-12">
+      <section className="mt-8">
         <h2 className="font-medium text-xl mb-4 tracking-tighter">
           {t('productionProjects')}
         </h2>

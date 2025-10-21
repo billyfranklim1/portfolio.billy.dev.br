@@ -52,6 +52,15 @@
       "description": "Complete management for churches"
     }
   },
+  "projectsPage": {
+    "title": "Projects",
+    "description": "Check out some of my projects and experiments",
+    "heading": "my projects 🚀",
+    "intro": "Here are some of my public projects. You can find more on my",
+    "classification": "They are classified by type, but many of them are complete projects that include frontend, backend, mobile and AI. Many of these projects are made for study and learning, but some are made for pure fun.",
+    "searchByCategory": "🔍 search by category",
+    "viewOnGithub": "View on GitHub"
+  },
   "work": {
     "title": "Work Experience",
     "description": "My professional journey over the years",

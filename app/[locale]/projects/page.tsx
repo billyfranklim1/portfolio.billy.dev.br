@@ -1,33 +1,42 @@
 import type { Metadata } from "next";
 import Link from 'next/link';
+import { getTranslations } from 'next-intl/server';
 
-export const metadata: Metadata = {
-  title: "Projetos",
-  description: "Alguns projetos públicos que desenvolvi",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'projectsPage' });
 
+  return {
+    title: t('title'),
+    description: t('description'),
+  };
+}
 
-const ProjectsList = ({ projects }) => {
+const ProjectsList = ({ projects, viewOnGithub }: { projects: any; viewOnGithub: string }) => {
   return (
     <div>
       {Object.entries(projects).map(([category, projectsInCategory]: [string, any[]]) => (
         <div key={category}>
           <h2 className="font-medium text-xl">{category}</h2>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2" id={category.replace(/[^a-zA-Z]/g, "")}>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3" id={category.replace(/[^a-zA-Z]/g, "")}>
             {projectsInCategory.map(project => (
               <div key={project.title} className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded w-full justify-between px-3 py-4">
                 <h5 className="font-medium text-base">{project.title}</h5>
-                <p className="text-xs">{project.description}</p>
-                <div className="flex space-x-2 my-2">
+                <p className="text-xs text-neutral-600 dark:text-neutral-400 mt-1">{project.description}</p>
+                <div className="flex flex-wrap gap-1 my-2">
                   {project.tags.map(tag => (
                     <span key={tag} className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
                       #{tag}
                     </span>
                   ))}
                 </div>
-                <a target="_blank" href={project.link} className="text-xs">
-                  Ver no github
-                </a>
+                <Link target="_blank" href={project.link} className="text-xs hover:underline text-blue-600 dark:text-blue-400">
+                  {viewOnGithub}
+                </Link>
               </div>
             ))}
           </div>
@@ -38,13 +47,40 @@ const ProjectsList = ({ projects }) => {
   );
 };
 
-export default function WorkPage() {
+export default async function ProjectsPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'projectsPage' });
+  const tn = await getTranslations({ locale, namespace: 'nav' });
 
-  const projects = {
+  const projects = locale === 'pt' ? {
+    "🚀 projetos em produção": [
+      {
+        "title": "HubNews AI",
+        "description": "Plataforma de IA para análise e curadoria de notícias em tempo real",
+        "link": `/${locale}/${tn('projects')}/hubnews`,
+        "tags": ["ia", "react", "next.js", "tensorflow"]
+      },
+      {
+        "title": "Voice Notes",
+        "description": "App para transcrição de notas de áudio com IA",
+        "link": `/${locale}/${tn('projects')}/voice-notes`,
+        "tags": ["ia", "react", "speech-to-text"]
+      },
+      {
+        "title": "Sistema Reino",
+        "description": "Sistema completo de gestão para igrejas",
+        "link": `/${locale}/${tn('projects')}/sistema-reino`,
+        "tags": ["laravel", "vue.js", "saas"]
+      },
+    ],
     "💻 backend": [
       {
         "title": "Auth API",
-        "description": "API de autenticação com Laravel",
+        "description": "API de autenticação com Laravel Sanctum",
         "link": "https://github.com/billyfranklim1/laravel-auth-api",
         "tags": ["php", "laravel", "auth", "sanctum"]
       },
@@ -55,7 +91,7 @@ export default function WorkPage() {
         "tags": ["laravel", "api", "php-unit", "docker"]
       },
       {
-        "title": "loteria API",
+        "title": "Loteria API",
         "description": "API que simula um jogo de loteria",
         "link": "https://github.com/billyfranklim1/loteria",
         "tags": ["laravel", "api", "php-unit", "docker"]
@@ -69,14 +105,14 @@ export default function WorkPage() {
         "tags": ["html", "css", "javascript"]
       },
       {
-        "title": "Nextjs blog",
-        "description": "Blog feito com nextjs",
+        "title": "Next.js Blog",
+        "description": "Blog feito com Next.js",
         "link": "https://github.com/billyfranklim1/nextjs-blog",
         "tags": ["nextjs", "react"]
       },
       {
-        "title": "Login react",
-        "description": "Tela de login feita com react",
+        "title": "Login React",
+        "description": "Tela de login feita com React",
         "link": "https://github.com/billyfranklim1/login-reactjs",
         "tags": ["reactjs", "javascript"]
       },
@@ -87,25 +123,25 @@ export default function WorkPage() {
         "tags": ["vuejs", "javascript", "tailwindcss"]
       },
       {
-        "title": "Portifolio",
-        "description": "portifolio landing page",
+        "title": "Portfolio",
+        "description": "Portfolio landing page",
         "link": "https://github.com/billyfranklim1/portifolio-landing-page",
         "tags": ["html", "css", "javascript"]
       },
       {
-        "title": "Netflix clone taiilwindcss",
-        "description": "Clone da interface do netflix feito com tailwindcss",
+        "title": "Netflix Clone Tailwind CSS",
+        "description": "Clone da interface do Netflix feito com Tailwind CSS",
         "link": "https://github.com/billyfranklim1/site-clone-netflix-tailwindcss",
         "tags": ["tailwindcss", "html", "css", "javascript"]
       },
       {
-        "title": "my-links",
+        "title": "My Links",
         "description": "Gerenciador de links",
         "link": "https://github.com/billyfranklim1/my-links",
         "tags": ["html", "css", "javascript"]
       },
       {
-        "title": "snake_js",
+        "title": "Snake JS",
         "description": "Jogo da cobrinha",
         "link": "https://github.com/billyfranklim1/snake_js",
         "tags": ["javascript", "html", "css"]
@@ -113,285 +149,225 @@ export default function WorkPage() {
     ],
     "📱 mobile": [
       {
-        "title": "Login-react-native",
-        "description": "Tela de login feita com react-native",
+        "title": "Login React Native",
+        "description": "Tela de login feita com React Native",
         "link": "https://github.com/billyfranklim1/login-react-native",
         "tags": ["react-native", "javascript"]
       }
     ],
     "🤖 ia": [
       {
-        "title": "Api movie recommendation",
-        "description": "Api de recomendação de filmes usando inteligência artificial",
-        "link": "https://github.com/billyfranklim1/login-react-native",
+        "title": "API Movie Recommendation",
+        "description": "API de recomendação de filmes usando inteligência artificial",
+        "link": "https://github.com/billyfranklim1/movie-recommendation-api",
         "tags": ["gpt", "api", "python"]
       },
       {
-        "title": "gereador de flashcards anki",
-        "description": "Gera flashcards para anki usando a api do gpt",
-        "link": "https://github.com/billyfranklim1/login-react-native",
+        "title": "Gerador de Flashcards Anki",
+        "description": "Gera flashcards para Anki usando a API do GPT",
+        "link": "https://github.com/billyfranklim1/anki-flashcard-generator",
         "tags": ["gpt", "api", "python"]
       },
     ],
     "📄 scripts": [
       {
         "title": "LinkedIn Job Miner",
-        "description": "Minerador de vagas de emprego no linkedin",
+        "description": "Minerador de vagas de emprego no LinkedIn",
         "link": "https://github.com/billyfranklim1/LinkedIn-Job-Miner",
         "tags": ["python", "linkedin", "job", "miner"]
       },
       {
-        "title": "Birthday alert",
-        "description": "Alerta de aniversário no grupo do whatsapp",
+        "title": "Birthday Alert",
+        "description": "Alerta de aniversário no grupo do WhatsApp",
         "link": "https://github.com/billyfranklim1/birthday",
         "tags": ["python", "whatsapp", "alert"]
       },
       {
-        "title": "Twitter python",
-        "description": "Interface de linha de comando para o twitter",
+        "title": "Twitter Python",
+        "description": "Interface de linha de comando para o Twitter",
         "link": "https://github.com/billyfranklim1/twitter-python",
         "tags": ["python", "twitter"]
       },
       {
-        "title": "Scrap google imagem",
-        "description": "Scrape de imagens do google",
+        "title": "Scrape Google Imagens",
+        "description": "Scrape de imagens do Google",
+        "link": "https://github.com/billyfranklim1/scrape-google-imagens-php",
+        "tags": ["php", "scrape", "google-images"]
+      }
+    ]
+  } : {
+    "🚀 production projects": [
+      {
+        "title": "HubNews AI",
+        "description": "AI platform for real-time news analysis and curation",
+        "link": `/${locale}/${tn('projects')}/hubnews`,
+        "tags": ["ai", "react", "next.js", "tensorflow"]
+      },
+      {
+        "title": "Voice Notes",
+        "description": "App for transcribing audio notes with AI",
+        "link": `/${locale}/${tn('projects')}/voice-notes`,
+        "tags": ["ai", "react", "speech-to-text"]
+      },
+      {
+        "title": "Sistema Reino",
+        "description": "Complete church management system",
+        "link": `/${locale}/${tn('projects')}/sistema-reino`,
+        "tags": ["laravel", "vue.js", "saas"]
+      },
+    ],
+    "💻 backend": [
+      {
+        "title": "Auth API",
+        "description": "Authentication API with Laravel Sanctum",
+        "link": "https://github.com/billyfranklim1/laravel-auth-api",
+        "tags": ["php", "laravel", "auth", "sanctum"]
+      },
+      {
+        "title": "E-Commerce API",
+        "description": "API simulating an e-commerce interface with customer, product, and order entities",
+        "link": "https://github.com/billyfranklim1/backend-challenge",
+        "tags": ["laravel", "api", "php-unit", "docker"]
+      },
+      {
+        "title": "Lottery API",
+        "description": "API simulating a lottery game",
+        "link": "https://github.com/billyfranklim1/loteria",
+        "tags": ["laravel", "api", "php-unit", "docker"]
+      },
+    ],
+    "🌐 frontend": [
+      {
+        "title": "Pomodoro",
+        "description": "Pomodoro timer for study and work",
+        "link": "https://github.com/billyfranklim1/node-api",
+        "tags": ["html", "css", "javascript"]
+      },
+      {
+        "title": "Next.js Blog",
+        "description": "Blog built with Next.js",
+        "link": "https://github.com/billyfranklim1/nextjs-blog",
+        "tags": ["nextjs", "react"]
+      },
+      {
+        "title": "React Login",
+        "description": "Login screen built with React",
+        "link": "https://github.com/billyfranklim1/login-reactjs",
+        "tags": ["reactjs", "javascript"]
+      },
+      {
+        "title": "E-commerce - Pastel de ideias",
+        "description": "E-commerce for a pastry shop",
+        "link": "https://github.com/billyfranklim1/frontend-challenge",
+        "tags": ["vuejs", "javascript", "tailwindcss"]
+      },
+      {
+        "title": "Portfolio",
+        "description": "Portfolio landing page",
+        "link": "https://github.com/billyfranklim1/portifolio-landing-page",
+        "tags": ["html", "css", "javascript"]
+      },
+      {
+        "title": "Netflix Clone Tailwind CSS",
+        "description": "Netflix interface clone built with Tailwind CSS",
+        "link": "https://github.com/billyfranklim1/site-clone-netflix-tailwindcss",
+        "tags": ["tailwindcss", "html", "css", "javascript"]
+      },
+      {
+        "title": "My Links",
+        "description": "Link manager",
+        "link": "https://github.com/billyfranklim1/my-links",
+        "tags": ["html", "css", "javascript"]
+      },
+      {
+        "title": "Snake JS",
+        "description": "Snake game",
+        "link": "https://github.com/billyfranklim1/snake_js",
+        "tags": ["javascript", "html", "css"]
+      },
+    ],
+    "📱 mobile": [
+      {
+        "title": "React Native Login",
+        "description": "Login screen built with React Native",
+        "link": "https://github.com/billyfranklim1/login-react-native",
+        "tags": ["react-native", "javascript"]
+      }
+    ],
+    "🤖 ai": [
+      {
+        "title": "Movie Recommendation API",
+        "description": "Movie recommendation API using artificial intelligence",
+        "link": "https://github.com/billyfranklim1/movie-recommendation-api",
+        "tags": ["gpt", "api", "python"]
+      },
+      {
+        "title": "Anki Flashcard Generator",
+        "description": "Generates flashcards for Anki using GPT API",
+        "link": "https://github.com/billyfranklim1/anki-flashcard-generator",
+        "tags": ["gpt", "api", "python"]
+      },
+    ],
+    "📄 scripts": [
+      {
+        "title": "LinkedIn Job Miner",
+        "description": "LinkedIn job posting scraper",
+        "link": "https://github.com/billyfranklim1/LinkedIn-Job-Miner",
+        "tags": ["python", "linkedin", "job", "miner"]
+      },
+      {
+        "title": "Birthday Alert",
+        "description": "Birthday alert for WhatsApp groups",
+        "link": "https://github.com/billyfranklim1/birthday",
+        "tags": ["python", "whatsapp", "alert"]
+      },
+      {
+        "title": "Twitter Python",
+        "description": "Command-line interface for Twitter",
+        "link": "https://github.com/billyfranklim1/twitter-python",
+        "tags": ["python", "twitter"]
+      },
+      {
+        "title": "Google Images Scraper",
+        "description": "Google images scraper",
         "link": "https://github.com/billyfranklim1/scrape-google-imagens-php",
         "tags": ["php", "scrape", "google-images"]
       }
     ]
   };
+
+  const categories = locale === 'pt'
+    ? ["🚀 projetos em produção", "💻 backend", "🌐 frontend", "📱 mobile", "🤖 IA", "📄 scripts"]
+    : ["🚀 production projects", "💻 backend", "🌐 frontend", "📱 mobile", "🤖 AI", "📄 scripts"];
+
   return (
     <section>
       <h1 className="font-medium text-2xl mb-8 tracking-tighter">
-        meus projetos 🚀
+        {t('heading')}
       </h1>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          Aqui estão alguns dos meus projetos públicos. Você pode encontrar mais
-          no meu perfil do <a href="https://github.com/billyfranklim1" target="_blank">GitHub</a>. Eles são classificados por tipo, mas muitos
-          deles são projetos completos que incluem{" "}
-          <span className="font-bold">frontend</span>,{" "}
-          <span className="font-bold">backend</span>,{" "}
-          <span className="font-bold">mobile</span> e{" "}
-          <span className="font-bold">IA</span>.
-          Muito desses projetos são feitos para estudo e aprendizado, mas alguns
-          são feitos por pura diversão.
+          {t('intro')}{' '}
+          <a href="https://github.com/billyfranklim1" target="_blank" rel="noopener noreferrer" className="hover:underline">
+            GitHub
+          </a>
+          . {t('classification')}
         </p>
 
-        <h3 className="font-medium text-xl ">🔍 busque por categoria</h3>
-        <div className="flex flex-wrap space-x-1 mt-4">
-          {["💻 backend", "🌐 frontend", "📱 mobile", "🤖 IA", "📄 scripts"].map((section) => (
+        <h3 className="font-medium text-xl">{t('searchByCategory')}</h3>
+        <div className="flex flex-wrap gap-2 mt-4">
+          {categories.map((section) => (
             <Link
               key={section}
               href={`#${section.replace(/[^a-zA-Z]/g, "")}`}
-              passHref
-              id={`link-${section.replace(/[^a-zA-Z]/g, "")}`}
-              className={`border border-neutral-200 dark:border-neutral-700 rounded-full px-2 md:px-4 py-1 md:py-2 project-button text-xs font-medium no-underline my-1`}
+              className="border border-neutral-200 dark:border-neutral-700 rounded-full px-3 md:px-4 py-1 md:py-2 text-xs font-medium no-underline hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
             >
               {section}
             </Link>
           ))}
         </div>
 
-
-        <ProjectsList projects={projects} />
-
-        {/* <h2 className="font-medium text-xl ">💻 backend</h2>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2" id="backend">
-          <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded w-full justify-between px-3 py-4">
-            <h5 className="font-medium text-base">Projeto 1</h5>
-            <p className="text-xs">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-              blanditiis sint quos{" "}
-            </p>
-
-            <div className="flex space-x-2 my-2">
-              <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
-                #nodejs
-              </span>
-              <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
-                #express
-              </span>
-              <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
-                #mongodb
-              </span>
-            </div>
-
-            <a target="_blank" href="#" className="text-xs">
-              Ver no github
-            </a>
-          </div>
-          <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded w-full justify-between px-3 py-4">
-            <h5 className="font-medium text-base">Projeto 2</h5>
-            <p className="text-xs">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-              blanditiis sint quos{" "}
-            </p>
-
-            <div className="flex space-x-2 my-2">
-              <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
-                #nodejs
-              </span>
-              <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
-                #express
-              </span>
-              <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
-                #mongodb
-              </span>
-            </div>
-
-            <a target="_blank" href="#" className="text-xs">
-              Ver no github
-            </a>
-          </div>
-        </div>
-        <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
-
-        <h2 className="font-medium text-xl ">🌐 frontend</h2>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2" id="frontend">
-          <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded w-full justify-between px-3 py-4">
-            <h5 className="font-medium text-base">Projeto 1</h5>
-            <p className="text-xs">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-              blanditiis sint quos{" "}
-            </p>
-            <div className="flex space-x-2 my-2">
-              <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
-                #nodejs
-              </span>
-              <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
-                #express
-              </span>
-              <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
-                #mongodb
-              </span>
-            </div>
-
-            <a target="_blank" href="#" className="text-xs">
-              Ver no github
-            </a>
-          </div>
-          <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded w-full justify-between px-3 py-4">
-            <h5 className="font-medium text-base">Projeto 2</h5>
-            <p className="text-xs">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-              blanditiis sint quos{" "}
-            </p>
-
-            <div className="flex space-x-2 my-2">
-              <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
-                #nodejs
-              </span>
-              <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
-                #express
-              </span>
-              <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
-                #mongodb
-              </span>
-            </div>
-
-            <a target="_blank" href="#" className="text-xs">
-              Ver no github
-            </a>
-          </div>
-        </div>
-        <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
-        
-        <h2 className="font-medium text-xl ">📱 mobile</h2>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2" id="mobile">
-          <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded w-full justify-between px-3 py-4">
-            <h5 className="font-medium text-base">Projeto 1</h5>
-            <p className="text-xs">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-              blanditiis sint quos{" "}
-            </p>
-            <div className="flex space-x-2 my-2">
-              <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
-                #nodejs
-              </span>
-              <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
-                #express
-              </span>
-              <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
-                #mongodb
-              </span>
-            </div>
-            <a target="_blank" href="#" className="text-xs">
-              Ver no github
-            </a>
-          </div>
-
-          <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded w-full justify-between px-3 py-4">
-            <h5 className="font-medium text-base">Projeto 2</h5>
-            <p className="text-xs">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-              blanditiis sint quos{" "}
-            </p>
-            <div className="flex space-x-2 my-2">
-              <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
-                #nodejs
-              </span>
-              <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
-                #express
-              </span>
-              <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
-                #mongodb
-              </span>
-            </div>
-            <a target="_blank" href="#" className="text-xs">
-              Ver no github
-            </a>
-          </div>
-        </div>
-        <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
-        
-        <h2 className="font-medium text-xl ">
-          🤖 IA (Inteligência Artificial)
-        </h2>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2" id="ia">
-          <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded w-full justify-between px-3 py-4">
-            <h5 className="font-medium text-base">Projeto 1</h5>
-            <p className="text-xs">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-              blanditiis sint quos{" "}
-            </p>
-            <div className="flex space-x-2 my-2">
-              <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
-                #nodejs
-              </span>
-              <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
-                #express
-              </span>
-              <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
-                #mongodb
-              </span>
-            </div>
-            <a target="_blank" href="#" className="text-xs">
-              Ver no github
-            </a>
-          </div>
-          <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded w-full justify-between px-3 py-4">
-            <h5 className="font-medium text-base">Projeto 2</h5>
-            <p className="text-xs">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-              blanditiis sint quos{" "}
-            </p>
-            <div className="flex space-x-2 my-2">
-              <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
-                #nodejs
-              </span>
-              <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
-                #express
-              </span>
-              <span className="text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-1 rounded">
-                #mongodb
-              </span>
-            </div>
-            <a target="_blank" href="#" className="text-xs">
-              Ver no github
-            </a>
-          </div>
-        </div> */}
+        <ProjectsList projects={projects} viewOnGithub={t('viewOnGithub')} />
       </div>
     </section>
   );

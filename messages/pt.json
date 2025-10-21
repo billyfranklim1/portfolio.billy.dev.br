@@ -52,6 +52,15 @@
       "description": "Gestão completa para igrejas"
     }
   },
+  "projectsPage": {
+    "title": "Projetos",
+    "description": "Veja alguns dos meus projetos e experimentos",
+    "heading": "meus projetos 🚀",
+    "intro": "Aqui estão alguns dos meus projetos públicos. Você pode encontrar mais no meu perfil do",
+    "classification": "Eles são classificados por tipo, mas muitos deles são projetos completos que incluem frontend, backend, mobile e IA. Muitos desses projetos são feitos para estudo e aprendizado, mas alguns são feitos por pura diversão.",
+    "searchByCategory": "🔍 busque por categoria",
+    "viewOnGithub": "Ver no GitHub"
+  },
   "work": {
     "title": "Experiências Profissionais",
     "description": "Minha jornada profissional ao longo dos anos",
