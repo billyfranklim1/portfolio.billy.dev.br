@@ -67,11 +67,11 @@ const cx = (...classes) => classes.filter(Boolean).join(' ');
 
 const Footer = () => {
   return (
-    <footer className="flex justify-between items-center text-xs mt-8 mb-4">
-      <span>© 2024 Billy. Todos os direitos reservados.</span>
-      <div className="flex space-x-4"> 
+    <footer className="flex justify-between items-center text-xs mt-16 mb-8 text-neutral-600 dark:text-neutral-400">
+      <span>© 2025 Billy</span>
+      <div className="flex space-x-4">
         {/*  */}
-       
+
       </div>
     </footer>
   );
@@ -95,7 +95,7 @@ export default function RootLayout({
       <head>
         <SandpackCSS />
       </head>
-      <body className="antialiased max-w-2xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto">
+      <body className="antialiased max-w-2xl flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto">
         <SkipToContent />
         <script
           type="application/ld+json"
@@ -119,10 +119,10 @@ export default function RootLayout({
         <main id="main-content" className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />
           {children}
+          <Footer />
           <GoogleAnalytics />
           <Analytics />
           <SpeedInsights />
-          <Footer />
         </main>
       </body>
     </html>

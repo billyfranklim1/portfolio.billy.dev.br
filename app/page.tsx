@@ -10,12 +10,10 @@ import filming from "public/images/home/filming.jpg";
 import meetups from "public/images/home/meetups.jpg";
 import vercel from "public/images/home/vercel.jpg";
 import avatar from "app/avatar.jpg";
-import ViewCounter from "app/blog/view-counter";
 import { PreloadResources } from "app/preload";
 import {
   getLeeYouTubeSubs,
   getVercelYouTubeSubs,
-  getViewsCount,
 } from "app/db/queries";
 import { Badge } from './components/home/Badge';
 import { ProjectLink } from './components/home/ProjectLink';
@@ -94,11 +92,6 @@ async function Subs({ name }: { name: string }) {
       {subscribers} subscribers
     </p>
   );
-}
-
-async function Views({ slug }: { slug: string }) {
-  let views = await getViewsCount();
-  return <ViewCounter allViews={views} slug={slug} />;
 }
 
 export default function Page() {
