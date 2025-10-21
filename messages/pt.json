@@ -1,12 +1,19 @@
 {
   "nav": {
     "home": "home",
-    "projects": "projetos",
-    "work": "experiências",
+    "projects": "projects",
+    "work": "work",
     "blog": "blog",
-    "uses": "setup",
-    "guestbook": "livro de visitas",
-    "about": "sobre"
+    "uses": "uses",
+    "guestbook": "guestbook",
+    "about": "sobre",
+    "homeLabel": "home",
+    "projectsLabel": "projetos",
+    "workLabel": "experiências",
+    "blogLabel": "blog",
+    "usesLabel": "setup",
+    "guestbookLabel": "livro de visitas",
+    "aboutLabel": "sobre"
   },
   "home": {
     "greeting": "Olá, meu nome é Billy 👋",

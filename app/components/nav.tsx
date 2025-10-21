@@ -11,11 +11,11 @@ export function Navbar() {
   const t = useTranslations('nav');
 
   const navItems = [
-    { path: '', name: t('home') },
-    { path: t('projects'), name: t('projects') },
-    { path: t('work'), name: t('work') },
-    { path: t('blog'), name: t('blog') },
-    { path: t('uses'), name: t('uses') },
+    { path: '', name: t('homeLabel') },
+    { path: t('projects'), name: t('projectsLabel') },
+    { path: t('work'), name: t('workLabel') },
+    { path: t('blog'), name: t('blogLabel') },
+    { path: t('uses'), name: t('usesLabel') },
   ];
 
   return (
