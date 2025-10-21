@@ -45,8 +45,8 @@ export function Navbar() {
                 );
               })}
             </div>
+            <LanguageSwitcher />
           </div>
-          <LanguageSwitcher />
         </nav>
       </div>
     </aside>

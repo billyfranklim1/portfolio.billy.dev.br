@@ -32,22 +32,28 @@ export function LanguageSwitcher() {
     });
   };
 
+  const flagEmojis: { [key: string]: string } = {
+    pt: '🇧🇷',
+    en: '🇺🇸',
+  };
+
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-1">
       {locales.map((loc) => (
         <button
           key={loc}
           onClick={() => switchLocale(loc)}
           disabled={isPending || loc === locale}
-          className={`text-sm transition-all px-2 py-1 rounded ${
+          className={`text-xl transition-all px-2 py-1 rounded hover:scale-110 ${
             loc === locale
-              ? 'text-neutral-800 dark:text-neutral-200 font-semibold underline'
-              : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200'
+              ? 'opacity-100 scale-110'
+              : 'opacity-50 hover:opacity-100'
           }`}
           aria-label={`Switch to ${localeNames[loc]}`}
           aria-current={loc === locale ? 'true' : undefined}
+          title={localeNames[loc]}
         >
-          {loc.toUpperCase()}
+          {flagEmojis[loc] || loc.toUpperCase()}
         </button>
       ))}
     </div>
