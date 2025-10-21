@@ -5,11 +5,15 @@ import { CustomMDX } from 'app/components/mdx';
 import { getBlogPosts } from 'app/db/blog';
 import { unstable_noStore as noStore } from 'next/cache';
 
+type Props = {
+  params: Promise<{ locale: string; slug: string }>;
+};
+
 export async function generateMetadata({
   params,
-}): Promise<Metadata | undefined> {
-  const { slug } = await params;
-  let post = getBlogPosts().find((post) => post.slug === slug);
+}: Props): Promise<Metadata | undefined> {
+  const { locale, slug } = await params;
+  let post = getBlogPosts(locale).find((post) => post.slug === slug);
   if (!post) {
     return;
   }
@@ -32,7 +36,7 @@ export async function generateMetadata({
       description,
       type: 'article',
       publishedTime,
-      url: `https://billy.dev.br/blog/${post.slug}`,
+      url: `https://billy.dev.br/${locale}/blog/${post.slug}`,
       images: [
         {
           url: ogImage,
@@ -48,7 +52,7 @@ export async function generateMetadata({
   };
 }
 
-function formatDate(date: string) {
+function formatDate(date: string, locale: string = 'en') {
   noStore();
   let currentDate = new Date();
   if (!date.includes('T')) {
@@ -62,17 +66,35 @@ function formatDate(date: string) {
 
   let formattedDate = '';
 
+  const translations = {
+    pt: {
+      yearsAgo: (n: number) => `${n} ano${n > 1 ? 's' : ''} atrás`,
+      monthsAgo: (n: number) => `${n} ${n > 1 ? 'meses' : 'mês'} atrás`,
+      daysAgo: (n: number) => `${n} dia${n > 1 ? 's' : ''} atrás`,
+      today: 'Hoje',
+    },
+    en: {
+      yearsAgo: (n: number) => `${n}y ago`,
+      monthsAgo: (n: number) => `${n}mo ago`,
+      daysAgo: (n: number) => `${n}d ago`,
+      today: 'Today',
+    },
+  };
+
+  const t = translations[locale as keyof typeof translations] || translations.en;
+
   if (yearsAgo > 0) {
-    formattedDate = `${yearsAgo}y ago`;
+    formattedDate = t.yearsAgo(yearsAgo);
   } else if (monthsAgo > 0) {
-    formattedDate = `${monthsAgo}mo ago`;
+    formattedDate = t.monthsAgo(monthsAgo);
   } else if (daysAgo > 0) {
-    formattedDate = `${daysAgo}d ago`;
+    formattedDate = t.daysAgo(daysAgo);
   } else {
-    formattedDate = 'Today';
+    formattedDate = t.today;
   }
 
-  let fullDate = targetDate.toLocaleString('en-us', {
+  const localeCode = locale === 'pt' ? 'pt-BR' : 'en-US';
+  let fullDate = targetDate.toLocaleString(localeCode, {
     month: 'long',
     day: 'numeric',
     year: 'numeric',
@@ -81,9 +103,9 @@ function formatDate(date: string) {
   return `${fullDate} (${formattedDate})`;
 }
 
-export default async function Blog({ params }) {
-  const { slug } = await params;
-  let post = getBlogPosts().find((post) => post.slug === slug);
+export default async function Blog({ params }: Props) {
+  const { locale, slug } = await params;
+  let post = getBlogPosts(locale).find((post) => post.slug === slug);
 
   if (!post) {
     notFound();
@@ -105,7 +127,7 @@ export default async function Blog({ params }) {
             image: post.metadata.image
               ? `https://billy.dev.br${post.metadata.image}`
               : `https://billy.dev.br/og?title=${post.metadata.title}`,
-            url: `https://billy.dev.br/blog/${post.slug}`,
+            url: `https://billy.dev.br/${locale}/blog/${post.slug}`,
             author: {
               '@type': 'Person',
               name: 'Billy',
@@ -118,7 +140,7 @@ export default async function Blog({ params }) {
       </h1>
       <div className="flex justify-between items-center mt-2 mb-8 text-sm max-w-[650px]">
         <p className="text-sm text-neutral-600 dark:text-neutral-400">
-          {formatDate(post.metadata.publishedAt)}
+          {formatDate(post.metadata.publishedAt, locale)}
         </p>
       </div>
       <article className="prose prose-quoteless prose-neutral dark:prose-invert">

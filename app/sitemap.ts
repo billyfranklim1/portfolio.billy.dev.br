@@ -36,25 +36,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
   );
 
   // Dynamic blog pages for all locales
-  const blogPosts = getBlogPosts();
-  const dynamicPages = locales.flatMap((locale) =>
-    blogPosts.map((post) => ({
+  const dynamicPages = locales.flatMap((locale) => {
+    const blogPosts = getBlogPosts(locale);
+    return blogPosts.map((post) => ({
       url: `${baseUrl}/${locale}/blog/${post.slug}`,
       lastModified: post.metadata.publishedAt
         ? new Date(post.metadata.publishedAt)
         : new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.7,
-      alternates: {
-        languages: Object.fromEntries(
-          locales.map((loc) => [
-            loc === 'pt' ? 'pt-BR' : 'en-US',
-            `${baseUrl}/${loc}/blog/${post.slug}`,
-          ])
-        ),
-      },
-    }))
-  );
+    }));
+  });
 
   return [...staticPages, ...dynamicPages];
 }

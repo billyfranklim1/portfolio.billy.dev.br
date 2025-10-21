@@ -1,14 +1,14 @@
 import { getBlogPosts } from 'app/db/blog';
 
 export async function GET() {
-  const posts = getBlogPosts();
+  const posts = getBlogPosts('pt'); // Default to Portuguese
   const baseUrl = 'https://billy.dev.br';
 
   const rss = `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Billy - Blog</title>
-    <link>${baseUrl}/blog</link>
+    <link>${baseUrl}/pt/blog</link>
     <description>Artigos sobre desenvolvimento de software, tecnologia e experiências na área de programação.</description>
     <language>pt-BR</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
@@ -21,7 +21,7 @@ export async function GET() {
         return 1;
       })
       .map((post) => {
-        const url = `${baseUrl}/blog/${post.slug}`;
+        const url = `${baseUrl}/pt/blog/${post.slug}`;
         return `
     <item>
       <title>${escapeXml(post.metadata.title)}</title>
