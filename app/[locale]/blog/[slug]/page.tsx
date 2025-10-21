@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { CustomMDX } from 'app/components/mdx';
 import { getBlogPosts } from 'app/db/blog';
 import { unstable_noStore as noStore } from 'next/cache';
+import { BlogLanguageSwitcher } from 'app/components/BlogLanguageSwitcher';
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
@@ -135,6 +136,12 @@ export default async function Blog({ params }: Props) {
           }),
         }}
       />
+      <div className="flex justify-end mb-4">
+        <BlogLanguageSwitcher
+          translations={post.metadata.translations}
+          currentSlug={post.slug}
+        />
+      </div>
       <h1 className="title font-medium text-2xl tracking-tighter max-w-[650px]">
         {post.metadata.title}
       </h1>

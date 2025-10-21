@@ -6,6 +6,9 @@ type Metadata = {
   publishedAt: string;
   summary: string;
   image?: string;
+  translations?: {
+    [key: string]: string;
+  };
 };
 
 function parseFrontmatter(fileContent: string) {
@@ -14,13 +17,32 @@ function parseFrontmatter(fileContent: string) {
   let frontMatterBlock = match![1];
   let content = fileContent.replace(frontmatterRegex, '').trim();
   let frontMatterLines = frontMatterBlock.trim().split('\n');
-  let metadata: Partial<Metadata> = {};
+  let metadata: any = {};
+  let currentKey: string | null = null;
+  let currentObject: any = null;
 
   frontMatterLines.forEach((line) => {
-    let [key, ...valueArr] = line.split(': ');
-    let value = valueArr.join(': ').trim();
-    value = value.replace(/^['"](.*)['"]$/, '$1'); // Remove quotes
-    metadata[key.trim() as keyof Metadata] = value;
+    // Check if this is a nested object key (starts without spaces and ends with :)
+    if (line.match(/^[a-zA-Z]+:\s*$/)) {
+      currentKey = line.replace(':', '').trim();
+      currentObject = {};
+      metadata[currentKey] = currentObject;
+    } else if (line.match(/^\s{2,}[a-zA-Z]+:/) && currentObject) {
+      // This is a nested property (indented)
+      let trimmed = line.trim();
+      let [nestedKey, ...nestedValueArr] = trimmed.split(': ');
+      let nestedValue = nestedValueArr.join(': ').trim();
+      nestedValue = nestedValue.replace(/^['"](.*)['"]$/, '$1'); // Remove quotes
+      currentObject[nestedKey.trim()] = nestedValue;
+    } else if (line.includes(':')) {
+      // Regular key-value pair
+      let [key, ...valueArr] = line.split(': ');
+      let value = valueArr.join(': ').trim();
+      value = value.replace(/^['"](.*)['"]$/, '$1'); // Remove quotes
+      metadata[key.trim()] = value;
+      currentKey = null;
+      currentObject = null;
+    }
   });
 
   return { metadata: metadata as Metadata, content };
