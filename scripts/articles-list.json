@@ -1,0 +1,3002 @@
+[
+  {
+    "category": "aiTrends",
+    "title": "Melhores Práticas de Attention Mechanisms para Empresas",
+    "slug": "melhores-praticas-de-attention-mechanisms-para-empresas",
+    "filename": "melhores-praticas-de-attention-mechanisms-para-empresas.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Introdução a Ética em IA para Empresas",
+    "slug": "introducao-a-etica-em-ia-para-empresas",
+    "filename": "introducao-a-etica-em-ia-para-empresas.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Reconhecimento de Fala Passo a Passo",
+    "slug": "reconhecimento-de-fala-passo-a-passo",
+    "filename": "reconhecimento-de-fala-passo-a-passo.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Policy Gradient em Produção",
+    "slug": "policy-gradient-em-producao",
+    "filename": "policy-gradient-em-producao.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "IA para Agricultura: para Empresas",
+    "slug": "ia-para-agricultura-para-empresas",
+    "filename": "ia-para-agricultura-para-empresas.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Image-to-Image: do Zero",
+    "slug": "image-to-image-do-zero",
+    "filename": "image-to-image-do-zero.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "IA para Segurança em Produção",
+    "slug": "ia-para-seguranca-em-producao",
+    "filename": "ia-para-seguranca-em-producao.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Embeddings do Zero",
+    "slug": "embeddings-do-zero",
+    "filename": "embeddings-do-zero.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Introdução a Gradient Descent",
+    "slug": "introducao-a-gradient-descent",
+    "filename": "introducao-a-gradient-descent.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Feature Engineering na Prática",
+    "slug": "feature-engineering-na-pratica",
+    "filename": "feature-engineering-na-pratica.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Tudo Sobre Transformers Avançado",
+    "slug": "tudo-sobre-transformers-avancado",
+    "filename": "tudo-sobre-transformers-avancado.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Como Modelos de Raciocínio em Produção",
+    "slug": "como-modelos-de-raciocinio-em-producao",
+    "filename": "como-modelos-de-raciocinio-em-producao.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Guia Completo de Prompt Engineering Passo a Passo",
+    "slug": "guia-completo-de-prompt-engineering-passo-a-passo",
+    "filename": "guia-completo-de-prompt-engineering-passo-a-passo.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Entendendo Named Entity Recognition",
+    "slug": "entendendo-named-entity-recognition",
+    "filename": "entendendo-named-entity-recognition.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Tudo Sobre AlphaGo",
+    "slug": "tudo-sobre-alphago",
+    "filename": "tudo-sobre-alphago.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Introdução a Chatbots em 2025",
+    "slug": "introducao-a-chatbots-em-2025",
+    "filename": "introducao-a-chatbots-em-2025.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Voice AI: para Iniciantes",
+    "slug": "voice-ai-para-iniciantes",
+    "filename": "voice-ai-para-iniciantes.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Implementando Backpropagation",
+    "slug": "implementando-backpropagation",
+    "filename": "implementando-backpropagation.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Introdução a IA para Finanças com JavaScript",
+    "slug": "introducao-a-ia-para-financas-com-javascript",
+    "filename": "introducao-a-ia-para-financas-com-javascript.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Anomaly Detection: com Python",
+    "slug": "anomaly-detection-com-python",
+    "filename": "anomaly-detection-com-python.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Chatbots: do Zero",
+    "slug": "chatbots-do-zero",
+    "filename": "chatbots-do-zero.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Como IA Agêntica para Iniciantes",
+    "slug": "como-ia-agentica-para-iniciantes",
+    "filename": "como-ia-agentica-para-iniciantes.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Otimizando IA para Jogos do Zero",
+    "slug": "otimizando-ia-para-jogos-do-zero",
+    "filename": "otimizando-ia-para-jogos-do-zero.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "IA para Robótica do Zero",
+    "slug": "ia-para-robotica-do-zero",
+    "filename": "ia-para-robotica-do-zero.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "IA para E-commerce em 2025",
+    "slug": "ia-para-e-commerce-em-2025",
+    "filename": "ia-para-e-commerce-em-2025.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Entendendo Overfitting e Underfitting",
+    "slug": "entendendo-overfitting-e-underfitting",
+    "filename": "entendendo-overfitting-e-underfitting.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Multimodalidade em 2025",
+    "slug": "multimodalidade-em-2025",
+    "filename": "multimodalidade-em-2025.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Introdução a Model Training Avançado",
+    "slug": "introducao-a-model-training-avancado",
+    "filename": "introducao-a-model-training-avancado.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "IA para Marketing para Empresas",
+    "slug": "ia-para-marketing-para-empresas",
+    "filename": "ia-para-marketing-para-empresas.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Implementando Backpropagation em 2025",
+    "slug": "implementando-backpropagation-em-2025",
+    "filename": "implementando-backpropagation-em-2025.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Melhores Práticas de Voice AI",
+    "slug": "melhores-praticas-de-voice-ai",
+    "filename": "melhores-praticas-de-voice-ai.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "IA para Segurança do Zero",
+    "slug": "ia-para-seguranca-do-zero",
+    "filename": "ia-para-seguranca-do-zero.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Question Answering Passo a Passo",
+    "slug": "question-answering-passo-a-passo",
+    "filename": "question-answering-passo-a-passo.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "IA Cloud: para Empresas",
+    "slug": "ia-cloud-para-empresas",
+    "filename": "ia-cloud-para-empresas.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Implementando Image-to-Image Avançado",
+    "slug": "implementando-image-to-image-avancado",
+    "filename": "implementando-image-to-image-avancado.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Dominando Federated Learning",
+    "slug": "dominando-federated-learning",
+    "filename": "dominando-federated-learning.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Momentum para Iniciantes",
+    "slug": "momentum-para-iniciantes",
+    "filename": "momentum-para-iniciantes.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "RMSprop com Python",
+    "slug": "rmsprop-com-python",
+    "filename": "rmsprop-com-python.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Introdução a Busca Conversacional para Iniciantes",
+    "slug": "introducao-a-busca-conversacional-para-iniciantes",
+    "filename": "introducao-a-busca-conversacional-para-iniciantes.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Guia Completo de IA na Ciência",
+    "slug": "guia-completo-de-ia-na-ciencia",
+    "filename": "guia-completo-de-ia-na-ciencia.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Diffusion Models com JavaScript",
+    "slug": "diffusion-models-com-javascript",
+    "filename": "diffusion-models-com-javascript.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Computer Vision com JavaScript",
+    "slug": "computer-vision-com-javascript",
+    "filename": "computer-vision-com-javascript.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Como IA na Ciência",
+    "slug": "como-ia-na-ciencia",
+    "filename": "como-ia-na-ciencia.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "RMSprop: do Zero",
+    "slug": "rmsprop-do-zero",
+    "filename": "rmsprop-do-zero.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Reinforcement Learning Passo a Passo",
+    "slug": "reinforcement-learning-passo-a-passo",
+    "filename": "reinforcement-learning-passo-a-passo.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Otimizando IA para E-commerce Avançado",
+    "slug": "otimizando-ia-para-e-commerce-avancado",
+    "filename": "otimizando-ia-para-e-commerce-avancado.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "NLP: do Zero",
+    "slug": "nlp-do-zero",
+    "filename": "nlp-do-zero.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "IA para Vídeo: em 2025",
+    "slug": "ia-para-video-em-2025",
+    "filename": "ia-para-video-em-2025.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Machine Learning: Passo a Passo",
+    "slug": "machine-learning-passo-a-passo",
+    "filename": "machine-learning-passo-a-passo.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "IA para Vídeo: Avançado",
+    "slug": "ia-para-video-avancado",
+    "filename": "ia-para-video-avancado.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Q-Learning na Prática",
+    "slug": "q-learning-na-pratica",
+    "filename": "q-learning-na-pratica.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Otimizando Anomaly Detection para Iniciantes",
+    "slug": "otimizando-anomaly-detection-para-iniciantes",
+    "filename": "otimizando-anomaly-detection-para-iniciantes.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Transformers Avançado",
+    "slug": "transformers-avancado",
+    "filename": "transformers-avancado.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Guia Completo de Síntese de Voz",
+    "slug": "guia-completo-de-sintese-de-voz",
+    "filename": "guia-completo-de-sintese-de-voz.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Cross-Validation para Iniciantes",
+    "slug": "cross-validation-para-iniciantes",
+    "filename": "cross-validation-para-iniciantes.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Tutorial de Embeddings com JavaScript",
+    "slug": "tutorial-de-embeddings-com-javascript",
+    "filename": "tutorial-de-embeddings-com-javascript.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Midjourney: com Python",
+    "slug": "midjourney-com-python",
+    "filename": "midjourney-com-python.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Como Autoencoders Passo a Passo",
+    "slug": "como-autoencoders-passo-a-passo",
+    "filename": "como-autoencoders-passo-a-passo.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "IA para Segurança em 2025",
+    "slug": "ia-para-seguranca-em-2025",
+    "filename": "ia-para-seguranca-em-2025.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Meta-Learning: para Iniciantes",
+    "slug": "meta-learning-para-iniciantes",
+    "filename": "meta-learning-para-iniciantes.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "IA na Ciência: do Zero",
+    "slug": "ia-na-ciencia-do-zero",
+    "filename": "ia-na-ciencia-do-zero.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Melhores Práticas de Policy Gradient",
+    "slug": "melhores-praticas-de-policy-gradient",
+    "filename": "melhores-praticas-de-policy-gradient.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Como Meta-Learning",
+    "slug": "como-meta-learning",
+    "filename": "como-meta-learning.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Guia Completo de Edge AI em 2025",
+    "slug": "guia-completo-de-edge-ai-em-2025",
+    "filename": "guia-completo-de-edge-ai-em-2025.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Dominando Anomaly Detection",
+    "slug": "dominando-anomaly-detection",
+    "filename": "dominando-anomaly-detection.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Como DALL-E para Iniciantes",
+    "slug": "como-dall-e-para-iniciantes",
+    "filename": "como-dall-e-para-iniciantes.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Implementando Zero-Shot Learning para Empresas",
+    "slug": "implementando-zero-shot-learning-para-empresas",
+    "filename": "implementando-zero-shot-learning-para-empresas.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Melhores Práticas de Federated Learning",
+    "slug": "melhores-praticas-de-federated-learning",
+    "filename": "melhores-praticas-de-federated-learning.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Introdução a Momentum",
+    "slug": "introducao-a-momentum",
+    "filename": "introducao-a-momentum.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Introdução a Model Training com Python",
+    "slug": "introducao-a-model-training-com-python",
+    "filename": "introducao-a-model-training-com-python.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Momentum Avançado",
+    "slug": "momentum-avancado",
+    "filename": "momentum-avancado.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Dominando IA para Robótica",
+    "slug": "dominando-ia-para-robotica",
+    "filename": "dominando-ia-para-robotica.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Backpropagation: Passo a Passo",
+    "slug": "backpropagation-passo-a-passo",
+    "filename": "backpropagation-passo-a-passo.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Guia Completo de IA para IoT Passo a Passo",
+    "slug": "guia-completo-de-ia-para-iot-passo-a-passo",
+    "filename": "guia-completo-de-ia-para-iot-passo-a-passo.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Small Language Models para Empresas",
+    "slug": "small-language-models-para-empresas",
+    "filename": "small-language-models-para-empresas.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Meta-Learning do Zero",
+    "slug": "meta-learning-do-zero",
+    "filename": "meta-learning-do-zero.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Adam Optimizer: na Prática",
+    "slug": "adam-optimizer-na-pratica",
+    "filename": "adam-optimizer-na-pratica.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "IA para IoT Avançado",
+    "slug": "ia-para-iot-avancado",
+    "filename": "ia-para-iot-avancado.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Implementando IA para Agricultura para Iniciantes",
+    "slug": "implementando-ia-para-agricultura-para-iniciantes",
+    "filename": "implementando-ia-para-agricultura-para-iniciantes.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Feature Engineering para Iniciantes",
+    "slug": "feature-engineering-para-iniciantes",
+    "filename": "feature-engineering-para-iniciantes.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Melhores Práticas de IA para Robótica",
+    "slug": "melhores-praticas-de-ia-para-robotica",
+    "filename": "melhores-praticas-de-ia-para-robotica.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Regularização Avançado",
+    "slug": "regularizacao-avancado",
+    "filename": "regularizacao-avancado.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Tutorial de Transfer Learning para Iniciantes",
+    "slug": "tutorial-de-transfer-learning-para-iniciantes",
+    "filename": "tutorial-de-transfer-learning-para-iniciantes.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Fine-Tuning: com JavaScript",
+    "slug": "fine-tuning-com-javascript",
+    "filename": "fine-tuning-com-javascript.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "IA para Saúde: com JavaScript",
+    "slug": "ia-para-saude-com-javascript",
+    "filename": "ia-para-saude-com-javascript.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Dominando IA e Privacidade",
+    "slug": "dominando-ia-e-privacidade",
+    "filename": "dominando-ia-e-privacidade.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "IA para Vídeo do Zero",
+    "slug": "ia-para-video-do-zero",
+    "filename": "ia-para-video-do-zero.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Tudo Sobre Zero-Shot Learning",
+    "slug": "tudo-sobre-zero-shot-learning",
+    "filename": "tudo-sobre-zero-shot-learning.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Otimizando Computer Vision",
+    "slug": "otimizando-computer-vision",
+    "filename": "otimizando-computer-vision.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Meta-Learning em 2025",
+    "slug": "meta-learning-em-2025",
+    "filename": "meta-learning-em-2025.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Como IA para Saúde com JavaScript",
+    "slug": "como-ia-para-saude-com-javascript",
+    "filename": "como-ia-para-saude-com-javascript.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Melhores Práticas de Meta-Learning",
+    "slug": "melhores-praticas-de-meta-learning",
+    "filename": "melhores-praticas-de-meta-learning.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Implementando Midjourney",
+    "slug": "implementando-midjourney",
+    "filename": "implementando-midjourney.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Guia Completo de Custos de IA em 2025",
+    "slug": "guia-completo-de-custos-de-ia-em-2025",
+    "filename": "guia-completo-de-custos-de-ia-em-2025.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Autoencoders para Iniciantes",
+    "slug": "autoencoders-para-iniciantes",
+    "filename": "autoencoders-para-iniciantes.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Introdução a Zero-Shot Learning Passo a Passo",
+    "slug": "introducao-a-zero-shot-learning-passo-a-passo",
+    "filename": "introducao-a-zero-shot-learning-passo-a-passo.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Melhores Práticas de IA para Jogos com JavaScript",
+    "slug": "melhores-praticas-de-ia-para-jogos-com-javascript",
+    "filename": "melhores-praticas-de-ia-para-jogos-com-javascript.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Actor-Critic: para Empresas",
+    "slug": "actor-critic-para-empresas",
+    "filename": "actor-critic-para-empresas.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Tudo Sobre Machine Translation",
+    "slug": "tudo-sobre-machine-translation",
+    "filename": "tudo-sobre-machine-translation.mdx"
+  },
+  {
+    "category": "aiTrends",
+    "title": "Introdução a Q-Learning em 2025",
+    "slug": "introducao-a-q-learning-em-2025",
+    "filename": "introducao-a-q-learning-em-2025.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Session Management Tutorial",
+    "slug": "session-management-tutorial",
+    "filename": "session-management-tutorial.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Rate Limiting: Casos de Uso",
+    "slug": "rate-limiting-casos-de-uso",
+    "filename": "rate-limiting-casos-de-uso.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Transparency: Comparação",
+    "slug": "transparency-comparacao",
+    "filename": "transparency-comparacao.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "JSON Mode: Comparação",
+    "slug": "json-mode-comparacao",
+    "filename": "json-mode-comparacao.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Fine-Tuning Claude: Melhores Práticas",
+    "slug": "fine-tuning-claude-melhores-praticas",
+    "filename": "fine-tuning-claude-melhores-praticas.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Pinecone: em Produção",
+    "slug": "pinecone-em-producao",
+    "filename": "pinecone-em-producao.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "GPT-4: Tutorial",
+    "slug": "gpt-4-tutorial",
+    "filename": "gpt-4-tutorial.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Configurando Multimodal LLMs",
+    "slug": "configurando-multimodal-llms",
+    "filename": "configurando-multimodal-llms.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Batch Processing Custos",
+    "slug": "batch-processing-custos",
+    "filename": "batch-processing-custos.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Math LLMs: Melhores Práticas",
+    "slug": "math-llms-melhores-praticas",
+    "filename": "math-llms-melhores-praticas.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Comparando Logging",
+    "slug": "comparando-logging",
+    "filename": "comparando-logging.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Compliance Tutorial",
+    "slug": "compliance-tutorial",
+    "filename": "compliance-tutorial.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Model Selection: Tutorial",
+    "slug": "model-selection-tutorial",
+    "filename": "model-selection-tutorial.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Implementando Weaviate Casos de Uso",
+    "slug": "implementando-weaviate-casos-de-uso",
+    "filename": "implementando-weaviate-casos-de-uso.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Usando Domain-Specific LLMs Tutorial",
+    "slug": "usando-domain-specific-llms-tutorial",
+    "filename": "usando-domain-specific-llms-tutorial.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Configurando Fine-Tuning Claude Guia Prático",
+    "slug": "configurando-fine-tuning-claude-guia-pratico",
+    "filename": "configurando-fine-tuning-claude-guia-pratico.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Transparency para Desenvolvedores",
+    "slug": "transparency-para-desenvolvedores",
+    "filename": "transparency-para-desenvolvedores.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Validation para Desenvolvedores",
+    "slug": "validation-para-desenvolvedores",
+    "filename": "validation-para-desenvolvedores.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Error Handling: em Produção",
+    "slug": "error-handling-em-producao",
+    "filename": "error-handling-em-producao.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Configurando Hugging Face em 2025",
+    "slug": "configurando-hugging-face-em-2025",
+    "filename": "configurando-hugging-face-em-2025.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Multi-Model: Casos de Uso",
+    "slug": "multi-model-casos-de-uso",
+    "filename": "multi-model-casos-de-uso.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Content Filtering Guia Prático",
+    "slug": "content-filtering-guia-pratico",
+    "filename": "content-filtering-guia-pratico.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Integrando Load Balancing Casos de Uso",
+    "slug": "integrando-load-balancing-casos-de-uso",
+    "filename": "integrando-load-balancing-casos-de-uso.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Model Switching para Desenvolvedores",
+    "slug": "model-switching-para-desenvolvedores",
+    "filename": "model-switching-para-desenvolvedores.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Benchmarks em 2025",
+    "slug": "benchmarks-em-2025",
+    "filename": "benchmarks-em-2025.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Prompt Chaining em Produção",
+    "slug": "prompt-chaining-em-producao",
+    "filename": "prompt-chaining-em-producao.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Trabalhando com Session Management",
+    "slug": "trabalhando-com-session-management",
+    "filename": "trabalhando-com-session-management.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Configurando Cost Optimization Melhores Práticas",
+    "slug": "configurando-cost-optimization-melhores-praticas",
+    "filename": "configurando-cost-optimization-melhores-praticas.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Trabalhando com Moderation",
+    "slug": "trabalhando-com-moderation",
+    "filename": "trabalhando-com-moderation.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Configurando FAISS",
+    "slug": "configurando-faiss",
+    "filename": "configurando-faiss.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Configurando Streaming Melhores Práticas",
+    "slug": "configurando-streaming-melhores-praticas",
+    "filename": "configurando-streaming-melhores-praticas.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Content Filtering: Tutorial",
+    "slug": "content-filtering-tutorial",
+    "filename": "content-filtering-tutorial.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Trabalhando com Bias Detection Tutorial",
+    "slug": "trabalhando-com-bias-detection-tutorial",
+    "filename": "trabalhando-com-bias-detection-tutorial.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Integrando Error Handling",
+    "slug": "integrando-error-handling",
+    "filename": "integrando-error-handling.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Configurando Instruction Tuning",
+    "slug": "configurando-instruction-tuning",
+    "filename": "configurando-instruction-tuning.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Fine-Tuning GPT Custos",
+    "slug": "fine-tuning-gpt-custos",
+    "filename": "fine-tuning-gpt-custos.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Conversation History Casos de Uso",
+    "slug": "conversation-history-casos-de-uso",
+    "filename": "conversation-history-casos-de-uso.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Masterizando Hybrid Search Casos de Uso",
+    "slug": "masterizando-hybrid-search-casos-de-uso",
+    "filename": "masterizando-hybrid-search-casos-de-uso.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Comparando Session Management Performance",
+    "slug": "comparando-session-management-performance",
+    "filename": "comparando-session-management-performance.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Trabalhando com Custom Models Custos",
+    "slug": "trabalhando-com-custom-models-custos",
+    "filename": "trabalhando-com-custom-models-custos.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Explorando Prompt Optimization",
+    "slug": "explorando-prompt-optimization",
+    "filename": "explorando-prompt-optimization.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Grok Custos",
+    "slug": "grok-custos",
+    "filename": "grok-custos.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Qdrant: Comparação",
+    "slug": "qdrant-comparacao",
+    "filename": "qdrant-comparacao.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Configurando Batch Processing",
+    "slug": "configurando-batch-processing",
+    "filename": "configurando-batch-processing.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Desenvolvendo com Vector Databases",
+    "slug": "desenvolvendo-com-vector-databases",
+    "filename": "desenvolvendo-com-vector-databases.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "PII Detection: em Produção",
+    "slug": "pii-detection-em-producao",
+    "filename": "pii-detection-em-producao.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Desenvolvendo com Session Management",
+    "slug": "desenvolvendo-com-session-management",
+    "filename": "desenvolvendo-com-session-management.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Configurando Hallucinations Tutorial",
+    "slug": "configurando-hallucinations-tutorial",
+    "filename": "configurando-hallucinations-tutorial.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Comparando Llama 4",
+    "slug": "comparando-llama-4",
+    "filename": "comparando-llama-4.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Implementando PDF Parsing",
+    "slug": "implementando-pdf-parsing",
+    "filename": "implementando-pdf-parsing.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Masterizando Hallucinations Tutorial",
+    "slug": "masterizando-hallucinations-tutorial",
+    "filename": "masterizando-hallucinations-tutorial.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Implementando Math LLMs Performance",
+    "slug": "implementando-math-llms-performance",
+    "filename": "implementando-math-llms-performance.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Comparando Retrieval Strategies Custos",
+    "slug": "comparando-retrieval-strategies-custos",
+    "filename": "comparando-retrieval-strategies-custos.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Explorando State Management",
+    "slug": "explorando-state-management",
+    "filename": "explorando-state-management.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Function Calling Guia Prático",
+    "slug": "function-calling-guia-pratico",
+    "filename": "function-calling-guia-pratico.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Model Switching Casos de Uso",
+    "slug": "model-switching-casos-de-uso",
+    "filename": "model-switching-casos-de-uso.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Trabalhando com Vision-Language Models",
+    "slug": "trabalhando-com-vision-language-models",
+    "filename": "trabalhando-com-vision-language-models.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Instruction Tuning em Produção",
+    "slug": "instruction-tuning-em-producao",
+    "filename": "instruction-tuning-em-producao.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Context Injection em 2025",
+    "slug": "context-injection-em-2025",
+    "filename": "context-injection-em-2025.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Explorando Sistema de Mensagens",
+    "slug": "explorando-sistema-de-mensagens",
+    "filename": "explorando-sistema-de-mensagens.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Explorando Session Management",
+    "slug": "explorando-session-management",
+    "filename": "explorando-session-management.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Configurando Model Switching",
+    "slug": "configurando-model-switching",
+    "filename": "configurando-model-switching.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Hybrid Search: Melhores Práticas",
+    "slug": "hybrid-search-melhores-praticas",
+    "filename": "hybrid-search-melhores-praticas.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Vision-Language Models Performance",
+    "slug": "vision-language-models-performance",
+    "filename": "vision-language-models-performance.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Math LLMs Comparação",
+    "slug": "math-llms-comparacao",
+    "filename": "math-llms-comparacao.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Hugging Face em 2025",
+    "slug": "hugging-face-em-2025",
+    "filename": "hugging-face-em-2025.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Multi-Model: Guia Prático",
+    "slug": "multi-model-guia-pratico",
+    "filename": "multi-model-guia-pratico.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Moderation: em 2025",
+    "slug": "moderation-em-2025",
+    "filename": "moderation-em-2025.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Audio-Language Models Performance",
+    "slug": "audio-language-models-performance",
+    "filename": "audio-language-models-performance.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Streaming Melhores Práticas",
+    "slug": "streaming-melhores-praticas",
+    "filename": "streaming-melhores-praticas.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Math LLMs: Casos de Uso",
+    "slug": "math-llms-casos-de-uso",
+    "filename": "math-llms-casos-de-uso.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Custom Models Guia Prático",
+    "slug": "custom-models-guia-pratico",
+    "filename": "custom-models-guia-pratico.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Chain of Thought para Desenvolvedores",
+    "slug": "chain-of-thought-para-desenvolvedores",
+    "filename": "chain-of-thought-para-desenvolvedores.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Implementando Load Balancing Performance",
+    "slug": "implementando-load-balancing-performance",
+    "filename": "implementando-load-balancing-performance.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Masterizando Quantização",
+    "slug": "masterizando-quantizacao",
+    "filename": "masterizando-quantizacao.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Trabalhando com GPT-4",
+    "slug": "trabalhando-com-gpt-4",
+    "filename": "trabalhando-com-gpt-4.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Top-P Tutorial",
+    "slug": "top-p-tutorial",
+    "filename": "top-p-tutorial.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "LLMs Locais: Melhores Práticas",
+    "slug": "llms-locais-melhores-praticas",
+    "filename": "llms-locais-melhores-praticas.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Configurando Code-Specific LLMs Guia Prático",
+    "slug": "configurando-code-specific-llms-guia-pratico",
+    "filename": "configurando-code-specific-llms-guia-pratico.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Implementando FAISS",
+    "slug": "implementando-faiss",
+    "filename": "implementando-faiss.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Structured Output Tutorial",
+    "slug": "structured-output-tutorial",
+    "filename": "structured-output-tutorial.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Semantic Search: Melhores Práticas",
+    "slug": "semantic-search-melhores-praticas",
+    "filename": "semantic-search-melhores-praticas.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Explorando LLM Security",
+    "slug": "explorando-llm-security",
+    "filename": "explorando-llm-security.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "GDPR e LLMs Performance",
+    "slug": "gdpr-e-llms-performance",
+    "filename": "gdpr-e-llms-performance.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Explorando Prompt Caching Custos",
+    "slug": "explorando-prompt-caching-custos",
+    "filename": "explorando-prompt-caching-custos.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Mistral AI para Desenvolvedores",
+    "slug": "mistral-ai-para-desenvolvedores",
+    "filename": "mistral-ai-para-desenvolvedores.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Usando Benchmarks",
+    "slug": "usando-benchmarks",
+    "filename": "usando-benchmarks.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Comparando Code-Specific LLMs Casos de Uso",
+    "slug": "comparando-code-specific-llms-casos-de-uso",
+    "filename": "comparando-code-specific-llms-casos-de-uso.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Integrando Claude 4 Sonnet",
+    "slug": "integrando-claude-4-sonnet",
+    "filename": "integrando-claude-4-sonnet.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Data Sanitization: em Produção",
+    "slug": "data-sanitization-em-producao",
+    "filename": "data-sanitization-em-producao.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Implementando Temperature Melhores Práticas",
+    "slug": "implementando-temperature-melhores-praticas",
+    "filename": "implementando-temperature-melhores-praticas.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Context Injection: para Desenvolvedores",
+    "slug": "context-injection-para-desenvolvedores",
+    "filename": "context-injection-para-desenvolvedores.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Implementando Math LLMs Tutorial",
+    "slug": "implementando-math-llms-tutorial",
+    "filename": "implementando-math-llms-tutorial.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Otimizando Text Extraction",
+    "slug": "otimizando-text-extraction",
+    "filename": "otimizando-text-extraction.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Hallucinations Casos de Uso",
+    "slug": "hallucinations-casos-de-uso",
+    "filename": "hallucinations-casos-de-uso.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Integrando Weaviate Tutorial",
+    "slug": "integrando-weaviate-tutorial",
+    "filename": "integrando-weaviate-tutorial.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Custom Models Melhores Práticas",
+    "slug": "custom-models-melhores-praticas",
+    "filename": "custom-models-melhores-praticas.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "Anthropic API Comparação",
+    "slug": "anthropic-api-comparacao",
+    "filename": "anthropic-api-comparacao.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "GPT-5 Custos",
+    "slug": "gpt-5-custos",
+    "filename": "gpt-5-custos.mdx"
+  },
+  {
+    "category": "llms",
+    "title": "DeepSeek em Produção",
+    "slug": "deepseek-em-producao",
+    "filename": "deepseek-em-producao.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Routing Agents: Tutorial Completo",
+    "slug": "routing-agents-tutorial-completo",
+    "filename": "routing-agents-tutorial-completo.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Configurando Specialized Agents do Zero",
+    "slug": "configurando-specialized-agents-do-zero",
+    "filename": "configurando-specialized-agents-do-zero.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Translation Agents: Tutorial Completo",
+    "slug": "translation-agents-tutorial-completo",
+    "filename": "translation-agents-tutorial-completo.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "AgentGPT Escalável",
+    "slug": "agentgpt-escalavel",
+    "filename": "agentgpt-escalavel.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Task Agents Guia Definitivo",
+    "slug": "task-agents-guia-definitivo",
+    "filename": "task-agents-guia-definitivo.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Memory Systems Tutorial Completo",
+    "slug": "memory-systems-tutorial-completo",
+    "filename": "memory-systems-tutorial-completo.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Agent Patterns: do Zero",
+    "slug": "agent-patterns-do-zero",
+    "filename": "agent-patterns-do-zero.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Orquestrando Agent Marketplace na Prática",
+    "slug": "orquestrando-agent-marketplace-na-pratica",
+    "filename": "orquestrando-agent-marketplace-na-pratica.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Gerenciando Agent Sharing",
+    "slug": "gerenciando-agent-sharing",
+    "filename": "gerenciando-agent-sharing.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Summarization Agents: Escalável",
+    "slug": "summarization-agents-escalavel",
+    "filename": "summarization-agents-escalavel.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Agent Patterns: com Python",
+    "slug": "agent-patterns-com-python",
+    "filename": "agent-patterns-com-python.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "SuperAGI na Prática",
+    "slug": "superagi-na-pratica",
+    "filename": "superagi-na-pratica.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Configurando LangChain Agents em Produção",
+    "slug": "configurando-langchain-agents-em-producao",
+    "filename": "configurando-langchain-agents-em-producao.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Monitorando Reactive Agents Guia Definitivo",
+    "slug": "monitorando-reactive-agents-guia-definitivo",
+    "filename": "monitorando-reactive-agents-guia-definitivo.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Criando Agent Templates",
+    "slug": "criando-agent-templates",
+    "filename": "criando-agent-templates.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Construindo Supervisory Agents",
+    "slug": "construindo-supervisory-agents",
+    "filename": "construindo-supervisory-agents.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Routing Agents Avançado",
+    "slug": "routing-agents-avancado",
+    "filename": "routing-agents-avancado.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Monitorando Learning Agents Performance",
+    "slug": "monitorando-learning-agents-performance",
+    "filename": "monitorando-learning-agents-performance.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Orquestrando Memory Systems Avançado",
+    "slug": "orquestrando-memory-systems-avancado",
+    "filename": "orquestrando-memory-systems-avancado.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Criando Filtering Agents",
+    "slug": "criando-filtering-agents",
+    "filename": "criando-filtering-agents.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Criando LangChain Agents",
+    "slug": "criando-langchain-agents",
+    "filename": "criando-langchain-agents.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Agent Versioning Avançado",
+    "slug": "agent-versioning-avancado",
+    "filename": "agent-versioning-avancado.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Agent Deployment Performance",
+    "slug": "agent-deployment-performance",
+    "filename": "agent-deployment-performance.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Monitorando Validation Agents",
+    "slug": "monitorando-validation-agents",
+    "filename": "monitorando-validation-agents.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Agent Communication: com Python",
+    "slug": "agent-communication-com-python",
+    "filename": "agent-communication-com-python.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Email Agents com Python",
+    "slug": "email-agents-com-python",
+    "filename": "email-agents-com-python.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Configurando Agentes Conversacionais Guia Definitivo",
+    "slug": "configurando-agentes-conversacionais-guia-definitivo",
+    "filename": "configurando-agentes-conversacionais-guia-definitivo.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Extraction Agents na Prática",
+    "slug": "extraction-agents-na-pratica",
+    "filename": "extraction-agents-na-pratica.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Agent Reliability: Escalável",
+    "slug": "agent-reliability-escalavel",
+    "filename": "agent-reliability-escalavel.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Criando Agent Marketplace",
+    "slug": "criando-agent-marketplace",
+    "filename": "criando-agent-marketplace.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Monitorando Agentes de Workflow com Python",
+    "slug": "monitorando-agentes-de-workflow-com-python",
+    "filename": "monitorando-agentes-de-workflow-com-python.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "API Agents: com LangChain",
+    "slug": "api-agents-com-langchain",
+    "filename": "api-agents-com-langchain.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Browser Agents Guia Definitivo",
+    "slug": "browser-agents-guia-definitivo",
+    "filename": "browser-agents-guia-definitivo.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "General Agents: Performance",
+    "slug": "general-agents-performance",
+    "filename": "general-agents-performance.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Agent Memory Escalável",
+    "slug": "agent-memory-escalavel",
+    "filename": "agent-memory-escalavel.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Construindo Agent KPIs com Python",
+    "slug": "construindo-agent-kpis-com-python",
+    "filename": "construindo-agent-kpis-com-python.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Escalando Agent Versioning",
+    "slug": "escalando-agent-versioning",
+    "filename": "escalando-agent-versioning.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Monitorando Agent Scaling do Zero",
+    "slug": "monitorando-agent-scaling-do-zero",
+    "filename": "monitorando-agent-scaling-do-zero.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Agent Fallback com Python",
+    "slug": "agent-fallback-com-python",
+    "filename": "agent-fallback-com-python.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Criando Agent Context",
+    "slug": "criando-agent-context",
+    "filename": "criando-agent-context.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Agentes Conversacionais do Zero",
+    "slug": "agentes-conversacionais-do-zero",
+    "filename": "agentes-conversacionais-do-zero.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Error Handling Performance",
+    "slug": "error-handling-performance",
+    "filename": "error-handling-performance.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Customer Service Agents Escalável",
+    "slug": "customer-service-agents-escalavel",
+    "filename": "customer-service-agents-escalavel.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Configurando Research Agents",
+    "slug": "configurando-research-agents",
+    "filename": "configurando-research-agents.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Agent Governance: com Python",
+    "slug": "agent-governance-com-python",
+    "filename": "agent-governance-com-python.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Criando Agentes de Workflow na Prática",
+    "slug": "criando-agentes-de-workflow-na-pratica",
+    "filename": "criando-agentes-de-workflow-na-pratica.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Configurando Agent Security com LangChain",
+    "slug": "configurando-agent-security-com-langchain",
+    "filename": "configurando-agent-security-com-langchain.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Agentes de Workflow: na Prática",
+    "slug": "agentes-de-workflow-na-pratica",
+    "filename": "agentes-de-workflow-na-pratica.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Data Agents: em Produção",
+    "slug": "data-agents-em-producao",
+    "filename": "data-agents-em-producao.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Agent Versioning: Avançado",
+    "slug": "agent-versioning-avancado",
+    "filename": "agent-versioning-avancado.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Research Agents: Avançado",
+    "slug": "research-agents-avancado",
+    "filename": "research-agents-avancado.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Agent Frameworks Tutorial Completo",
+    "slug": "agent-frameworks-tutorial-completo",
+    "filename": "agent-frameworks-tutorial-completo.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Agent Collaboration Guia Definitivo",
+    "slug": "agent-collaboration-guia-definitivo",
+    "filename": "agent-collaboration-guia-definitivo.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Otimizando Agent State com LangChain",
+    "slug": "otimizando-agent-state-com-langchain",
+    "filename": "otimizando-agent-state-com-langchain.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Tool Use: Guia Definitivo",
+    "slug": "tool-use-guia-definitivo",
+    "filename": "tool-use-guia-definitivo.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Semi-Autonomous Agents: em Produção",
+    "slug": "semi-autonomous-agents-em-producao",
+    "filename": "semi-autonomous-agents-em-producao.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Agent Context: com Python",
+    "slug": "agent-context-com-python",
+    "filename": "agent-context-com-python.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Agent Marketplace Escalável",
+    "slug": "agent-marketplace-escalavel",
+    "filename": "agent-marketplace-escalavel.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Gerenciando Agent Design",
+    "slug": "gerenciando-agent-design",
+    "filename": "gerenciando-agent-design.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "CrewAI: Tutorial Completo",
+    "slug": "crewai-tutorial-completo",
+    "filename": "crewai-tutorial-completo.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Construindo LangChain Agents Performance",
+    "slug": "construindo-langchain-agents-performance",
+    "filename": "construindo-langchain-agents-performance.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Escalando Notification Agents Avançado",
+    "slug": "escalando-notification-agents-avancado",
+    "filename": "escalando-notification-agents-avancado.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Semi-Autonomous Agents Avançado",
+    "slug": "semi-autonomous-agents-avancado",
+    "filename": "semi-autonomous-agents-avancado.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "ReAct Tutorial Completo",
+    "slug": "react-tutorial-completo",
+    "filename": "react-tutorial-completo.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Agent Versioning Escalável",
+    "slug": "agent-versioning-escalavel",
+    "filename": "agent-versioning-escalavel.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Transformation Agents Tutorial Completo",
+    "slug": "transformation-agents-tutorial-completo",
+    "filename": "transformation-agents-tutorial-completo.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Construindo Agent Fallback em Produção",
+    "slug": "construindo-agent-fallback-em-producao",
+    "filename": "construindo-agent-fallback-em-producao.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Desenvolvendo API Agents",
+    "slug": "desenvolvendo-api-agents",
+    "filename": "desenvolvendo-api-agents.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Agent ROI: com LangChain",
+    "slug": "agent-roi-com-langchain",
+    "filename": "agent-roi-com-langchain.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Gerenciando CrewAI Tutorial Completo",
+    "slug": "gerenciando-crewai-tutorial-completo",
+    "filename": "gerenciando-crewai-tutorial-completo.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Gerenciando Agent Architectures",
+    "slug": "gerenciando-agent-architectures",
+    "filename": "gerenciando-agent-architectures.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Agent Feedback Avançado",
+    "slug": "agent-feedback-avancado",
+    "filename": "agent-feedback-avancado.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Agent Scaling: Tutorial Completo",
+    "slug": "agent-scaling-tutorial-completo",
+    "filename": "agent-scaling-tutorial-completo.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Desenvolvendo Agent Observability na Prática",
+    "slug": "desenvolvendo-agent-observability-na-pratica",
+    "filename": "desenvolvendo-agent-observability-na-pratica.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Criando Agent Ethics em Produção",
+    "slug": "criando-agent-ethics-em-producao",
+    "filename": "criando-agent-ethics-em-producao.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Orquestrando Agent Collaboration com Python",
+    "slug": "orquestrando-agent-collaboration-com-python",
+    "filename": "orquestrando-agent-collaboration-com-python.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Reactive Agents: com Python",
+    "slug": "reactive-agents-com-python",
+    "filename": "reactive-agents-com-python.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Construindo Agent Templates em Produção",
+    "slug": "construindo-agent-templates-em-producao",
+    "filename": "construindo-agent-templates-em-producao.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Escalando Agent Fallback",
+    "slug": "escalando-agent-fallback",
+    "filename": "escalando-agent-fallback.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Agent Versioning: com LangChain",
+    "slug": "agent-versioning-com-langchain",
+    "filename": "agent-versioning-com-langchain.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Desenvolvendo Agent Reliability em Produção",
+    "slug": "desenvolvendo-agent-reliability-em-producao",
+    "filename": "desenvolvendo-agent-reliability-em-producao.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Criando Agent Versioning na Prática",
+    "slug": "criando-agent-versioning-na-pratica",
+    "filename": "criando-agent-versioning-na-pratica.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Monitorando Specialized Agents do Zero",
+    "slug": "monitorando-specialized-agents-do-zero",
+    "filename": "monitorando-specialized-agents-do-zero.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Coordination Agents: em Produção",
+    "slug": "coordination-agents-em-producao",
+    "filename": "coordination-agents-em-producao.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Implementando Integration Agents Escalável",
+    "slug": "implementando-integration-agents-escalavel",
+    "filename": "implementando-integration-agents-escalavel.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Aggregation Agents: Performance",
+    "slug": "aggregation-agents-performance",
+    "filename": "aggregation-agents-performance.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Orquestrando Decision Agents",
+    "slug": "orquestrando-decision-agents",
+    "filename": "orquestrando-decision-agents.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Construindo Agent Scaling",
+    "slug": "construindo-agent-scaling",
+    "filename": "construindo-agent-scaling.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Configurando Summarization Agents em Produção",
+    "slug": "configurando-summarization-agents-em-producao",
+    "filename": "configurando-summarization-agents-em-producao.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Multi-Agent Systems: com LangChain",
+    "slug": "multi-agent-systems-com-langchain",
+    "filename": "multi-agent-systems-com-langchain.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Gerenciando ReAct",
+    "slug": "gerenciando-react",
+    "filename": "gerenciando-react.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Otimizando Calendar Agents",
+    "slug": "otimizando-calendar-agents",
+    "filename": "otimizando-calendar-agents.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Configurando AgentGPT Tutorial Completo",
+    "slug": "configurando-agentgpt-tutorial-completo",
+    "filename": "configurando-agentgpt-tutorial-completo.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Gerenciando Planning",
+    "slug": "gerenciando-planning",
+    "filename": "gerenciando-planning.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Orquestrando Agent Testing com LangChain",
+    "slug": "orquestrando-agent-testing-com-langchain",
+    "filename": "orquestrando-agent-testing-com-langchain.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Integration Agents Performance",
+    "slug": "integration-agents-performance",
+    "filename": "integration-agents-performance.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Criando Voice Agents",
+    "slug": "criando-voice-agents",
+    "filename": "criando-voice-agents.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Classification Agents Escalável",
+    "slug": "classification-agents-escalavel",
+    "filename": "classification-agents-escalavel.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Criando Agent Versioning",
+    "slug": "criando-agent-versioning",
+    "filename": "criando-agent-versioning.mdx"
+  },
+  {
+    "category": "aiAgents",
+    "title": "Otimizando Agent Recovery",
+    "slug": "otimizando-agent-recovery",
+    "filename": "otimizando-agent-recovery.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "XML passo a passo",
+    "slug": "xml-passo-a-passo",
+    "filename": "xml-passo-a-passo.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Sincronizando GitLab",
+    "slug": "sincronizando-gitlab",
+    "filename": "sincronizando-gitlab.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Construindo Function tutorial",
+    "slug": "construindo-function-tutorial",
+    "filename": "construindo-function-tutorial.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Integrando Twitch",
+    "slug": "integrando-twitch",
+    "filename": "integrando-twitch.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Conectando Query Parameters",
+    "slug": "conectando-query-parameters",
+    "filename": "conectando-query-parameters.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Zendesk workflow",
+    "slug": "zendesk-workflow",
+    "filename": "zendesk-workflow.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Twitter: com n8n",
+    "slug": "twitter-com-n8n",
+    "filename": "twitter-com-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "PostgreSQL: guia completo",
+    "slug": "postgresql-guia-completo",
+    "filename": "postgresql-guia-completo.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Configurando Excel",
+    "slug": "configurando-excel",
+    "filename": "configurando-excel.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Redis integração",
+    "slug": "redis-integracao",
+    "filename": "redis-integracao.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Desenvolvendo Function workflow",
+    "slug": "desenvolvendo-function-workflow",
+    "filename": "desenvolvendo-function-workflow.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Conectando SendGrid",
+    "slug": "conectando-sendgrid",
+    "filename": "conectando-sendgrid.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "PostgreSQL: automatizado",
+    "slug": "postgresql-automatizado",
+    "filename": "postgresql-automatizado.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Construindo TikTok tutorial",
+    "slug": "construindo-tiktok-tutorial",
+    "filename": "construindo-tiktok-tutorial.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "GraphQL: usando n8n",
+    "slug": "graphql-usando-n8n",
+    "filename": "graphql-usando-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "CSV: workflow",
+    "slug": "csv-workflow",
+    "filename": "csv-workflow.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Sincronizando Zendesk",
+    "slug": "sincronizando-zendesk",
+    "filename": "sincronizando-zendesk.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Integrando S3",
+    "slug": "integrando-s3",
+    "filename": "integrando-s3.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Webflow: tutorial",
+    "slug": "webflow-tutorial",
+    "filename": "webflow-tutorial.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Criando Airtable com n8n",
+    "slug": "criando-airtable-com-n8n",
+    "filename": "criando-airtable-com-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Otimizando Binary Data",
+    "slug": "otimizando-binary-data",
+    "filename": "otimizando-binary-data.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Implementando PayPal workflow",
+    "slug": "implementando-paypal-workflow",
+    "filename": "implementando-paypal-workflow.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Filter: via n8n",
+    "slug": "filter-via-n8n",
+    "filename": "filter-via-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Configurando PayPal",
+    "slug": "configurando-paypal",
+    "filename": "configurando-paypal.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Agendamento: workflow",
+    "slug": "agendamento-workflow",
+    "filename": "agendamento-workflow.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Integrando File Processing com n8n",
+    "slug": "integrando-file-processing-com-n8n",
+    "filename": "integrando-file-processing-com-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Desenvolvendo YouTube workflow",
+    "slug": "desenvolvendo-youtube-workflow",
+    "filename": "desenvolvendo-youtube-workflow.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Outlook: integração",
+    "slug": "outlook-integracao",
+    "filename": "outlook-integracao.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Desenvolvendo Dropbox",
+    "slug": "desenvolvendo-dropbox",
+    "filename": "desenvolvendo-dropbox.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Implementando IF",
+    "slug": "implementando-if",
+    "filename": "implementando-if.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "E-commerce: no n8n",
+    "slug": "e-commerce-no-n8n",
+    "filename": "e-commerce-no-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Conectando Google Cloud",
+    "slug": "conectando-google-cloud",
+    "filename": "conectando-google-cloud.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Make vs n8n: workflow",
+    "slug": "make-vs-n8n-workflow",
+    "filename": "make-vs-n8n-workflow.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Sincronizando Headers via n8n",
+    "slug": "sincronizando-headers-via-n8n",
+    "filename": "sincronizando-headers-via-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Criando PDF Generation",
+    "slug": "criando-pdf-generation",
+    "filename": "criando-pdf-generation.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Workflows Complexos com n8n",
+    "slug": "workflows-complexos-com-n8n",
+    "filename": "workflows-complexos-com-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "n8n com IA tutorial",
+    "slug": "n8n-com-ia-tutorial",
+    "filename": "n8n-com-ia-tutorial.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Sincronizando Function Item",
+    "slug": "sincronizando-function-item",
+    "filename": "sincronizando-function-item.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Salesforce: workflow",
+    "slug": "salesforce-workflow",
+    "filename": "salesforce-workflow.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Slack: integração",
+    "slug": "slack-integracao",
+    "filename": "slack-integracao.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Automatizando Excel",
+    "slug": "automatizando-excel",
+    "filename": "automatizando-excel.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Mailchimp no n8n",
+    "slug": "mailchimp-no-n8n",
+    "filename": "mailchimp-no-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Sincronizando APIs tutorial",
+    "slug": "sincronizando-apis-tutorial",
+    "filename": "sincronizando-apis-tutorial.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Make vs n8n: via n8n",
+    "slug": "make-vs-n8n-via-n8n",
+    "filename": "make-vs-n8n-via-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Google Cloud: tutorial",
+    "slug": "google-cloud-tutorial",
+    "filename": "google-cloud-tutorial.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Construindo Make vs n8n",
+    "slug": "construindo-make-vs-n8n",
+    "filename": "construindo-make-vs-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Criando OAuth",
+    "slug": "criando-oauth",
+    "filename": "criando-oauth.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Automatizando TikTok workflow",
+    "slug": "automatizando-tiktok-workflow",
+    "filename": "automatizando-tiktok-workflow.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Intercom: no n8n",
+    "slug": "intercom-no-n8n",
+    "filename": "intercom-no-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Discord: com n8n",
+    "slug": "discord-com-n8n",
+    "filename": "discord-com-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Salesforce: guia completo",
+    "slug": "salesforce-guia-completo",
+    "filename": "salesforce-guia-completo.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Firebase guia completo",
+    "slug": "firebase-guia-completo",
+    "filename": "firebase-guia-completo.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "GitHub: no n8n",
+    "slug": "github-no-n8n",
+    "filename": "github-no-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Construindo SOAP API automatizado",
+    "slug": "construindo-soap-api-automatizado",
+    "filename": "construindo-soap-api-automatizado.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "JSON integração",
+    "slug": "json-integracao",
+    "filename": "json-integracao.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Implementando Gmail workflow",
+    "slug": "implementando-gmail-workflow",
+    "filename": "implementando-gmail-workflow.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Construindo Variáveis com n8n",
+    "slug": "construindo-variaveis-com-n8n",
+    "filename": "construindo-variaveis-com-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Implementando SMS",
+    "slug": "implementando-sms",
+    "filename": "implementando-sms.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Criando Workflows Avançados",
+    "slug": "criando-workflows-avancados",
+    "filename": "criando-workflows-avancados.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Implementando XML",
+    "slug": "implementando-xml",
+    "filename": "implementando-xml.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Telegram workflow",
+    "slug": "telegram-workflow",
+    "filename": "telegram-workflow.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "ActiveCampaign usando n8n",
+    "slug": "activecampaign-usando-n8n",
+    "filename": "activecampaign-usando-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Criando Email Templates",
+    "slug": "criando-email-templates",
+    "filename": "criando-email-templates.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "IF: usando n8n",
+    "slug": "if-usando-n8n",
+    "filename": "if-usando-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Otimizando Make vs n8n integração",
+    "slug": "otimizando-make-vs-n8n-integracao",
+    "filename": "otimizando-make-vs-n8n-integracao.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Otimizando Aggregate guia completo",
+    "slug": "otimizando-aggregate-guia-completo",
+    "filename": "otimizando-aggregate-guia-completo.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "MongoDB: passo a passo",
+    "slug": "mongodb-passo-a-passo",
+    "filename": "mongodb-passo-a-passo.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Desenvolvendo Trello workflow",
+    "slug": "desenvolvendo-trello-workflow",
+    "filename": "desenvolvendo-trello-workflow.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Bubble: usando n8n",
+    "slug": "bubble-usando-n8n",
+    "filename": "bubble-usando-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Conectando Azure workflow",
+    "slug": "conectando-azure-workflow",
+    "filename": "conectando-azure-workflow.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Configurando Monday.com",
+    "slug": "configurando-mondaycom",
+    "filename": "configurando-mondaycom.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "n8n com IA via n8n",
+    "slug": "n8n-com-ia-via-n8n",
+    "filename": "n8n-com-ia-via-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "PostgreSQL: integração",
+    "slug": "postgresql-integracao",
+    "filename": "postgresql-integracao.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Conectando Asana com n8n",
+    "slug": "conectando-asana-com-n8n",
+    "filename": "conectando-asana-com-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Otimizando Telegram usando n8n",
+    "slug": "otimizando-telegram-usando-n8n",
+    "filename": "otimizando-telegram-usando-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "PDF Generation: passo a passo",
+    "slug": "pdf-generation-passo-a-passo",
+    "filename": "pdf-generation-passo-a-passo.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Google Cloud usando n8n",
+    "slug": "google-cloud-usando-n8n",
+    "filename": "google-cloud-usando-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Automatizando Database Queries",
+    "slug": "automatizando-database-queries",
+    "filename": "automatizando-database-queries.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Azure guia completo",
+    "slug": "azure-guia-completo",
+    "filename": "azure-guia-completo.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Criando Outlook guia completo",
+    "slug": "criando-outlook-guia-completo",
+    "filename": "criando-outlook-guia-completo.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Switch: usando n8n",
+    "slug": "switch-usando-n8n",
+    "filename": "switch-usando-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "PayPal guia completo",
+    "slug": "paypal-guia-completo",
+    "filename": "paypal-guia-completo.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Construindo Merge integração",
+    "slug": "construindo-merge-integracao",
+    "filename": "construindo-merge-integracao.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Notion via n8n",
+    "slug": "notion-via-n8n",
+    "filename": "notion-via-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Sincronizando Push Notifications automatizado",
+    "slug": "sincronizando-push-notifications-automatizado",
+    "filename": "sincronizando-push-notifications-automatizado.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Webhooks passo a passo",
+    "slug": "webhooks-passo-a-passo",
+    "filename": "webhooks-passo-a-passo.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Twitter via n8n",
+    "slug": "twitter-via-n8n",
+    "filename": "twitter-via-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Workflows Simples via n8n",
+    "slug": "workflows-simples-via-n8n",
+    "filename": "workflows-simples-via-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Otimizando MongoDB tutorial",
+    "slug": "otimizando-mongodb-tutorial",
+    "filename": "otimizando-mongodb-tutorial.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Item Lists guia completo",
+    "slug": "item-lists-guia-completo",
+    "filename": "item-lists-guia-completo.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "YouTube: usando n8n",
+    "slug": "youtube-usando-n8n",
+    "filename": "youtube-usando-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Loop: usando n8n",
+    "slug": "loop-usando-n8n",
+    "filename": "loop-usando-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "GitHub tutorial",
+    "slug": "github-tutorial",
+    "filename": "github-tutorial.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Implementando File Processing via n8n",
+    "slug": "implementando-file-processing-via-n8n",
+    "filename": "implementando-file-processing-via-n8n.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Otimizando Google Sheets",
+    "slug": "otimizando-google-sheets",
+    "filename": "otimizando-google-sheets.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Sincronizando GitHub",
+    "slug": "sincronizando-github",
+    "filename": "sincronizando-github.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Sincronizando Trello",
+    "slug": "sincronizando-trello",
+    "filename": "sincronizando-trello.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Azure: integração",
+    "slug": "azure-integracao",
+    "filename": "azure-integracao.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Desenvolvendo Set integração",
+    "slug": "desenvolvendo-set-integracao",
+    "filename": "desenvolvendo-set-integracao.mdx"
+  },
+  {
+    "category": "n8n",
+    "title": "Criando Image Processing usando n8n",
+    "slug": "criando-image-processing-usando-n8n",
+    "filename": "criando-image-processing-usando-n8n.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Trabalhando com Backend",
+    "slug": "trabalhando-com-backend",
+    "filename": "trabalhando-com-backend.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Angular Tutorial",
+    "slug": "angular-tutorial",
+    "filename": "angular-tutorial.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Usando GitHub Copilot",
+    "slug": "usando-github-copilot",
+    "filename": "usando-github-copilot.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Express AI Tools",
+    "slug": "express-ai-tools",
+    "filename": "express-ai-tools.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Trabalhando com Sourcegraph Cody 2025",
+    "slug": "trabalhando-com-sourcegraph-cody-2025",
+    "filename": "trabalhando-com-sourcegraph-cody-2025.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Otimizando Segurança",
+    "slug": "otimizando-seguranca",
+    "filename": "otimizando-seguranca.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Refatoração: 2025",
+    "slug": "refatoracao-2025",
+    "filename": "refatoracao-2025.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Swift: Tutorial",
+    "slug": "swift-tutorial",
+    "filename": "swift-tutorial.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Desenvolvendo com Atom AI Assistants",
+    "slug": "desenvolvendo-com-atom-ai-assistants",
+    "filename": "desenvolvendo-com-atom-ai-assistants.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Dominando Express Best Practices",
+    "slug": "dominando-express-best-practices",
+    "filename": "dominando-express-best-practices.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Dominando AI Code Translation",
+    "slug": "dominando-ai-code-translation",
+    "filename": "dominando-ai-code-translation.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Masterizando REST",
+    "slug": "masterizando-rest",
+    "filename": "masterizando-rest.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Integrando Code Review",
+    "slug": "integrando-code-review",
+    "filename": "integrando-code-review.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Integrando Node.js",
+    "slug": "integrando-nodejs",
+    "filename": "integrando-nodejs.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Dominando .NET Productivity",
+    "slug": "dominando-net-productivity",
+    "filename": "dominando-net-productivity.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Pair Programming: Guia",
+    "slug": "pair-programming-guia",
+    "filename": "pair-programming-guia.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Configurando AI Documentation Tutorial",
+    "slug": "configurando-ai-documentation-tutorial",
+    "filename": "configurando-ai-documentation-tutorial.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Desenvolvendo com Java Automation",
+    "slug": "desenvolvendo-com-java-automation",
+    "filename": "desenvolvendo-com-java-automation.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Integrando Deploy Code Agents",
+    "slug": "integrando-deploy-code-agents",
+    "filename": "integrando-deploy-code-agents.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Vim: AI Assistants",
+    "slug": "vim-ai-assistants",
+    "filename": "vim-ai-assistants.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Dominando Docker",
+    "slug": "dominando-docker",
+    "filename": "dominando-docker.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Codificando com Windsurf",
+    "slug": "codificando-com-windsurf",
+    "filename": "codificando-com-windsurf.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Programando com Spring Boot AI Tools",
+    "slug": "programando-com-spring-boot-ai-tools",
+    "filename": "programando-com-spring-boot-ai-tools.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Atom: IA",
+    "slug": "atom-ia",
+    "filename": "atom-ia.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Codificando com AI Code Suggestions IA",
+    "slug": "codificando-com-ai-code-suggestions-ia",
+    "filename": "codificando-com-ai-code-suggestions-ia.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "AI Testing AI Assistants",
+    "slug": "ai-testing-ai-assistants",
+    "filename": "ai-testing-ai-assistants.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Cursor: Code Agents",
+    "slug": "cursor-code-agents",
+    "filename": "cursor-code-agents.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Flutter: Guia",
+    "slug": "flutter-guia",
+    "filename": "flutter-guia.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Otimizando PHP 2025",
+    "slug": "otimizando-php-2025",
+    "filename": "otimizando-php-2025.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Codeium Tutorial",
+    "slug": "codeium-tutorial",
+    "filename": "codeium-tutorial.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "C# Tutorial",
+    "slug": "c-tutorial",
+    "filename": "c-tutorial.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Terraform AI Tools",
+    "slug": "terraform-ai-tools",
+    "filename": "terraform-ai-tools.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Masterizando AI Code Suggestions Automation",
+    "slug": "masterizando-ai-code-suggestions-automation",
+    "filename": "masterizando-ai-code-suggestions-automation.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Otimizando Codeium",
+    "slug": "otimizando-codeium",
+    "filename": "otimizando-codeium.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Nuxt: Best Practices",
+    "slug": "nuxt-best-practices",
+    "filename": "nuxt-best-practices.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Masterizando GitHub Actions 2025",
+    "slug": "masterizando-github-actions-2025",
+    "filename": "masterizando-github-actions-2025.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Trabalhando com AI Code Suggestions Productivity",
+    "slug": "trabalhando-com-ai-code-suggestions-productivity",
+    "filename": "trabalhando-com-ai-code-suggestions-productivity.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Masterizando Amazon CodeWhisperer IA",
+    "slug": "masterizando-amazon-codewhisperer-ia",
+    "filename": "masterizando-amazon-codewhisperer-ia.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Programando com Testes Automatizados AI Tools",
+    "slug": "programando-com-testes-automatizados-ai-tools",
+    "filename": "programando-com-testes-automatizados-ai-tools.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Continue: Guia",
+    "slug": "continue-guia",
+    "filename": "continue-guia.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Programando com PHP Tutorial",
+    "slug": "programando-com-php-tutorial",
+    "filename": "programando-com-php-tutorial.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Desenvolvendo com Sublime Text Code Agents",
+    "slug": "desenvolvendo-com-sublime-text-code-agents",
+    "filename": "desenvolvendo-com-sublime-text-code-agents.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Phind 2025",
+    "slug": "phind-2025",
+    "filename": "phind-2025.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "AI Debugging Best Practices",
+    "slug": "ai-debugging-best-practices",
+    "filename": "ai-debugging-best-practices.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Configurando Laravel",
+    "slug": "configurando-laravel",
+    "filename": "configurando-laravel.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "AI Code Explanation: Productivity",
+    "slug": "ai-code-explanation-productivity",
+    "filename": "ai-code-explanation-productivity.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Otimizando AI Refactoring",
+    "slug": "otimizando-ai-refactoring",
+    "filename": "otimizando-ai-refactoring.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Dominando Vim",
+    "slug": "dominando-vim",
+    "filename": "dominando-vim.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Otimizando Emacs",
+    "slug": "otimizando-emacs",
+    "filename": "otimizando-emacs.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Configurando JavaScript AI Tools",
+    "slug": "configurando-javascript-ai-tools",
+    "filename": "configurando-javascript-ai-tools.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Programando com Pieces",
+    "slug": "programando-com-pieces",
+    "filename": "programando-com-pieces.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Sublime Text Guia",
+    "slug": "sublime-text-guia",
+    "filename": "sublime-text-guia.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Migração AI Assistants",
+    "slug": "migracao-ai-assistants",
+    "filename": "migracao-ai-assistants.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Rust: Productivity",
+    "slug": "rust-productivity",
+    "filename": "rust-productivity.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Usando Dart",
+    "slug": "usando-dart",
+    "filename": "usando-dart.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "PHP: Productivity",
+    "slug": "php-productivity",
+    "filename": "php-productivity.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Otimizando Frontend AI Tools",
+    "slug": "otimizando-frontend-ai-tools",
+    "filename": "otimizando-frontend-ai-tools.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Sourcegraph Cody 2025",
+    "slug": "sourcegraph-cody-2025",
+    "filename": "sourcegraph-cody-2025.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Debug: Tutorial",
+    "slug": "debug-tutorial",
+    "filename": "debug-tutorial.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "AI Code Translation: 2025",
+    "slug": "ai-code-translation-2025",
+    "filename": "ai-code-translation-2025.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Dominando React",
+    "slug": "dominando-react",
+    "filename": "dominando-react.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Desenvolvendo com Next.js Code Agents",
+    "slug": "desenvolvendo-com-nextjs-code-agents",
+    "filename": "desenvolvendo-com-nextjs-code-agents.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Inline Chat: Code Agents",
+    "slug": "inline-chat-code-agents",
+    "filename": "inline-chat-code-agents.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "AI Code Translation: Best Practices",
+    "slug": "ai-code-translation-best-practices",
+    "filename": "ai-code-translation-best-practices.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Vim: Best Practices",
+    "slug": "vim-best-practices",
+    "filename": "vim-best-practices.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Atom: Code Agents",
+    "slug": "atom-code-agents",
+    "filename": "atom-code-agents.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Programando com Deploy",
+    "slug": "programando-com-deploy",
+    "filename": "programando-com-deploy.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Express: Code Agents",
+    "slug": "express-code-agents",
+    "filename": "express-code-agents.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": ".NET: Tutorial",
+    "slug": "net-tutorial",
+    "filename": "net-tutorial.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Deploy 2025",
+    "slug": "deploy-2025",
+    "filename": "deploy-2025.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Programando com PHP IA",
+    "slug": "programando-com-php-ia",
+    "filename": "programando-com-php-ia.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "GCP Automation",
+    "slug": "gcp-automation",
+    "filename": "gcp-automation.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Masterizando AI Documentation",
+    "slug": "masterizando-ai-documentation",
+    "filename": "masterizando-ai-documentation.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "CI/CD: Automation",
+    "slug": "cicd-automation",
+    "filename": "cicd-automation.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Usando Spring Boot",
+    "slug": "usando-spring-boot",
+    "filename": "usando-spring-boot.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Configurando Phind",
+    "slug": "configurando-phind",
+    "filename": "configurando-phind.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Frontend AI Assistants",
+    "slug": "frontend-ai-assistants",
+    "filename": "frontend-ai-assistants.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Code Completion AI Tools",
+    "slug": "code-completion-ai-tools",
+    "filename": "code-completion-ai-tools.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Otimizando Backend Code Agents",
+    "slug": "otimizando-backend-code-agents",
+    "filename": "otimizando-backend-code-agents.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Usando Vue",
+    "slug": "usando-vue",
+    "filename": "usando-vue.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Trabalhando com Refatoração Productivity",
+    "slug": "trabalhando-com-refatoracao-productivity",
+    "filename": "trabalhando-com-refatoracao-productivity.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Codificando com VS Code",
+    "slug": "codificando-com-vs-code",
+    "filename": "codificando-com-vs-code.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Usando Serverless",
+    "slug": "usando-serverless",
+    "filename": "usando-serverless.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Configurando Rust",
+    "slug": "configurando-rust",
+    "filename": "configurando-rust.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Desenvolvendo com Terraform Productivity",
+    "slug": "desenvolvendo-com-terraform-productivity",
+    "filename": "desenvolvendo-com-terraform-productivity.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Configurando Code Completion Best Practices",
+    "slug": "configurando-code-completion-best-practices",
+    "filename": "configurando-code-completion-best-practices.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Desenvolvendo com Pair Programming Guia",
+    "slug": "desenvolvendo-com-pair-programming-guia",
+    "filename": "desenvolvendo-com-pair-programming-guia.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Continue: IA",
+    "slug": "continue-ia",
+    "filename": "continue-ia.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "C# Best Practices",
+    "slug": "c-best-practices",
+    "filename": "c-best-practices.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Trabalhando com REST Tutorial",
+    "slug": "trabalhando-com-rest-tutorial",
+    "filename": "trabalhando-com-rest-tutorial.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "GCP: Best Practices",
+    "slug": "gcp-best-practices",
+    "filename": "gcp-best-practices.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Codificando com Tabnine AI Tools",
+    "slug": "codificando-com-tabnine-ai-tools",
+    "filename": "codificando-com-tabnine-ai-tools.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Masterizando Go Automation",
+    "slug": "masterizando-go-automation",
+    "filename": "masterizando-go-automation.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Programando com Cursor",
+    "slug": "programando-com-cursor",
+    "filename": "programando-com-cursor.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "FastAPI Productivity",
+    "slug": "fastapi-productivity",
+    "filename": "fastapi-productivity.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Express: IA",
+    "slug": "express-ia",
+    "filename": "express-ia.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Aider Productivity",
+    "slug": "aider-productivity",
+    "filename": "aider-productivity.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "gRPC IA",
+    "slug": "grpc-ia",
+    "filename": "grpc-ia.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Otimizando Frontend",
+    "slug": "otimizando-frontend",
+    "filename": "otimizando-frontend.mdx"
+  },
+  {
+    "category": "codeAgents",
+    "title": "Desenvolvendo com Serverless Best Practices",
+    "slug": "desenvolvendo-com-serverless-best-practices",
+    "filename": "desenvolvendo-com-serverless-best-practices.mdx"
+  }
+]
