@@ -8,6 +8,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { SandpackCSS } from './blog/[slug]/sandpack';
 import { GoogleAnalytics } from './components/GoogleAnalytics';
 import { SkipToContent } from './components/SkipToContent';
+import { Suspense } from 'react';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://billy.dev.br'),
@@ -120,7 +121,9 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
-          <GoogleAnalytics />
+          <Suspense fallback={null}>
+            <GoogleAnalytics />
+          </Suspense>
           <Analytics />
           <SpeedInsights />
         </main>

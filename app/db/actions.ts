@@ -2,17 +2,18 @@
 
 import { auth } from 'app/auth';
 import { type Session } from 'next-auth';
-import { sql } from './postgres';
+// import { sql } from './postgres';
 import { revalidatePath, unstable_noStore as noStore } from 'next/cache';
 
 export async function increment(slug: string) {
   noStore();
-  await sql`
-    INSERT INTO views (slug, count)
-    VALUES (${slug}, 1)
-    ON CONFLICT (slug)
-    DO UPDATE SET count = views.count + 1
-  `;
+  // PostgreSQL desabilitado - função increment não faz nada
+  // await sql`
+  //   INSERT INTO views (slug, count)
+  //   VALUES (${slug}, 1)
+  //   ON CONFLICT (slug)
+  //   DO UPDATE SET count = views.count + 1
+  // `;
 }
 
 async function getSession(): Promise<Session> {
@@ -36,10 +37,11 @@ export async function saveGuestbookEntry(formData: FormData) {
   let entry = formData.get('entry')?.toString() || '';
   let body = entry.slice(0, 500);
 
-  await sql`
-    INSERT INTO guestbook (email, body, created_by, created_at)
-    VALUES (${email}, ${body}, ${created_by}, NOW())
-  `;
+  // PostgreSQL desabilitado - guestbook não funciona no momento
+  // await sql`
+  //   INSERT INTO guestbook (email, body, created_by, created_at)
+  //   VALUES (${email}, ${body}, ${created_by}, NOW())
+  // `;
 
   revalidatePath('/guestbook');
 
@@ -72,10 +74,11 @@ export async function deleteGuestbookEntries(selectedEntries: string[]) {
   let selectedEntriesAsNumbers = selectedEntries.map(Number);
   let arrayLiteral = `{${selectedEntriesAsNumbers.join(',')}}`;
 
-  await sql`
-    DELETE FROM guestbook
-    WHERE id = ANY(${arrayLiteral}::int[])
-  `;
+  // PostgreSQL desabilitado - delete não funciona no momento
+  // await sql`
+  //   DELETE FROM guestbook
+  //   WHERE id = ANY(${arrayLiteral}::int[])
+  // `;
 
   revalidatePath('/admin');
   revalidatePath('/guestbook');

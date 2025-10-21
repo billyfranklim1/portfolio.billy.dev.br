@@ -13,7 +13,7 @@ const ProjectsList = ({ projects }) => {
       {Object.entries(projects).map(([category, projectsInCategory]: [string, any[]]) => (
         <div key={category}>
           <h2 className="font-medium text-xl">{category}</h2>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2" id={category.replace(/[^a-zA-Z]|\p{Emoji}/gu, "")}>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2" id={category.replace(/[^a-zA-Z]/g, "")}>
             {projectsInCategory.map(project => (
               <div key={project.title} className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded w-full justify-between px-3 py-4">
                 <h5 className="font-medium text-base">{project.title}</h5>
@@ -183,9 +183,9 @@ export default function WorkPage() {
           {["💻 backend", "🌐 frontend", "📱 mobile", "🤖 IA", "📄 scripts"].map((section) => (
             <Link
               key={section}
-              href={`#${section.replace(/[^a-zA-Z]|\p{Emoji}/gu, "")}`}
+              href={`#${section.replace(/[^a-zA-Z]/g, "")}`}
               passHref
-              id={`link-${section.replace(/[^a-zA-Z]|\p{Emoji}/gu, "")}`}
+              id={`link-${section.replace(/[^a-zA-Z]/g, "")}`}
               className={`border border-neutral-200 dark:border-neutral-700 rounded-full px-2 md:px-4 py-1 md:py-2 project-button text-xs font-medium no-underline my-1`}
             >
               {section}

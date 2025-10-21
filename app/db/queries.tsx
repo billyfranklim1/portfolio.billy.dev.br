@@ -1,7 +1,7 @@
 'use server';
 
 import { auth, youtube } from '@googleapis/youtube';
-import { sql } from './postgres';
+// import { sql } from './postgres';
 import {
   unstable_cache as cache,
   unstable_noStore as noStore,
@@ -21,31 +21,37 @@ let yt = youtube({
 });
 
 export async function getBlogViews() {
-  if (!process.env.POSTGRES_URL) {
-    return [];
-  }
+  // PostgreSQL desabilitado
+  return 0;
 
-  noStore();
-  let views = await sql`
-    SELECT count
-    FROM views
-  `;
+  // if (!process.env.POSTGRES_URL) {
+  //   return [];
+  // }
 
-  return views.reduce((acc, curr) => acc + Number(curr.count), 0);
+  // noStore();
+  // let views = await sql`
+  //   SELECT count
+  //   FROM views
+  // `;
+
+  // return views.reduce((acc, curr) => acc + Number(curr.count), 0);
 }
 
 export async function getViewsCount(): Promise<
   { slug: string; count: number }[]
 > {
-  if (!process.env.POSTGRES_URL) {
-    return [];
-  }
+  // PostgreSQL desabilitado
+  return [];
 
-  noStore();
-  return sql`
-    SELECT slug, count
-    FROM views
-  `;
+  // if (!process.env.POSTGRES_URL) {
+  //   return [];
+  // }
+
+  // noStore();
+  // return sql`
+  //   SELECT slug, count
+  //   FROM views
+  // `;
 }
 
 export const getLeeYouTubeSubs = cache(
@@ -82,16 +88,26 @@ export const getVercelYouTubeSubs = cache(
   }
 );
 
-export async function getGuestbookEntries() {
-  if (!process.env.POSTGRES_URL) {
-    return [];
-  }
+type GuestbookEntry = {
+  id: number;
+  body: string;
+  created_by: string;
+  updated_at: Date;
+};
 
-  noStore();
-  return sql`
-    SELECT id, body, created_by, updated_at
-    FROM guestbook
-    ORDER BY created_at DESC
-    LIMIT 100
-  `;
+export async function getGuestbookEntries(): Promise<GuestbookEntry[]> {
+  // PostgreSQL desabilitado
+  return [];
+
+  // if (!process.env.POSTGRES_URL) {
+  //   return [];
+  // }
+
+  // noStore();
+  // return sql`
+  //   SELECT id, body, created_by, updated_at
+  //   FROM guestbook
+  //   ORDER BY created_at DESC
+  //   LIMIT 100
+  // `;
 }
