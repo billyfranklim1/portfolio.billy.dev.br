@@ -11,7 +11,6 @@ import {
 import { Badge } from '../components/home/Badge';
 import { ProjectLink } from '../components/home/ProjectLink';
 import { BlogLink } from '../components/home/BlogLink';
-import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 
 function ArrowIcon() {
@@ -98,13 +97,24 @@ export default async function Page({
         </Badge>
       </div>
       <p className="prose prose-neutral dark:prose-invert">
-        {t.rich('intro', {
-          workLink: (chunks) => <Link href={`/${locale}/${tn('work')}`}>{chunks}</Link>,
-        })}
+        {locale === 'pt' ? (
+          <>
+            Eu sou engenheiro de software com 7 anos de experiência. Tendo{' '}
+            <Link href={`/${locale}/${tn('work')}`}>trabalhado</Link>{' '}
+            em empresas de diversos tamanhos e segmentos, tais como startups, empresas de médio, grande porte e empresas governamentais.
+          </>
+        ) : (
+          <>
+            I'm a software engineer with 7 years of experience. I've{' '}
+            <Link href={`/${locale}/${tn('work')}`}>worked</Link>{' '}
+            in companies of various sizes and sectors, such as startups, medium and large enterprises, and government agencies.
+          </>
+        )}
         <br />
         <br />
-        {t.rich('stacks', {
-          laravel: (chunks) => (
+        {locale === 'pt' ? (
+          <>
+            Minhas principais stacks são{' '}
             <Badge href="https://laravel.com">
               <Image
                 src="/laravel.svg"
@@ -114,10 +124,9 @@ export default async function Page({
                 height={11}
                 style={{ marginRight: '5px' }}
               />
-              {chunks}
+              Laravel
             </Badge>
-          ),
-          vue: (chunks) => (
+            {', '}
             <Badge href="https://vuejs.org">
               <Image
                 src="/vue.svg"
@@ -127,10 +136,9 @@ export default async function Page({
                 height={11}
                 style={{ marginRight: '5px' }}
               />
-              {chunks}
+              VueJs
             </Badge>
-          ),
-          react: (chunks) => (
+            {', '}
             <Badge href="https://react.dev">
               <svg
                 width="13"
@@ -141,10 +149,52 @@ export default async function Page({
               >
                 <use href="/sprite.svg#react" />
               </svg>
-              {chunks}
+              React
             </Badge>
-          ),
-        })}
+            .
+          </>
+        ) : (
+          <>
+            My main stacks are{' '}
+            <Badge href="https://laravel.com">
+              <Image
+                src="/laravel.svg"
+                alt={t('frameworkLaravel')}
+                className="inline-flex mr-1"
+                width={13}
+                height={11}
+                style={{ marginRight: '5px' }}
+              />
+              Laravel
+            </Badge>
+            {', '}
+            <Badge href="https://vuejs.org">
+              <Image
+                src="/vue.svg"
+                alt={t('frameworkVue')}
+                className="inline-flex"
+                width={13}
+                height={11}
+                style={{ marginRight: '5px' }}
+              />
+              VueJs
+            </Badge>
+            {', '}
+            <Badge href="https://react.dev">
+              <svg
+                width="13"
+                height="11"
+                role="img"
+                aria-label={t('libraryReact')}
+                className="inline-flex mr-1"
+              >
+                <use href="/sprite.svg#react" />
+              </svg>
+              React
+            </Badge>
+            .
+          </>
+        )}
       </p>
 
       <div className="prose prose-neutral dark:prose-invert">
