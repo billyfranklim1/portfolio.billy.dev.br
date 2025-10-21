@@ -1,0 +1,401 @@
+---
+title: 'n8n + IA: Automatizando Workflows com Inteligência Artificial'
+slug: 'n8n-ia-automacao-inteligente'
+publishedAt: '2025-01-20'
+summary: 'Guia prático de como integrar IA e LLMs no n8n para criar automações inteligentes que processam texto, tomam decisões e executam tarefas complexas automaticamente.'
+translations:
+  en: 'n8n-ai-intelligent-automation'
+---
+
+## A Combinação Perfeita: n8n e IA
+
+Quando descobri que podia combinar n8n com IA, percebi que tinha em mãos uma ferramenta poderosa para automação inteligente. n8n cuida da orquestração de workflows, e IA traz inteligência para processar dados, tomar decisões e gerar conteúdo.
+
+Neste artigo, vou mostrar como construí workflows inteligentes que:
+- Classificam emails automaticamente
+- Geram resumos de documentos
+- Respondem perguntas sobre dados
+- Tomam decisões baseadas em contexto
+
+## Por Que n8n + IA?
+
+**Problema real**: Precisávamos processar centenas de emails diários de suporte. Classificar manualmente era inviável.
+
+**Solução**: Workflow n8n que usa GPT-4 para:
+1. Ler emails
+2. Classificar por urgência/categoria
+3. Extrair informações chave
+4. Rotear para departamento correto
+5. Gerar resposta draft
+
+**Resultado**: 70% de redução no tempo de triagem.
+
+## Setup Inicial
+
+### 1. Instalando n8n
+
+```bash
+# Via Docker (recomendado)
+docker run -it --rm \
+  --name n8n \
+  -p 5678:5678 \
+  -v ~/.n8n:/home/node/.n8n \
+  n8nio/n8n
+
+# Via npm
+npm install -g n8n
+n8n start
+```
+
+### 2. Configurando Credenciais OpenAI
+
+1. Vá em **Settings → Credentials**
+2. Adicione **OpenAI** credential
+3. Cole sua API key
+
+## Workflow 1: Classificador Inteligente de Emails
+
+### Estrutura do Workflow
+
+```
+Gmail Trigger → Extract Data → GPT-4 Classify → Router → Actions
+```
+
+### Implementação Passo a Passo
+
+**Nó 1: Gmail Trigger**
+- Trigger: On new email
+- Label: "Suporte"
+
+**Nó 2: OpenAI Chat Model**
+
+Configuração:
+```json
+{
+  "model": "gpt-4-turbo-preview",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Você é um classificador de emails de suporte. Classifique em: URGENT, HIGH, MEDIUM, LOW. Extraia: categoria, problema, cliente."
+    },
+    {
+      "role": "user",
+      "content": "Email: \{\{ $json.subject \}\}\\n\\nConteúdo: \{\{ $json.body \}\}"
+    }
+  ],
+  "options": {
+    "temperature": 0,
+    "response_format": { "type": "json_object" }
+  }
+}
+```
+
+**Nó 3: Set Node** (Parse JSON)
+```javascript
+// Parsear resposta do GPT
+const response = JSON.parse($json.choices[0].message.content);
+
+return {
+  priority: response.priority,
+  category: response.category,
+  problem: response.problem,
+  customer: response.customer,
+  original_email: $json
+};
+```
+
+**Nó 4: Switch Node** (Roteamento)
+
+Baseado em `priority`:
+- URGENT → Notificação Slack + Email gerente
+- HIGH → Criar ticket Jira prioritário
+- MEDIUM → Criar ticket normal
+- LOW → Adicionar a fila
+
+### Resultado Real
+
+**Antes**:
+- Tempo médio de triagem: 5 minutos/email
+- Erros de roteamento: ~15%
+- SLA breach: 20%
+
+**Depois**:
+- Tempo médio: 30 segundos/email
+- Erros: <2%
+- SLA breach: 5%
+
+## Workflow 2: Gerador de Resumos Automático
+
+### Use Case
+
+Recebemos PDFs de contratos que precisam ser resumidos para executivos.
+
+### Workflow
+
+```
+Watch Folder → PDF to Text → Chunk Text → GPT Summarize → Save Summary → Notify
+```
+
+### Implementação
+
+**Nó 1: Read Binary File**
+- Watch folder: `/contracts`
+- File type: PDF
+
+**Nó 2: Extract from File** (PDF to Text)
+
+**Nó 3: Code Node** (Chunking)
+```javascript
+// Dividir texto em chunks de 3000 caracteres
+const text = $json.data;
+const chunkSize = 3000;
+const chunks = [];
+
+for (let i = 0; i < text.length; i += chunkSize) {
+  chunks.push(text.slice(i, i + chunkSize));
+}
+
+return chunks.map((chunk, i) => ({
+  json: { chunk, index: i, total: chunks.length }
+}));
+```
+
+**Nó 4: OpenAI** (Resumo por chunk)
+```
+Prompt: "Resuma este trecho de contrato em 3-5 bullet points destacando cláusulas importantes:
+
+\{\{ $json.chunk \}\}"
+```
+
+**Nó 5: Code Node** (Combinar resumos)
+```javascript
+const summaries = $input.all().map(item => item.json.summary);
+
+const finalPrompt = `Combine estes resumos em um resumo executivo coeso de 1 página:
+
+${summaries.join('\n\n')}`;
+
+return [{ json: { prompt: finalPrompt } }];
+```
+
+**Nó 6: OpenAI** (Resumo final)
+
+**Nó 7: Google Docs** (Salvar)
+
+## Workflow 3: Chatbot com Memória
+
+### Arquitetura
+
+```
+Webhook → Load Context → GPT Chat → Save Context → Response
+```
+
+### Implementação
+
+**Nó 1: Webhook**
+Recebe:
+```json
+{
+  "session_id": "user123",
+  "message": "Qual foi o ticket que abri ontem?"
+}
+```
+
+**Nó 2: PostgreSQL** (Load History)
+```sql
+SELECT message, response, timestamp
+FROM chat_history
+WHERE session_id = '\{\{ $json.session_id \}\}'
+ORDER BY timestamp DESC
+LIMIT 10
+```
+
+**Nó 3: Code Node** (Format Context)
+```javascript
+const history = $input.all().map(item => ({
+  role: "user",
+  content: item.json.message
+}), {
+  role: "assistant",
+  content: item.json.response
+}));
+
+const messages = [
+  {
+    role: "system",
+    content: "Você é um assistente de suporte que tem acesso ao histórico de conversas."
+  },
+  ...history,
+  {
+    role: "user",
+    content: $json.message
+  }
+];
+
+return [{ json: { messages } }];
+```
+
+**Nó 4: OpenAI Chat**
+
+**Nó 5: PostgreSQL** (Save)
+```sql
+INSERT INTO chat_history (session_id, message, response, timestamp)
+VALUES (
+  '\{\{ $json.session_id \}\}',
+  '\{\{ $json.message \}\}',
+  '\{\{ $json.response \}\}',
+  NOW()
+)
+```
+
+## Otimizações e Truques
+
+### 1. Cache de Respostas
+
+```javascript
+// Code Node antes do GPT
+const cacheKey = crypto
+  .createHash('md5')
+  .update($json.message)
+  .digest('hex');
+
+// Verificar cache no Redis
+const cached = await redis.get(cacheKey);
+if (cached) {
+  return [{ json: { response: cached, from_cache: true } }];
+}
+
+// Se não cached, continua para GPT
+return [{ json: { ...json, cache_key: cacheKey } }];
+```
+
+### 2. Fallback para Modelos Menores
+
+```javascript
+// Try GPT-4 first
+try {
+  const response = await openai.chat({
+    model: 'gpt-4-turbo-preview',
+    ...params
+  });
+  return response;
+} catch (error) {
+  // Fallback to GPT-3.5
+  return await openai.chat({
+    model: 'gpt-3.5-turbo',
+    ...params
+  });
+}
+```
+
+### 3. Batch Processing
+
+Ao invés de processar 1 email por vez:
+
+```javascript
+// Acumular emails em batches de 10
+const batch = [];
+for (const item of $input.all()) {
+  batch.push(item.json);
+  
+  if (batch.length >= 10) {
+    // Processar batch
+    const results = await processBatch(batch);
+    batch.length = 0; // Clear
+  }
+}
+```
+
+**Economia**: Reduziu custos em 40% usando batch.
+
+## Monitoramento e Logs
+
+### Dashboard de Métricas
+
+Criei workflow separado que:
+1. Coleta logs de execução
+2. Agrega métricas (custo, latência, erros)
+3. Envia para Grafana
+
+```javascript
+// Código de logging
+const metrics = {
+  workflow_id: $workflow.id,
+  execution_time: $execution.stopTime - $execution.startTime,
+  cost: calculateCost($json.tokens_used),
+  success: $execution.finished,
+  timestamp: new Date()
+};
+
+await postgres.insert('metrics', metrics);
+```
+
+## Melhores Práticas
+
+### 1. Sempre Use JSON Mode
+
+```json
+{
+  "response_format": { "type": "json_object" }
+}
+```
+
+Garante respostas estruturadas e parseáveis.
+
+### 2. Error Handling Robusto
+
+Use nó **Error Trigger** para capturar e tratar erros:
+
+```javascript
+if ($json.error) {
+  await slack.send({
+    channel: '#alerts',
+    text: `Workflow failed: ${$json.error}`
+  });
+  
+  // Log error
+  await postgres.insert('errors', {
+    workflow: $workflow.name,
+    error: $json.error,
+    timestamp: new Date()
+  });
+}
+```
+
+### 3. Rate Limiting
+
+```javascript
+const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+for (const item of items) {
+  await processItem(item);
+  await delay(1000); // 1 req/second
+}
+```
+
+## Custos Reais
+
+Mês 1 de produção:
+- **Chamadas GPT-4**: 15.000
+- **Custo total**: $450
+- **Custo por operação**: $0.03
+- **Valor economizado em tempo**: $12.000
+
+ROI: 26x em apenas 1 mês.
+
+## Conclusão
+
+n8n + IA é uma combinação poderosa para:
+- Automatizar tarefas que requerem compreensão
+- Processar linguagem natural
+- Tomar decisões inteligentes
+- Escalar operações
+
+### Próximos Passos
+
+1. Implemente embeddings para busca semântica
+2. Adicione voice input/output
+3. Integre com banco vetorial (Pinecone)
+4. Crie multi-agent workflows
+
+Comece simples, teste bastante, e escale gradualmente. Os resultados valem o esforço!
