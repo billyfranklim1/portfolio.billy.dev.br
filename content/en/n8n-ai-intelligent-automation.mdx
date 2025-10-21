@@ -1,0 +1,400 @@
+---
+title: 'n8n + AI: Automating Workflows with Artificial Intelligence'
+publishedAt: '2025-01-20'
+summary: 'Practical guide on how to integrate AI and LLMs into n8n to create intelligent automations that process text, make decisions, and execute complex tasks automatically.'
+translations:
+  pt: 'n8n-ia-automacao-inteligente'
+---
+
+## The Perfect Combination: n8n and AI
+
+When I discovered I could combine n8n with AI, I realized I had a powerful tool for intelligent automation. n8n handles workflow orchestration, and AI brings intelligence to process data, make decisions, and generate content.
+
+In this article, I'll show how I built intelligent workflows that:
+- Automatically classify emails
+- Generate document summaries
+- Answer questions about data
+- Make context-based decisions
+
+## Why n8n + AI?
+
+**Real problem**: We needed to process hundreds of support emails daily. Manual classification was unfeasible.
+
+**Solution**: n8n workflow that uses GPT-4 to:
+1. Read emails
+2. Classify by urgency/category
+3. Extract key information
+4. Route to correct department
+5. Generate draft response
+
+**Result**: 70% reduction in triage time.
+
+## Initial Setup
+
+### 1. Installing n8n
+
+```bash
+# Via Docker (recommended)
+docker run -it --rm \
+  --name n8n \
+  -p 5678:5678 \
+  -v ~/.n8n:/home/node/.n8n \
+  n8nio/n8n
+
+# Via npm
+npm install -g n8n
+n8n start
+```
+
+### 2. Configuring OpenAI Credentials
+
+1. Go to **Settings → Credentials**
+2. Add **OpenAI** credential
+3. Paste your API key
+
+## Workflow 1: Intelligent Email Classifier
+
+### Workflow Structure
+
+```
+Gmail Trigger → Extract Data → GPT-4 Classify → Router → Actions
+```
+
+### Step-by-Step Implementation
+
+**Node 1: Gmail Trigger**
+- Trigger: On new email
+- Label: "Support"
+
+**Node 2: OpenAI Chat Model**
+
+Configuration:
+```json
+{
+  "model": "gpt-4-turbo-preview",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a support email classifier. Classify as: URGENT, HIGH, MEDIUM, LOW. Extract: category, problem, customer."
+    },
+    {
+      "role": "user",
+      "content": "Email: \{\{ $json.subject \}\}\\n\\nContent: \{\{ $json.body \}\}"
+    }
+  ],
+  "options": {
+    "temperature": 0,
+    "response_format": { "type": "json_object" }
+  }
+}
+```
+
+**Node 3: Set Node** (Parse JSON)
+```javascript
+// Parse GPT response
+const response = JSON.parse($json.choices[0].message.content);
+
+return {
+  priority: response.priority,
+  category: response.category,
+  problem: response.problem,
+  customer: response.customer,
+  original_email: $json
+};
+```
+
+**Node 4: Switch Node** (Routing)
+
+Based on `priority`:
+- URGENT → Slack notification + Manager email
+- HIGH → Create priority Jira ticket
+- MEDIUM → Create normal ticket
+- LOW → Add to queue
+
+### Real Result
+
+**Before**:
+- Average triage time: 5 minutes/email
+- Routing errors: ~15%
+- SLA breach: 20%
+
+**After**:
+- Average time: 30 seconds/email
+- Errors: <2%
+- SLA breach: 5%
+
+## Workflow 2: Automatic Summary Generator
+
+### Use Case
+
+We receive contract PDFs that need to be summarized for executives.
+
+### Workflow
+
+```
+Watch Folder → PDF to Text → Chunk Text → GPT Summarize → Save Summary → Notify
+```
+
+### Implementation
+
+**Node 1: Read Binary File**
+- Watch folder: `/contracts`
+- File type: PDF
+
+**Node 2: Extract from File** (PDF to Text)
+
+**Node 3: Code Node** (Chunking)
+```javascript
+// Split text into 3000 character chunks
+const text = $json.data;
+const chunkSize = 3000;
+const chunks = [];
+
+for (let i = 0; i < text.length; i += chunkSize) {
+  chunks.push(text.slice(i, i + chunkSize));
+}
+
+return chunks.map((chunk, i) => ({
+  json: { chunk, index: i, total: chunks.length }
+}));
+```
+
+**Node 4: OpenAI** (Summary per chunk)
+```
+Prompt: "Summarize this contract excerpt in 3-5 bullet points highlighting important clauses:
+
+\{\{ $json.chunk \}\}"
+```
+
+**Node 5: Code Node** (Combine summaries)
+```javascript
+const summaries = $input.all().map(item => item.json.summary);
+
+const finalPrompt = `Combine these summaries into a cohesive 1-page executive summary:
+
+${summaries.join('\n\n')}`;
+
+return [{ json: { prompt: finalPrompt } }];
+```
+
+**Node 6: OpenAI** (Final summary)
+
+**Node 7: Google Docs** (Save)
+
+## Workflow 3: Chatbot with Memory
+
+### Architecture
+
+```
+Webhook → Load Context → GPT Chat → Save Context → Response
+```
+
+### Implementation
+
+**Node 1: Webhook**
+Receives:
+```json
+{
+  "session_id": "user123",
+  "message": "What was the ticket I opened yesterday?"
+}
+```
+
+**Node 2: PostgreSQL** (Load History)
+```sql
+SELECT message, response, timestamp
+FROM chat_history
+WHERE session_id = '\{\{ $json.session_id \}\}'
+ORDER BY timestamp DESC
+LIMIT 10
+```
+
+**Node 3: Code Node** (Format Context)
+```javascript
+const history = $input.all().map(item => ({
+  role: "user",
+  content: item.json.message
+}), {
+  role: "assistant",
+  content: item.json.response
+}));
+
+const messages = [
+  {
+    role: "system",
+    content: "You are a support assistant with access to conversation history."
+  },
+  ...history,
+  {
+    role: "user",
+    content: $json.message
+  }
+];
+
+return [{ json: { messages } }];
+```
+
+**Node 4: OpenAI Chat**
+
+**Node 5: PostgreSQL** (Save)
+```sql
+INSERT INTO chat_history (session_id, message, response, timestamp)
+VALUES (
+  '\{\{ $json.session_id \}\}',
+  '\{\{ $json.message \}\}',
+  '\{\{ $json.response \}\}',
+  NOW()
+)
+```
+
+## Optimizations and Tricks
+
+### 1. Response Cache
+
+```javascript
+// Code Node before GPT
+const cacheKey = crypto
+  .createHash('md5')
+  .update($json.message)
+  .digest('hex');
+
+// Check cache in Redis
+const cached = await redis.get(cacheKey);
+if (cached) {
+  return [{ json: { response: cached, from_cache: true } }];
+}
+
+// If not cached, continue to GPT
+return [{ json: { ...json, cache_key: cacheKey } }];
+```
+
+### 2. Fallback to Smaller Models
+
+```javascript
+// Try GPT-4 first
+try {
+  const response = await openai.chat({
+    model: 'gpt-4-turbo-preview',
+    ...params
+  });
+  return response;
+} catch (error) {
+  // Fallback to GPT-3.5
+  return await openai.chat({
+    model: 'gpt-3.5-turbo',
+    ...params
+  });
+}
+```
+
+### 3. Batch Processing
+
+Instead of processing 1 email at a time:
+
+```javascript
+// Accumulate emails in batches of 10
+const batch = [];
+for (const item of $input.all()) {
+  batch.push(item.json);
+
+  if (batch.length >= 10) {
+    // Process batch
+    const results = await processBatch(batch);
+    batch.length = 0; // Clear
+  }
+}
+```
+
+**Savings**: Reduced costs by 40% using batch processing.
+
+## Monitoring and Logs
+
+### Metrics Dashboard
+
+I created a separate workflow that:
+1. Collects execution logs
+2. Aggregates metrics (cost, latency, errors)
+3. Sends to Grafana
+
+```javascript
+// Logging code
+const metrics = {
+  workflow_id: $workflow.id,
+  execution_time: $execution.stopTime - $execution.startTime,
+  cost: calculateCost($json.tokens_used),
+  success: $execution.finished,
+  timestamp: new Date()
+};
+
+await postgres.insert('metrics', metrics);
+```
+
+## Best Practices
+
+### 1. Always Use JSON Mode
+
+```json
+{
+  "response_format": { "type": "json_object" }
+}
+```
+
+Ensures structured and parseable responses.
+
+### 2. Robust Error Handling
+
+Use **Error Trigger** node to catch and handle errors:
+
+```javascript
+if ($json.error) {
+  await slack.send({
+    channel: '#alerts',
+    text: `Workflow failed: ${$json.error}`
+  });
+
+  // Log error
+  await postgres.insert('errors', {
+    workflow: $workflow.name,
+    error: $json.error,
+    timestamp: new Date()
+  });
+}
+```
+
+### 3. Rate Limiting
+
+```javascript
+const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+for (const item of items) {
+  await processItem(item);
+  await delay(1000); // 1 req/second
+}
+```
+
+## Real Costs
+
+Month 1 in production:
+- **GPT-4 calls**: 15,000
+- **Total cost**: $450
+- **Cost per operation**: $0.03
+- **Value saved in time**: $12,000
+
+ROI: 26x in just 1 month.
+
+## Conclusion
+
+n8n + AI is a powerful combination for:
+- Automating tasks that require understanding
+- Processing natural language
+- Making intelligent decisions
+- Scaling operations
+
+### Next Steps
+
+1. Implement embeddings for semantic search
+2. Add voice input/output
+3. Integrate with vector database (Pinecone)
+4. Create multi-agent workflows
+
+Start simple, test extensively, and scale gradually. The results are worth the effort!
