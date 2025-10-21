@@ -1,0 +1,123 @@
+{
+  "nav": {
+    "home": "home",
+    "projects": "projects",
+    "work": "work",
+    "blog": "blog",
+    "uses": "uses",
+    "guestbook": "guestbook",
+    "about": "about"
+  },
+  "home": {
+    "greeting": "Hi, my name is Billy 👋",
+    "role": "Full-Stack Software Engineer",
+    "intro": "I'm a software engineer with 7 years of experience. I've {workLink} in companies of various sizes and sectors, such as startups, medium and large enterprises, and government agencies.",
+    "worked": "worked",
+    "stacks": "My main stacks are {laravel}, {vue}, {react}.",
+    "recentPosts": "📌 recent posts",
+    "projects": "💼 some of my projects",
+    "productionProjects": "🚀 production projects",
+    "viewMore": "View more",
+    "connectLinkedIn": "Connect with me on LinkedIn",
+    "viewGitHub": "View my projects on GitHub",
+    "followInstagram": "Follow me on Instagram",
+    "followTwitter": "Follow me on X (Twitter)",
+    "frameworkLaravel": "Laravel Framework",
+    "frameworkVue": "Vue.js Framework",
+    "libraryReact": "React Library"
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Check out some of my projects and experiments",
+    "viewProject": "View project",
+    "sourceCode": "Source code",
+    "laravelAuthApi": {
+      "name": "Laravel Auth API",
+      "description": "Authentication API with Laravel Sanctum"
+    },
+    "loteria": {
+      "name": "Lottery",
+      "description": "A lottery project for TDD study"
+    },
+    "hubnews": {
+      "name": "HubNews AI",
+      "description": "AI platform for news analysis"
+    },
+    "voiceNotes": {
+      "name": "Voice Notes",
+      "description": "App for audio notes transcription"
+    },
+    "sistemaReino": {
+      "name": "Sistema Reino",
+      "description": "Complete management for churches"
+    }
+  },
+  "work": {
+    "title": "Work Experience",
+    "description": "My professional journey over the years",
+    "present": "Present",
+    "duration": "{years} years",
+    "months": "{months} months"
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Articles about development, technology and experiences",
+    "readMore": "Read more",
+    "publishedOn": "Published on",
+    "views": "views",
+    "minRead": "min read"
+  },
+  "uses": {
+    "title": "Uses",
+    "description": "Tools, software and hardware I use"
+  },
+  "about": {
+    "title": "About",
+    "description": "A little bit about me and my journey"
+  },
+  "guestbook": {
+    "title": "Guestbook",
+    "description": "Leave your message",
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "yourMessage": "Your message...",
+    "submit": "Submit"
+  },
+  "footer": {
+    "copyright": "© 2025 Billy"
+  },
+  "metadata": {
+    "title": "Billy - Full-Stack Software Engineer",
+    "description": "Full-Stack Software Engineer with 7 years of experience in Laravel, Vue.js and React. Web development, APIs and scalable solutions.",
+    "keywords": "Billy, Software Engineer, Full-Stack, Laravel, Vue.js, React, Next.js, PHP, JavaScript, TypeScript, Web Development, APIs",
+    "ogTitle": "Billy - Full-Stack Software Engineer",
+    "ogDescription": "Full-Stack Software Engineer with expertise in Laravel, Vue.js and React. Check out my projects and articles about web development."
+  },
+  "aria": {
+    "skipToContent": "Skip to content",
+    "mainNavigation": "Main navigation",
+    "languageSwitcher": "Language switcher",
+    "currentLanguage": "Current language: {language}",
+    "switchTo": "Switch to {language}",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "darkMode": "Dark mode",
+    "lightMode": "Light mode"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "save": "Save",
+    "cancel": "Cancel",
+    "close": "Close",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "notFound": "Page not found",
+    "goHome": "Go home"
+  }
+}

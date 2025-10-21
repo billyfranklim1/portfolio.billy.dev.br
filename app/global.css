@@ -28,6 +28,22 @@
 
 html {
   min-width: 360px;
+  scroll-behavior: smooth;
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 .prose .anchor {
@@ -155,4 +171,42 @@ table {
   overflow: visible;
   clip: auto;
   white-space: normal;
+}
+
+/* Focus visible improvements for accessibility */
+*:focus-visible {
+  outline: 2px solid #47a3f3;
+  outline-offset: 2px;
+}
+
+/* Better link focus for keyboard navigation */
+a:focus-visible {
+  outline: 2px solid #47a3f3;
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .prose a {
+    text-decoration-thickness: 2px;
+  }
+}
+
+/* Performance optimization: will-change for animated elements */
+.transition-all {
+  will-change: transform, opacity;
+}
+
+/* Prevent layout shift from images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Font loading optimization */
+@supports (font-variation-settings: normal) {
+  html {
+    font-feature-settings: "liga" 1, "calt" 1;
+  }
 }

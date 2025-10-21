@@ -1,0 +1,123 @@
+{
+  "nav": {
+    "home": "home",
+    "projects": "projetos",
+    "work": "experiências",
+    "blog": "blog",
+    "uses": "setup",
+    "guestbook": "livro de visitas",
+    "about": "sobre"
+  },
+  "home": {
+    "greeting": "Olá, meu nome é Billy 👋",
+    "role": "Engenheiro de Software Full-Stack",
+    "intro": "Eu sou engenheiro de software com 7 anos de experiência. Tendo {workLink} em empresas de diversos tamanhos e segmentos, tais como startups, empresas de médio, grande porte e empresas governamentais.",
+    "worked": "trabalhado",
+    "stacks": "Minhas principais stacks são {laravel}, {vue}, {react}.",
+    "recentPosts": "📌 posts recentes",
+    "projects": "💼 alguns dos meus projetos",
+    "productionProjects": "🚀 projetos em produção",
+    "viewMore": "Ver mais",
+    "connectLinkedIn": "Conecte-se comigo no LinkedIn",
+    "viewGitHub": "Veja meus projetos no GitHub",
+    "followInstagram": "Siga-me no Instagram",
+    "followTwitter": "Acompanhe-me no X (Twitter)",
+    "frameworkLaravel": "Framework Laravel",
+    "frameworkVue": "Framework Vue.js",
+    "libraryReact": "Biblioteca React"
+  },
+  "projects": {
+    "title": "Projetos",
+    "description": "Veja alguns dos meus projetos e experimentos",
+    "viewProject": "Ver projeto",
+    "sourceCode": "Código fonte",
+    "laravelAuthApi": {
+      "name": "Laravel Auth API",
+      "description": "API de autenticação com Laravel Sanctum"
+    },
+    "loteria": {
+      "name": "Loteria",
+      "description": "Um projeto de loteria para estudo de TDD"
+    },
+    "hubnews": {
+      "name": "HubNews AI",
+      "description": "Plataforma de IA para análise de notícias"
+    },
+    "voiceNotes": {
+      "name": "Voice Notes",
+      "description": "App para transcrição de notas de áudio"
+    },
+    "sistemaReino": {
+      "name": "Sistema Reino",
+      "description": "Gestão completa para igrejas"
+    }
+  },
+  "work": {
+    "title": "Experiências Profissionais",
+    "description": "Minha jornada profissional ao longo dos anos",
+    "present": "Presente",
+    "duration": "{years} anos",
+    "months": "{months} meses"
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Artigos sobre desenvolvimento, tecnologia e experiências",
+    "readMore": "Ler mais",
+    "publishedOn": "Publicado em",
+    "views": "visualizações",
+    "minRead": "min de leitura"
+  },
+  "uses": {
+    "title": "Setup",
+    "description": "Ferramentas, software e hardware que eu uso"
+  },
+  "about": {
+    "title": "Sobre",
+    "description": "Um pouco sobre mim e minha trajetória"
+  },
+  "guestbook": {
+    "title": "Livro de Visitas",
+    "description": "Deixe sua mensagem",
+    "signIn": "Entrar",
+    "signOut": "Sair",
+    "yourMessage": "Sua mensagem...",
+    "submit": "Enviar"
+  },
+  "footer": {
+    "copyright": "© 2025 Billy"
+  },
+  "metadata": {
+    "title": "Billy - Engenheiro de Software Full-Stack",
+    "description": "Engenheiro de Software Full-Stack com 7 anos de experiência em Laravel, Vue.js e React. Desenvolvimento web, APIs e soluções escaláveis.",
+    "keywords": "Billy, Engenheiro de Software, Full-Stack, Laravel, Vue.js, React, Next.js, PHP, JavaScript, TypeScript, Desenvolvimento Web, APIs",
+    "ogTitle": "Billy - Engenheiro de Software Full-Stack",
+    "ogDescription": "Engenheiro de Software Full-Stack com expertise em Laravel, Vue.js e React. Confira meus projetos e artigos sobre desenvolvimento web."
+  },
+  "aria": {
+    "skipToContent": "Pular para o conteúdo",
+    "mainNavigation": "Navegação principal",
+    "languageSwitcher": "Mudar idioma",
+    "currentLanguage": "Idioma atual: {language}",
+    "switchTo": "Mudar para {language}",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu",
+    "darkMode": "Modo escuro",
+    "lightMode": "Modo claro"
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro",
+    "success": "Sucesso",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "close": "Fechar",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "back": "Voltar",
+    "next": "Próximo",
+    "previous": "Anterior",
+    "search": "Buscar",
+    "notFound": "Página não encontrada",
+    "goHome": "Ir para home"
+  }
+}

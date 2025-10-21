@@ -1,3 +1,7 @@
+import createNextIntlPlugin from 'next-intl/plugin';
+
+const withNextIntl = createNextIntlPlugin('./i18n.ts');
+
 const nextConfig = {
   async redirects() {
     return [];
@@ -54,4 +58,4 @@ const securityHeaders = [
   },
 ];
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

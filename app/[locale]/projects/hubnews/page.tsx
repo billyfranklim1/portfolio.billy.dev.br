@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
-import { ProjectTracker } from '../../components/ProjectTracker'
+import { ProjectTracker } from '../../../components/ProjectTracker'
 
 export const metadata: Metadata = {
   title: 'HubNews AI - Plataforma de Inteligência Artificial para Análise de Notícias | Billy',
