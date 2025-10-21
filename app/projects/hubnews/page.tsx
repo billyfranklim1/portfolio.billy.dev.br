@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 
 function Badge({ children }: { children: React.ReactNode }) {
   return (
-    <span className="px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">
+    <span className="px-2 py-1 text-xs rounded-md bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300">
       {children}
     </span>
   )
@@ -44,11 +44,11 @@ function Badge({ children }: { children: React.ReactNode }) {
 
 function Feature({ icon, title, description }: { icon: string, title: string, description: string }) {
   return (
-    <div className="flex gap-4 p-6 rounded-lg bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-      <div className="text-2xl">{icon}</div>
+    <div className="flex gap-3 p-4 rounded-lg border border-neutral-200 dark:border-neutral-800">
+      <div className="text-xl">{icon}</div>
       <div>
-        <h3 className="font-semibold mb-1 text-gray-900 dark:text-white">{title}</h3>
-        <p className="text-sm text-gray-600 dark:text-gray-400">{description}</p>
+        <h3 className="font-medium mb-1">{title}</h3>
+        <p className="text-sm text-neutral-600 dark:text-neutral-400">{description}</p>
       </div>
     </div>
   )
@@ -56,22 +56,16 @@ function Feature({ icon, title, description }: { icon: string, title: string, de
 
 export default function HubNewsPage() {
   return (
-    <section className="max-w-4xl mx-auto">
-      <Link 
-        href="/"
-        className="inline-flex items-center gap-2 mb-8 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
-      >
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-        </svg>
-        Voltar
+    <section>
+      <Link href="/" className="mb-8 inline-block">
+        ← voltar
       </Link>
 
-      <div className="mb-8">
-        <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+      <div className="mb-12">
+        <h1 className="font-medium text-2xl mb-4 tracking-tighter">
           HubNews AI
         </h1>
-        <p className="text-xl text-gray-600 dark:text-gray-400 mb-6">
+        <p className="text-neutral-600 dark:text-neutral-400 mb-6">
           Plataforma de Inteligência Artificial para Análise e Curadoria de Notícias
         </p>
         
@@ -114,7 +108,7 @@ export default function HubNewsPage() {
       </div>
 
       <div className="mb-12">
-        <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Principais Funcionalidades</h2>
+        <h2 className="font-medium text-xl mb-4 tracking-tighter">Principais Funcionalidades</h2>
         <div className="grid gap-4 md:grid-cols-2">
           <Feature 
             icon="🤖"
@@ -140,30 +134,18 @@ export default function HubNewsPage() {
       </div>
 
       <div className="mb-12">
-        <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Stack Tecnológica</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div className="text-center p-4 rounded-lg bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-            <div className="text-3xl mb-2">⚛️</div>
-            <p className="text-sm font-medium">React</p>
-          </div>
-          <div className="text-center p-4 rounded-lg bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-            <div className="text-3xl mb-2">🧠</div>
-            <p className="text-sm font-medium">TensorFlow</p>
-          </div>
-          <div className="text-center p-4 rounded-lg bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-            <div className="text-3xl mb-2">🐍</div>
-            <p className="text-sm font-medium">Python</p>
-          </div>
-          <div className="text-center p-4 rounded-lg bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-            <div className="text-3xl mb-2">📱</div>
-            <p className="text-sm font-medium">Next.js</p>
-          </div>
+        <h2 className="font-medium text-xl mb-4 tracking-tighter">Stack Tecnológica</h2>
+        <div className="flex flex-wrap gap-2">
+          <Badge>React</Badge>
+          <Badge>TensorFlow</Badge>
+          <Badge>Python</Badge>
+          <Badge>Next.js</Badge>
         </div>
       </div>
 
-      <div className="border-t border-gray-200 dark:border-gray-800 pt-8">
-        <p className="text-center text-gray-600 dark:text-gray-400">
-          Desenvolvido por <Link href="/" className="text-blue-600 dark:text-blue-400 hover:underline">Billy</Link>
+      <div className="border-t border-neutral-200 dark:border-neutral-800 pt-8 mt-12">
+        <p className="text-sm text-neutral-600 dark:text-neutral-400">
+          Desenvolvido por <Link href="/" className="hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors">Billy</Link>
         </p>
       </div>
     </section>

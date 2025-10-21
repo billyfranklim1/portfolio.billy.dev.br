@@ -1,17 +1,15 @@
 import type { Metadata } from 'next';
-import { Suspense, cache } from 'react';
+import { Suspense } from 'react';
 import { notFound } from 'next/navigation';
 import { CustomMDX } from 'app/components/mdx';
-import { getViewsCount } from 'app/db/queries';
 import { getBlogPosts } from 'app/db/blog';
-import ViewCounter from '../view-counter';
-import { increment } from 'app/db/actions';
 import { unstable_noStore as noStore } from 'next/cache';
 
 export async function generateMetadata({
   params,
 }): Promise<Metadata | undefined> {
-  let post = getBlogPosts().find((post) => post.slug === params.slug);
+  const { slug } = await params;
+  let post = getBlogPosts().find((post) => post.slug === slug);
   if (!post) {
     return;
   }
@@ -83,8 +81,9 @@ function formatDate(date: string) {
   return `${fullDate} (${formattedDate})`;
 }
 
-export default function Blog({ params }) {
-  let post = getBlogPosts().find((post) => post.slug === params.slug);
+export default async function Blog({ params }) {
+  const { slug } = await params;
+  let post = getBlogPosts().find((post) => post.slug === slug);
 
   if (!post) {
     notFound();
@@ -118,26 +117,13 @@ export default function Blog({ params }) {
         {post.metadata.title}
       </h1>
       <div className="flex justify-between items-center mt-2 mb-8 text-sm max-w-[650px]">
-        <Suspense fallback={<p className="h-5" />}>
-          <p className="text-sm text-neutral-600 dark:text-neutral-400">
-            {formatDate(post.metadata.publishedAt)}
-          </p>
-        </Suspense>
-        <Suspense fallback={<p className="h-5" />}>
-          <Views slug={post.slug} />
-        </Suspense>
+        <p className="text-sm text-neutral-600 dark:text-neutral-400">
+          {formatDate(post.metadata.publishedAt)}
+        </p>
       </div>
       <article className="prose prose-quoteless prose-neutral dark:prose-invert">
         <CustomMDX source={post.content} />
       </article>
     </section>
   );
-}
-
-let incrementViews = cache(increment);
-
-async function Views({ slug }: { slug: string }) {
-  let views = await getViewsCount();
-  incrementViews(slug);
-  return <ViewCounter allViews={views} slug={slug} />;
 }

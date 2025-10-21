@@ -35,19 +35,19 @@ export const metadata: Metadata = {
 
 function Badge({ children }: { children: React.ReactNode }) {
   return (
-    <span className="px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">
+    <span className="px-2 py-1 text-xs rounded-md bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300">
       {children}
     </span>
   )
 }
 
-function Feature({ icon, title, description }: { icon: string, title: string, description: string }) {
+function Feature({ icon, title, description }: { icon: string, title, description: string }) {
   return (
-    <div className="flex gap-4 p-6 rounded-lg bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-      <div className="text-2xl">{icon}</div>
+    <div className="flex gap-3 p-4 rounded-lg border border-neutral-200 dark:border-neutral-800">
+      <div className="text-xl">{icon}</div>
       <div>
-        <h3 className="font-semibold mb-1 text-gray-900 dark:text-white">{title}</h3>
-        <p className="text-sm text-gray-600 dark:text-gray-400">{description}</p>
+        <h3 className="font-medium mb-1">{title}</h3>
+        <p className="text-sm text-neutral-600 dark:text-neutral-400">{description}</p>
       </div>
     </div>
   )
@@ -55,22 +55,16 @@ function Feature({ icon, title, description }: { icon: string, title: string, de
 
 export default function VoiceNotesPage() {
   return (
-    <section className="max-w-4xl mx-auto">
-      <Link 
-        href="/"
-        className="inline-flex items-center gap-2 mb-8 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
-      >
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-        </svg>
-        Voltar
+    <section>
+      <Link href="/" className="mb-8 inline-block">
+        ← voltar
       </Link>
 
-      <div className="mb-8">
-        <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-green-500 to-teal-600 bg-clip-text text-transparent">
+      <div className="mb-12">
+        <h1 className="font-medium text-2xl mb-4 tracking-tighter">
           Voice Notes
         </h1>
-        <p className="text-xl text-gray-600 dark:text-gray-400 mb-6">
+        <p className="text-neutral-600 dark:text-neutral-400 mb-6">
           Aplicação Web para Gravação, Transcrição e Análise Inteligente de Notas de Áudio
         </p>
         
@@ -82,19 +76,17 @@ export default function VoiceNotesPage() {
           <Badge>SaaS</Badge>
         </div>
 
-        <div className="flex gap-4">
-          <a
-            href="https://voice-notes.laravel.cloud/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-green-600 text-white hover:bg-green-700 transition-colors"
-          >
-            Visitar Projeto
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-            </svg>
-          </a>
-        </div>
+        <a
+          href="https://voice-notes.laravel.cloud/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-sm hover:underline"
+        >
+          Visitar Projeto
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          </svg>
+        </a>
       </div>
 
       <div className="prose prose-neutral dark:prose-invert max-w-none mb-12">
@@ -121,7 +113,7 @@ export default function VoiceNotesPage() {
       </div>
 
       <div className="mb-12">
-        <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Principais Funcionalidades</h2>
+        <h2 className="font-medium text-xl mb-4 tracking-tighter">Principais Funcionalidades</h2>
         <div className="grid gap-4 md:grid-cols-2">
           <Feature 
             icon="🎙️"
@@ -157,54 +149,18 @@ export default function VoiceNotesPage() {
       </div>
 
       <div className="mb-12">
-        <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Stack Tecnológica</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div className="text-center p-4 rounded-lg bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-            <div className="text-3xl mb-2">🎨</div>
-            <p className="text-sm font-medium">Laravel</p>
-          </div>
-          <div className="text-center p-4 rounded-lg bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-            <div className="text-3xl mb-2">🤖</div>
-            <p className="text-sm font-medium">OpenAI API</p>
-          </div>
-          <div className="text-center p-4 rounded-lg bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-            <div className="text-3xl mb-2">🎯</div>
-            <p className="text-sm font-medium">Vue.js</p>
-          </div>
-          <div className="text-center p-4 rounded-lg bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-            <div className="text-3xl mb-2">💾</div>
-            <p className="text-sm font-medium">MySQL</p>
-          </div>
+        <h2 className="font-medium text-xl mb-4 tracking-tighter">Stack Tecnológica</h2>
+        <div className="flex flex-wrap gap-2">
+          <Badge>Laravel</Badge>
+          <Badge>OpenAI API</Badge>
+          <Badge>Vue.js</Badge>
+          <Badge>MySQL</Badge>
         </div>
       </div>
 
-      <div className="mb-12">
-        <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Casos de Uso</h2>
-        <div className="grid gap-4">
-          <div className="p-4 rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800">
-            <h3 className="font-semibold mb-2 text-blue-900 dark:text-blue-100">👨‍💼 Profissionais</h3>
-            <p className="text-sm text-blue-700 dark:text-blue-300">
-              Capture ideias durante reuniões, brainstorms ou no trânsito sem perder detalhes importantes
-            </p>
-          </div>
-          <div className="p-4 rounded-lg bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800">
-            <h3 className="font-semibold mb-2 text-green-900 dark:text-green-100">📚 Estudantes</h3>
-            <p className="text-sm text-green-700 dark:text-green-300">
-              Grave aulas, palestras e crie resumos automáticos para revisão posterior
-            </p>
-          </div>
-          <div className="p-4 rounded-lg bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-800">
-            <h3 className="font-semibold mb-2 text-purple-900 dark:text-purple-100">🔬 Pesquisadores</h3>
-            <p className="text-sm text-purple-700 dark:text-purple-300">
-              Documente observações e insights de campo com transcrição e análise automática
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="border-t border-gray-200 dark:border-gray-800 pt-8">
-        <p className="text-center text-gray-600 dark:text-gray-400">
-          Desenvolvido por <Link href="/" className="text-green-600 dark:text-green-400 hover:underline">Billy</Link>
+      <div className="border-t border-neutral-200 dark:border-neutral-800 pt-8 mt-12">
+        <p className="text-sm text-neutral-600 dark:text-neutral-400">
+          Desenvolvido por <Link href="/" className="hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors">Billy</Link>
         </p>
       </div>
     </section>
