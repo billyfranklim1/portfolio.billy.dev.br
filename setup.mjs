@@ -35,15 +35,22 @@ const workPage = `export default function Page() {
 `;
 
 const deleteFolderRecursive = async (path) => {
-  const stat = await fs.stat(path);
-  if (stat.isDirectory()) {
-    const files = await fs.readdir(path);
-    await Promise.all(
-      files.map((file) => deleteFolderRecursive(`${path}/${file}`))
-    );
-    await fs.rmdir(path);
-  } else {
-    await fs.unlink(path);
+  try {
+    const stat = await fs.stat(path);
+    if (stat.isDirectory()) {
+      const files = await fs.readdir(path);
+      await Promise.all(
+        files.map((file) => deleteFolderRecursive(`${path}/${file}`))
+      );
+      await fs.rmdir(path);
+    } else {
+      await fs.unlink(path);
+    }
+  } catch (error) {
+    // Ignore errors if path doesn't exist
+    if (error.code !== 'ENOENT') {
+      throw error;
+    }
   }
 };
 
@@ -57,7 +64,19 @@ const deleteFolderRecursive = async (path) => {
     return;
   }
 
+  // Check if this looks like a real project (not a template)
+  // If content directory has more than just a hello-world.mdx, skip setup
   const contentDir = path.join(process.cwd(), 'content');
+  try {
+    const contentFiles = await fs.readdir(contentDir);
+    if (contentFiles.length > 1 || (contentFiles.length === 1 && contentFiles[0] !== 'hello-world.mdx')) {
+      console.log('Detected existing content, skipping template setup');
+      return;
+    }
+  } catch (error) {
+    // Content dir doesn't exist, proceed with setup
+  }
+
   const imagesDir = path.join(process.cwd(), 'public', 'images');
   const appDir = path.join(process.cwd(), 'app');
   const workDir = path.join(process.cwd(), 'app', 'work');
